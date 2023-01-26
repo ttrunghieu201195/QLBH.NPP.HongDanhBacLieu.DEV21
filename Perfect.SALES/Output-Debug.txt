@@ -1,0 +1,183 @@
+'PM.QLK.exe': Loaded 'F:\Working\Devlopment\ERP\Bin\PM.QLK.exe', No native symbols in symbol file.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\ntdll.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\mscoree.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\kernel32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\advapi32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\rpcrt4.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\shlwapi.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\gdi32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\user32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\msvcrt.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\imm32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\lpk.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\usp10.dll'
+'PM.QLK.exe': Loaded 'C:\Program Files\Kaspersky Lab\Kaspersky Internet Security 2010\mzvkbd3.dll'
+'PM.QLK.exe': Loaded 'C:\Program Files\Kaspersky Lab\Kaspersky Internet Security 2010\kloehk.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorwks.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\WinSxS\x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.4053_x-ww_e6967989\msvcr80.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\shell32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.2982_x-ww_ac3f9c03\comctl32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\comctl32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Culture.dll'
+'PM.QLK.exe': Unloaded 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Culture.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\mscorlib\9adb89fa22fd5b4ce433b5aca7fb1b07\mscorlib.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\ole32.dll'
+'PM.QLK.exe': Loaded 'C:\Program Files\SQL Assistant\data\SqlAssist.dll', Binary was not built with debug information.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\oleaut32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\version.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\setupapi.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\MSCTF.dll'
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\PM.QLK.exe', Symbols loaded.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System\aa7926460a336408c8041330ad90929d\System.ni.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\Microsoft.VisualBas#\5b3d048d8c003d743ea5e72caf07773a\Microsoft.VisualBasic.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualBasic\8.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorjit.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\xpsp2res.dll', Binary was not built with debug information.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Data.Extra.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Common.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Data.SqlHelper.dll', Symbols loaded.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Data\0b40341027c01716cec1dd97592698e0\System.Data.ni.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll'
+'PM.QLK.exe': Unloaded 'C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\ws2_32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\ws2help.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\crypt32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\msasn1.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'ImageAtBase0x11000000', No symbols loaded.
+'PM.QLK.exe': Unloaded 'ImageAtBase0x11000000'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\rsaenh.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.BonusSkins.v9.1\9.1.4.0__95fc6c5621878f0a\DevExpress.BonusSkins.v9.1.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.BonusSkins.v9.1\9.1.4.0__95fc6c5621878f0a\DevExpress.BonusSkins.v9.1.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.OfficeSkins.v9.1\9.1.4.0__95fc6c5621878f0a\DevExpress.OfficeSkins.v9.1.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.Utils.v9.1\9.1.4.0__b88d1754d700e49a\DevExpress.Utils.v9.1.dll'
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Utils.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.LiveUpdate.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraBars.v9.1\9.1.4.0__b88d1754d700e49a\DevExpress.XtraBars.v9.1.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Drawing\6978f2e90f13bc720d57fa6895c911e2\System.Drawing.ni.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Windows.Forms\9a254c455892c02355ab0ab0f0727c5b\System.Windows.Forms.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.Data.v9.1\9.1.4.0__b88d1754d700e49a\DevExpress.Data.v9.1.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Configuration\cb4cb21d14767292e079366a5d3d76cd\System.Configuration.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Xml\36f3953f24d4f0b767bf172331ad6f3e\System.Xml.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'ImageAtBase0x10000000'
+'PM.QLK.exe': Unloaded 'ImageAtBase0x10000000'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\9.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\9.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll'
+'PM.QLK.exe': Loaded 'C:\Program Files\Microsoft Visual Studio 9.0\Common7\Packages\Debugger\x86\Microsoft.VisualStudio.Debugger.Runtime.Impl.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\WinSxS\x86_Microsoft.VC90.CRT_1fc8b3b9a1e18e3b_9.0.30729.1_x-ww_6f74963e\msvcr90.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\WinSxS\x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.2600.2180_x-ww_522f9f82\GdiPlus.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\MSCTFIME.IME'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\dciman32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\rasapi32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\rasman.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\netapi32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\tapi32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\rtutils.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\winmm.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\secur32.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\msv1_0.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\iphlpapi.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\mswsock.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\hnetcfg.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wshtcpip.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\dnsapi.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\winrnr.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wldap32.dll'
+'PM.QLK.exe': Unloaded 'C:\Program Files\Kaspersky Lab\Kaspersky Internet Security 2010\kloehk.dll'
+The thread 'Win32 Thread' (0xf18) has exited with code 0 (0x0).
+'PM.QLK.exe': Unloaded 'C:\Program Files\Kaspersky Lab\Kaspersky Internet Security 2010\mzvkbd3.dll'
+The thread 'Win32 Thread' (0xc54) has exited with code 0 (0x0).
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\rasadhlp.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\shfolder.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\userenv.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraEditors.v9.1\9.1.4.0__b88d1754d700e49a\DevExpress.XtraEditors.v9.1.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Transactions\12903c3843fe923d1977801ffa3cf26c\System.Transactions.ni.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll'
+'PM.QLK.exe': Unloaded 'C:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.EnterpriseSe#\5f9cd5bfebcb94175d440ebab3aa412f\System.EnterpriseServices.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\security.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\schannel.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\kerberos.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\cryptdll.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\ntdsapi.dll'
+'PM.QLK.exe': Loaded 'C:\Program Files\Microsoft SQL Server\90\Shared\instapi.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\dssenh.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Runtime.Remo#\3736ba3ecac186f9c5d85f01bda2be98\System.Runtime.Remoting.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\uxtheme.dll'
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Logonui.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Service.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Net.dll', Symbols loaded.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\assembly\NativeImages_v2.0.50727_32\System.Management\894d87c08a9a5b5923e7104055a616d2\System.Management.ni.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\System.Management\2.0.0.0__b03f5f7f11d50a3a\System.Management.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\clbcatq.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\comres.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\WMINet_Utils.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wbem\wmiutils.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wbem\wbemprox.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wbem\wbemcomn.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wbem\wbemsvc.dll'
+The thread 'Win32 Thread' (0xfcc) has exited with code 0 (0x0).
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wbem\fastprox.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\msvcp60.dll'
+The thread 0x724 has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x724) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xa28) has exited with code 0 (0x0).
+The thread 0x218 has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x218) has exited with code 0 (0x0).
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\wininet.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\normaliz.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\iertutil.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\sensapi.dll'
+The thread 'Win32 Thread' (0xbcc) has exited with code 0 (0x0).
+The thread 0xe10 has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xe10) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x208) has exited with code 0 (0x0).
+The thread 0x894 has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x894) has exited with code 0 (0x0).
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Security.dll', Symbols loaded.
+'PM.QLK.exe': Loaded 'E:\UniKey\UKHook40.dll', Binary was not built with debug information.
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\kbdus.dll'
+'PM.QLK.exe': Unloaded 'C:\WINDOWS\system32\kbdus.dll'
+'PM.QLK.exe': Loaded 'C:\WINDOWS\system32\kbdvntc.dll'
+'PM.QLK.exe': Unloaded 'C:\WINDOWS\system32\kbdvntc.dll'
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Dictionary.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Inventory.Core.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'F:\Working\Devlopment\ERP\Bin\Perfect.Report.dll', Symbols loaded.
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraGrid.v9.1\9.1.4.0__b88d1754d700e49a\DevExpress.XtraGrid.v9.1.dll'
+'PM.QLK.exe' (Managed): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\DevExpress.XtraLayout.v9.1\9.1.4.0__b88d1754d700e49a\DevExpress.XtraLayout.v9.1.dll'
+The thread 'Win32 Thread' (0xb38) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xe38) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x14c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xcac) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x328) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xd54) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xfc4) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x30c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xc8c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xf14) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x684) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x3d4) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x15c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x8cc) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x2c4) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xb8c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xf00) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x9cc) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x930) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x460) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xb68) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xa78) has exited with code 0 (0x0).
+The program '[2356] PM.QLK.exe: Native' has exited with code 0 (0x0).
+The program '[2356] PM.QLK.exe: Managed' has exited with code 0 (0x0).
+The program '[2356] PM.QLK.exe: T-SQL' has exited with code 0 (0x0).

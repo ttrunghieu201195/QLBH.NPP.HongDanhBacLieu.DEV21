@@ -1,0 +1,128 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="11">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="VisibleIndex">-1</property>
+      <property name="Name">colError</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="VisibleIndex">-1</property>
+      <property name="Name">colErrorText</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Width">92</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Name">colRefID</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Width">77</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Name">colRefDate</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Width">101</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Name">colAmount</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:##,##0.###}</property>
+        <property name="FieldName">Amount</property>
+        <property name="Tag" isnull="true" />
+      </property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Width">100</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Name">colDebt</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:##,##0.###}</property>
+        <property name="FieldName">Debt</property>
+        <property name="Tag" isnull="true" />
+      </property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Width">100</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">4</property>
+      <property name="Name">colPayment</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:##,##0.###}</property>
+        <property name="FieldName">Payment</property>
+        <property name="Tag" isnull="true" />
+      </property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Width">90</property>
+      <property name="VisibleIndex">-1</property>
+      <property name="Name">colDiscount</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:##,##0.###}</property>
+        <property name="FieldName">Discount</property>
+        <property name="Tag" isnull="true" />
+      </property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Width">57</property>
+      <property name="VisibleIndex">-1</property>
+      <property name="Name">colDiscountPercent</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Width">111</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">6</property>
+      <property name="Name">colCopyDebt</property>
+      <property name="SummaryItem" isnull="true" iskey="true">
+        <property name="SummaryType">Sum</property>
+        <property name="DisplayFormat">{0:##,##0.###}</property>
+        <property name="FieldName">colCopyDebt</property>
+        <property name="Tag" isnull="true" />
+      </property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Width">42</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">5</property>
+      <property name="Name">colIsCheck</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowFooter">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="AnimationType">AnimateFocusedItem</property>
+    <property name="EnableAppearanceOddRow">true</property>
+    <property name="EnableAppearanceEvenRow">true</property>
+    <property name="ShowDetailButtons">false</property>
+    <property name="ShowBands">false</property>
+    <property name="AllowHtmlDrawHeaders">true</property>
+  </property>
+  <property name="Bands" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Columns" iskey="true" value="11">
+        <property name="Item1">colError</property>
+        <property name="Item2">colErrorText</property>
+        <property name="Item3">colRefID</property>
+        <property name="Item4">colRefDate</property>
+        <property name="Item5">colAmount</property>
+        <property name="Item6">colDebt</property>
+        <property name="Item7">colDiscountPercent</property>
+        <property name="Item8">colDiscount</property>
+        <property name="Item9">colPayment</property>
+        <property name="Item10">colIsCheck</property>
+        <property name="Item11">colCopyDebt</property>
+      </property>
+      <property name="Name">gridBand2</property>
+      <property name="Children" iskey="true" value="0" />
+      <property name="Width">623</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

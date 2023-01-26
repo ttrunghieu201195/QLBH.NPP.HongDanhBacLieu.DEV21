@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSummary" targetNamespace="http://tempuri.org/dsSummary.xsd" xmlns:mstns="http://tempuri.org/dsSummary.xsd" xmlns="http://tempuri.org/dsSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_SALEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_SALEConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERP_SALEConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HuynhGiaKhangConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HuynhGiaKhangConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.HuynhGiaKhangConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_QLBH_2_9_1_4ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_QLBH_2_9_1_4ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERP_QLBH_2_9_1_4ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hongdanhblConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hongdanhblConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.hongdanhblConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="INVENTORY_DETAIL_SUMMARYTableAdapter" GeneratorDataComponentClassName="INVENTORY_DETAIL_SUMMARYTableAdapter" Name="INVENTORY_DETAIL_SUMMARY" UserDataComponentName="INVENTORY_DETAIL_SUMMARYTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hongdanhblConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT EP.Product_ID AS ProductID,
+       p.Product_Name AS ProductName,
+       u.Unit_Name,
+       EP.Stock_ID AS StockID,
+       s.Stock_Name,
+       p.Product_Group_ID AS ProductGroupID,
+       pg.ProductGroup_Name,
+       EP.OpenQuantity,
+       EP.OpenAmount,
+       EP.InQuantity,
+       EP.InAmount,
+       EP.OutQuantity,
+       EP.OutQuantity * ROUND(
+           (
+               CASE 
+                    WHEN EP.TotalOpIQuantity = 0 THEN 0
+                    ELSE (EP.TotalOpIAmount / EP.TotalOpIQuantity)
+               END
+           ),
+           2
+       ) AS [OutAmount],
+       --EP.OutAmount,
+       EP.TotalIOQuantity,
+       ROUND(
+           EP.TotalIOQuantity * (
+               CASE 
+                    WHEN EP.TotalOpIQuantity = 0 THEN 0
+                    ELSE (EP.TotalOpIAmount / EP.TotalOpIQuantity)
+               END
+           ),
+           2
+       ) AS TotalIOAmount,
+       EP.OutAmount - ROUND(
+           EP.OutQuantity * (
+               CASE 
+                    WHEN EP.TotalOpIQuantity = 0 THEN 0
+                    ELSE (EP.TotalOpIAmount / EP.TotalOpIQuantity)
+               END
+           ),
+           2
+       ) AS ProfitAmount
+FROM   (
+           SELECT EE.Product_ID,
+                  EE.Stock_ID,
+                  EE.OpenQuantity,
+                  EE.OpenAmount,
+                  EE.TotalQuantityInward AS InQuantity,
+                  EE.TotalAmountInward AS InAmount,
+                  EE.TotalQuantityOutward AS OutQuantity,
+                  EE.TotalAmountOutward AS OutAmount,
+                  (EE.OpenQuantity + EE.TotalQuantityInward) AS TotalOpIQuantity,
+                  (EE.OpenAmount + EE.TotalAmountInward) AS TotalOpIAmount,
+                  (
+                      EE.OpenQuantity + EE.TotalQuantityInward - EE.TotalQuantityOutward
+                  ) AS TotalIOQuantity
+           FROM   (
+                      SELECT CASE 
+                                  WHEN IP.Product_ID IS NULL THEN FP.Product_ID
+                                  ELSE IP.Product_ID
+                             END AS Product_ID,
+                             CASE 
+                                  WHEN IP.Stock_ID IS NULL THEN FP.Stock_ID
+                                  ELSE IP.Stock_ID
+                             END AS Stock_ID,
+                             CASE 
+                                  WHEN FP.OpenQuantity IS NULL THEN 0
+                                  ELSE FP.OpenQuantity
+                             END AS OpenQuantity,
+                             CASE 
+                                  WHEN FP.OpenAmount IS NULL THEN 0
+                                  ELSE FP.OpenAmount
+                             END AS OpenAmount,
+                             CASE 
+                                  WHEN IP.TotalQuantityInward IS NULL THEN 0
+                                  ELSE IP.TotalQuantityInward
+                             END AS TotalQuantityInward,
+                             CASE 
+                                  WHEN IP.TotalAmountInward IS NULL THEN 0
+                                  ELSE IP.TotalAmountInward
+                             END AS TotalAmountInward,
+                             CASE 
+                                  WHEN IP.TotalQuantityOutward IS NULL THEN 0
+                                  ELSE IP.TotalQuantityOutward
+                             END AS TotalQuantityOutward,
+                             CASE 
+                                  WHEN IP.TotalAmountOutward IS NULL THEN 0
+                                  ELSE IP.TotalAmountOutward
+                             END AS TotalAmountOutward
+                      FROM   (
+                                 SELECT a.Product_ID,
+                                        a.Stock_ID,
+                                        SUM(a.Inward) AS TotalQuantityInward,
+                                        SUM(a.AmountInward) AS TotalAmountInward,
+                                        SUM(a.Outward) AS TotalQuantityOutward,
+                                        SUM(a.AmountOutward) AS 
+                                        TotalAmountOutward
+                                 FROM   (
+                                            SELECT id.Product_ID,
+                                                   id.Stock_ID,
+                                                   id.RefStatus,
+                                                   CASE id.RefStatus
+                                                        WHEN 1 THEN id.Quantity
+                                                        ELSE 0
+                                                   END AS Inward,
+                                                   CASE id.RefStatus
+                                                        WHEN 1 THEN (id.Price * id.Quantity)
+                                                        ELSE 0
+                                                   END AS AmountInward,
+                                                   CASE id.RefStatus
+                                                        WHEN 2 THEN id.Quantity
+                                                        ELSE 0
+                                                   END AS Outward,
+                                                   CASE id.RefStatus
+                                                        WHEN 2 THEN (id.Price * id.Quantity)
+                                                        ELSE 0
+                                                   END AS AmountOutward
+                                            FROM   INVENTORY_DETAIL id
+                                            WHERE  DATEDIFF(DAY, @FromDate, id.RefDate) 
+                                                   &gt;= 0
+                                                   AND DATEDIFF(DAY, @ToDate, id.RefDate) 
+                                                       &lt;= 0
+                                                   AND id.RefType != 0
+                                                   AND id.Stock_ID = @Stock_Id
+                                        )a
+                                 GROUP BY
+                                        a.Product_ID,
+                                        a.Stock_ID
+                             ) IP
+                             FULL OUTER JOIN (
+                                      SELECT b.Product_ID,
+                                             b.Stock_ID,
+                                             SUM(b.RealQuantity) AS OpenQuantity,
+                                             SUM(b.RealAmount) AS OpenAmount
+                                      FROM   (
+                                                 SELECT id1.Product_ID,
+                                                        id1.Stock_ID,
+                                                        id1.RefStatus,
+                                                        CASE id1.RefStatus
+                                                             WHEN 1 THEN id1.Quantity
+                                                             ELSE (id1.Quantity * -1)
+                                                        END AS RealQuantity,
+                                                        CASE id1.RefStatus
+                                                             WHEN 1 THEN (p.Price * id1.Quantity)
+                                                             ELSE ((p.Price * id1.Quantity) * -1)
+                                                        END AS RealAmount
+                                                 FROM   INVENTORY_DETAIL id1
+                                                        LEFT JOIN (
+                                                                 SELECT AA.Product_ID,
+                                                                        CASE 
+                                                                             WHEN 
+                                                                                  SUM(AA.Quantity) 
+                                                                                  IS 
+                                                                                  NULL
+                                                                 OR SUM(AA.Quantity) 
+                                                                    = 0 THEN 0
+                                                                    ELSE SUM(AA.Amount) 
+                                                                    / SUM(AA.Quantity) 
+                                                                    END AS 
+                                                                    Price
+                                                                    FROM (
+                                                                        SELECT 
+                                                                               id2.Product_ID,
+                                                                               id2.Quantity,
+                                                                               (id2.Quantity * id2.Price) AS 
+                                                                               Amount
+                                                                        FROM   
+                                                                               INVENTORY_DETAIL 
+                                                                               id2
+                                                                        WHERE  (
+                                                                                   DATEDIFF(DAY, @FromDate, id2.RefDate) 
+                                                                                   &lt;
+                                                                                   0
+                                                                                   OR 
+                                                                                      id2.RefType 
+                                                                                      =
+                                                                                      0
+                                                                               )
+                                                                               AND 
+                                                                                   id2.RefType 
+                                                                                   &lt;
+                                                                                   &gt;
+                                                                                   2
+                                                                    )AA
+                                                                    GROUP BY
+                                                                    AA.Product_ID
+                                                             ) P
+                                                             ON  id1.Product_ID = 
+                                                                 P.Product_ID
+                                                 WHERE  (
+                                                            DATEDIFF(DAY, @FromDate, id1.RefDate) 
+                                                            &lt; 0
+                                                            OR id1.RefType =
+                                                               0
+                                                        )
+                                                        AND id1.Stock_ID = @Stock_Id
+                                             )b
+                                      GROUP BY
+                                             b.Product_ID,
+                                             b.Stock_ID
+                                  ) FP
+                                  ON  IP.Product_ID = FP.Product_ID
+                  )EE
+       ) EP
+       LEFT OUTER JOIN PRODUCT p
+            ON  EP.Product_ID = p.Product_ID
+       LEFT OUTER JOIN STOCK s
+            ON  EP.Stock_ID = s.Stock_ID
+       LEFT OUTER JOIN UNIT u
+            ON  u.Unit_ID = p.Unit
+       LEFT OUTER JOIN PRODUCT_GROUP pg
+            ON  pg.ProductGroup_ID = p.Product_Group_ID  </CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="FromDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@FromDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ToDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@ToDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Stock_Id" ColumnName="" DataSourceName="" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@Stock_Id" Precision="0" Scale="0" Size="20" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="Unit_Name" DataSetColumn="Unit_Name" />
+              <Mapping SourceColumn="StockID" DataSetColumn="StockID" />
+              <Mapping SourceColumn="Stock_Name" DataSetColumn="Stock_Name" />
+              <Mapping SourceColumn="ProductGroupID" DataSetColumn="ProductGroupID" />
+              <Mapping SourceColumn="ProductGroup_Name" DataSetColumn="ProductGroup_Name" />
+              <Mapping SourceColumn="OpenQuantity" DataSetColumn="OpenQuantity" />
+              <Mapping SourceColumn="OpenAmount" DataSetColumn="OpenAmount" />
+              <Mapping SourceColumn="InQuantity" DataSetColumn="InQuantity" />
+              <Mapping SourceColumn="InAmount" DataSetColumn="InAmount" />
+              <Mapping SourceColumn="OutQuantity" DataSetColumn="OutQuantity" />
+              <Mapping SourceColumn="OutAmount" DataSetColumn="OutAmount" />
+              <Mapping SourceColumn="TotalIOQuantity" DataSetColumn="TotalIOQuantity" />
+              <Mapping SourceColumn="TotalIOAmount" DataSetColumn="TotalIOAmount" />
+              <Mapping SourceColumn="ProfitAmount" DataSetColumn="ProfitAmount" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="hongdanhblConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT 
+
+EP.Product_ID AS ProductID,
+p.Product_Name AS ProductName,
+u.Unit_Name,
+EP.Stock_ID AS StockID,
+s.Stock_Name,
+p.Product_Group_ID AS ProductGroupID,
+pg.ProductGroup_Name,
+
+EP.OpenQuantity,
+EP.OpenAmount,
+
+EP.TotalQuantityInward AS InQuantity,
+EP.TotalAmountInward AS InAmount,
+
+EP.TotalQuantityOutward AS OutQuantity,
+EP.TotalAmountOutward AS OutAmount,
+
+(EP.OpenQuantity + EP.TotalQuantityInward - EP.TotalQuantityOutward) AS TotalIOQuantity,
+(EP.OpenAmount + EP.TotalAmountInward - EP.TotalAmountOutward) AS TotalIOAmount 
+
+FROM
+(
+	SELECT 
+		CASE WHEN IP.Product_ID IS NULL THEN FP.Product_ID
+		ELSE IP.Product_ID END AS Product_ID,
+		
+		CASE WHEN IP.Stock_ID IS NULL THEN FP.Stock_ID
+		ELSE IP.Stock_ID END AS Stock_ID,
+		
+		CASE WHEN IP.Unit IS NULL THEN FP.Unit
+		ELSE IP.Unit END AS Unit,
+		
+		CASE WHEN FP.OpenQuantity IS NULL THEN 0
+		ELSE FP.OpenQuantity END AS OpenQuantity,
+		
+		CASE WHEN FP.OpenAmount IS NULL THEN 0
+		ELSE FP.OpenAmount END AS OpenAmount,
+		
+		CASE WHEN IP.TotalQuantityInward IS NULL THEN 0
+		ELSE IP.TotalQuantityInward END AS TotalQuantityInward,
+		
+		CASE WHEN IP.TotalAmountInward IS NULL THEN 0
+		ELSE IP.TotalAmountInward END AS TotalAmountInward,
+		
+		CASE WHEN IP.TotalQuantityOutward IS NULL THEN 0
+		ELSE IP.TotalQuantityOutward END AS TotalQuantityOutward,
+		
+		CASE WHEN IP.TotalAmountOutward IS NULL THEN 0
+		ELSE IP.TotalAmountOutward END AS TotalAmountOutward
+		
+	FROM 
+	(
+		SELECT a.Product_ID,a.Stock_ID,a.Unit,
+		SUM(a.Inward) AS TotalQuantityInward, SUM(a.AmountInward) AS TotalAmountInward,
+		SUM(a.Outward) AS TotalQuantityOutward, SUM(a.AmountOutward) AS TotalAmountOutward
+		FROM(
+			SELECT id.Product_ID,id.Stock_ID,id.RefStatus,id.Unit,
+			CASE id.RefStatus WHEN 1 THEN id.Quantity 
+			ELSE 0 END AS Inward,
+			CASE id.RefStatus WHEN 1 THEN (id.Price * id.Quantity) 
+			ELSE 0 END AS AmountInward,
+			CASE id.RefStatus WHEN 2 THEN id.Quantity
+			ELSE 0 END AS Outward,
+			CASE id.RefStatus WHEN 2 THEN (id.Price * id.Quantity) 
+			ELSE 0 END AS AmountOutward
+			FROM INVENTORY_DETAIL id
+			WHERE DATEDIFF(DAY,@FromDate,id.RefDate) &gt;=0
+			AND DATEDIFF(DAY,@ToDate,id.RefDate) &lt;=0 AND id.RefType != 0
+			AND id.Stock_ID = @StockId
+		)a
+		GROUP BY a.Product_ID,a.Stock_ID,a.Unit
+	) IP FULL OUTER JOIN
+	(
+		SELECT b.Product_ID,b.Unit,b.Stock_ID,SUM(b.RealQuantity) AS OpenQuantity,SUM(b.RealAmount) AS OpenAmount
+		FROM 
+		(
+			SELECT id1.Product_ID,id1.Stock_ID,id1.RefStatus,id1.Unit,
+			CASE id1.RefStatus WHEN 1 THEN id1.Quantity 
+			ELSE (id1.Quantity * -1) END AS RealQuantity,
+			CASE id1.RefStatus WHEN 1 THEN (id1.Price * id1.Quantity) 
+			ELSE ((id1.Price * id1.Quantity) * -1) END AS RealAmount
+			FROM INVENTORY_DETAIL id1
+			WHERE (DATEDIFF(DAY,@FromDate,id1.RefDate) &lt;0
+			OR id1.RefType = 0) AND id1.Stock_ID = @StockId
+		)b
+		GROUP BY b.Product_ID,b.Stock_ID,b.Unit
+	) FP ON IP.Product_ID = FP.Product_ID AND IP.Unit = FP.Unit	
+) EP LEFT OUTER JOIN PRODUCT p ON EP.Product_ID = p.Product_ID
+LEFT OUTER JOIN STOCK s ON  EP.Stock_ID = s.Stock_ID 
+LEFT OUTER JOIN UNIT u ON EP.Unit = u.Unit_ID
+LEFT OUTER JOIN PRODUCT_GROUP pg ON pg.ProductGroup_ID = p.Product_Group_ID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="FromDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@FromDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ToDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@ToDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="StockId" ColumnName="" DataSourceName="" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@StockId" Precision="0" Scale="0" Size="20" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsSummary" msprop:Generator_DataSetName="dsSummary" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INVENTORY_DETAIL_SUMMARY" msprop:Generator_UserTableName="INVENTORY_DETAIL_SUMMARY" msprop:Generator_RowDeletedName="INVENTORY_DETAIL_SUMMARYRowDeleted" msprop:Generator_RowChangedName="INVENTORY_DETAIL_SUMMARYRowChanged" msprop:Generator_RowClassName="INVENTORY_DETAIL_SUMMARYRow" msprop:Generator_RowChangingName="INVENTORY_DETAIL_SUMMARYRowChanging" msprop:Generator_RowEvArgName="INVENTORY_DETAIL_SUMMARYRowChangeEvent" msprop:Generator_RowEvHandlerName="INVENTORY_DETAIL_SUMMARYRowChangeEventHandler" msprop:Generator_TableClassName="INVENTORY_DETAIL_SUMMARYDataTable" msprop:Generator_TableVarName="tableINVENTORY_DETAIL_SUMMARY" msprop:Generator_RowDeletingName="INVENTORY_DETAIL_SUMMARYRowDeleting" msprop:Generator_TablePropName="INVENTORY_DETAIL_SUMMARY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" msprop:Generator_UserColumnName="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit_Name" msprop:Generator_UserColumnName="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StockID" msprop:Generator_UserColumnName="StockID" msprop:Generator_ColumnVarNameInTable="columnStockID" msprop:Generator_ColumnPropNameInRow="StockID" msprop:Generator_ColumnPropNameInTable="StockIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock_Name" msprop:Generator_UserColumnName="Stock_Name" msprop:Generator_ColumnVarNameInTable="columnStock_Name" msprop:Generator_ColumnPropNameInRow="Stock_Name" msprop:Generator_ColumnPropNameInTable="Stock_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductGroupID" msprop:Generator_UserColumnName="ProductGroupID" msprop:Generator_ColumnVarNameInTable="columnProductGroupID" msprop:Generator_ColumnPropNameInRow="ProductGroupID" msprop:Generator_ColumnPropNameInTable="ProductGroupIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductGroup_Name" msprop:Generator_UserColumnName="ProductGroup_Name" msprop:Generator_ColumnVarNameInTable="columnProductGroup_Name" msprop:Generator_ColumnPropNameInRow="ProductGroup_Name" msprop:Generator_ColumnPropNameInTable="ProductGroup_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OpenQuantity" msprop:Generator_UserColumnName="OpenQuantity" msprop:Generator_ColumnVarNameInTable="columnOpenQuantity" msprop:Generator_ColumnPropNameInRow="OpenQuantity" msprop:Generator_ColumnPropNameInTable="OpenQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OpenAmount" msprop:Generator_UserColumnName="OpenAmount" msprop:Generator_ColumnVarNameInTable="columnOpenAmount" msprop:Generator_ColumnPropNameInRow="OpenAmount" msprop:Generator_ColumnPropNameInTable="OpenAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InQuantity" msprop:Generator_UserColumnName="InQuantity" msprop:Generator_ColumnVarNameInTable="columnInQuantity" msprop:Generator_ColumnPropNameInRow="InQuantity" msprop:Generator_ColumnPropNameInTable="InQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InAmount" msprop:Generator_UserColumnName="InAmount" msprop:Generator_ColumnVarNameInTable="columnInAmount" msprop:Generator_ColumnPropNameInRow="InAmount" msprop:Generator_ColumnPropNameInTable="InAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OutQuantity" msprop:Generator_UserColumnName="OutQuantity" msprop:Generator_ColumnVarNameInTable="columnOutQuantity" msprop:Generator_ColumnPropNameInRow="OutQuantity" msprop:Generator_ColumnPropNameInTable="OutQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OutAmount" msprop:Generator_UserColumnName="OutAmount" msprop:Generator_ColumnVarNameInTable="columnOutAmount" msprop:Generator_ColumnPropNameInRow="OutAmount" msprop:Generator_ColumnPropNameInTable="OutAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalIOQuantity" msprop:Generator_UserColumnName="TotalIOQuantity" msprop:Generator_ColumnVarNameInTable="columnTotalIOQuantity" msprop:Generator_ColumnPropNameInRow="TotalIOQuantity" msprop:Generator_ColumnPropNameInTable="TotalIOQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalIOAmount" msprop:Generator_UserColumnName="TotalIOAmount" msprop:Generator_ColumnVarNameInTable="columnTotalIOAmount" msprop:Generator_ColumnPropNameInRow="TotalIOAmount" msprop:Generator_ColumnPropNameInTable="TotalIOAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProfitAmount" msprop:Generator_UserColumnName="ProfitAmount" msprop:Generator_ColumnVarNameInTable="columnProfitAmount" msprop:Generator_ColumnPropNameInRow="ProfitAmount" msprop:Generator_ColumnPropNameInTable="ProfitAmountColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICE" msprop:Generator_UserTableName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICE" msprop:Generator_RowDeletedName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICERowDeleted" msprop:Generator_RowChangedName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICERowChanged" msprop:Generator_RowClassName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICERow" msprop:Generator_RowChangingName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICERowChanging" msprop:Generator_RowEvArgName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICERowChangeEvent" msprop:Generator_RowEvHandlerName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICERowChangeEventHandler" msprop:Generator_TableClassName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICEDataTable" msprop:Generator_TableVarName="tableINVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICE" msprop:Generator_RowDeletingName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICERowDeleting" msprop:Generator_TablePropName="INVENTORY_DETAIL_SUMMARY_WITH_AVG_UNIT_PRICE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" msprop:Generator_UserColumnName="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit_Name" msprop:Generator_UserColumnName="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StockID" msprop:Generator_UserColumnName="StockID" msprop:Generator_ColumnVarNameInTable="columnStockID" msprop:Generator_ColumnPropNameInRow="StockID" msprop:Generator_ColumnPropNameInTable="StockIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Stock_Name" msprop:Generator_UserColumnName="Stock_Name" msprop:Generator_ColumnVarNameInTable="columnStock_Name" msprop:Generator_ColumnPropNameInRow="Stock_Name" msprop:Generator_ColumnPropNameInTable="Stock_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductGroupID" msprop:Generator_UserColumnName="ProductGroupID" msprop:Generator_ColumnVarNameInTable="columnProductGroupID" msprop:Generator_ColumnPropNameInRow="ProductGroupID" msprop:Generator_ColumnPropNameInTable="ProductGroupIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductGroup_Name" msprop:Generator_UserColumnName="ProductGroup_Name" msprop:Generator_ColumnVarNameInTable="columnProductGroup_Name" msprop:Generator_ColumnPropNameInRow="ProductGroup_Name" msprop:Generator_ColumnPropNameInTable="ProductGroup_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OpenQuantity" msprop:Generator_UserColumnName="OpenQuantity" msprop:Generator_ColumnVarNameInTable="columnOpenQuantity" msprop:Generator_ColumnPropNameInRow="OpenQuantity" msprop:Generator_ColumnPropNameInTable="OpenQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OpenAmount" msprop:Generator_UserColumnName="OpenAmount" msprop:Generator_ColumnVarNameInTable="columnOpenAmount" msprop:Generator_ColumnPropNameInRow="OpenAmount" msprop:Generator_ColumnPropNameInTable="OpenAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OpenAVGAmount" msprop:Generator_UserColumnName="OpenAVGAmount" msprop:Generator_ColumnVarNameInTable="columnOpenAVGAmount" msprop:Generator_ColumnPropNameInRow="OpenAVGAmount" msprop:Generator_ColumnPropNameInTable="OpenAVGAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InQuantity" msprop:Generator_UserColumnName="InQuantity" msprop:Generator_ColumnVarNameInTable="columnInQuantity" msprop:Generator_ColumnPropNameInRow="InQuantity" msprop:Generator_ColumnPropNameInTable="InQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InAmount" msprop:Generator_UserColumnName="InAmount" msprop:Generator_ColumnVarNameInTable="columnInAmount" msprop:Generator_ColumnPropNameInRow="InAmount" msprop:Generator_ColumnPropNameInTable="InAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="InAVGAmount" msprop:Generator_UserColumnName="InAVGAmount" msprop:Generator_ColumnVarNameInTable="columnInAVGAmount" msprop:Generator_ColumnPropNameInRow="InAVGAmount" msprop:Generator_ColumnPropNameInTable="InAVGAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OutQuantity" msprop:Generator_UserColumnName="OutQuantity" msprop:Generator_ColumnVarNameInTable="columnOutQuantity" msprop:Generator_ColumnPropNameInRow="OutQuantity" msprop:Generator_ColumnPropNameInTable="OutQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OutAmount" msprop:Generator_UserColumnName="OutAmount" msprop:Generator_ColumnVarNameInTable="columnOutAmount" msprop:Generator_ColumnPropNameInRow="OutAmount" msprop:Generator_ColumnPropNameInTable="OutAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OutAVGAmount" msprop:Generator_UserColumnName="OutAVGAmount" msprop:Generator_ColumnVarNameInTable="columnOutAVGAmount" msprop:Generator_ColumnPropNameInRow="OutAVGAmount" msprop:Generator_ColumnPropNameInTable="OutAVGAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OnhandQuantity" msprop:Generator_UserColumnName="OnhandQuantity" msprop:Generator_ColumnVarNameInTable="columnOnhandQuantity" msprop:Generator_ColumnPropNameInRow="OnhandQuantity" msprop:Generator_ColumnPropNameInTable="OnhandQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CloseAmount" msprop:Generator_UserColumnName="CloseAmount" msprop:Generator_ColumnVarNameInTable="columnCloseAmount" msprop:Generator_ColumnPropNameInRow="CloseAmount" msprop:Generator_ColumnPropNameInTable="CloseAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CloseAVGAmount" msprop:Generator_UserColumnName="CloseAVGAmount" msprop:Generator_ColumnVarNameInTable="columnCloseAVGAmount" msprop:Generator_ColumnPropNameInRow="CloseAVGAmount" msprop:Generator_ColumnPropNameInTable="CloseAVGAmountColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPayment" targetNamespace="http://tempuri.org/dsPayment.xsd" xmlns:mstns="http://tempuri.org/dsPayment.xsd" xmlns="http://tempuri.org/dsPayment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_THANHTAMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_THANHTAMConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.ERP_THANHTAMConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PROVIDER_PAYMENTTableAdapter" GeneratorDataComponentClassName="PROVIDER_PAYMENTTableAdapter" Name="PROVIDER_PAYMENT" UserDataComponentName="PROVIDER_PAYMENTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ERP_THANHTAMConnectionString (Settings)" DbObjectName="ERP31.dbo.PROVIDER_PAYMENT" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        RefID, RefDate, CustomerName, CustomerAddress, CustomerTax, ContactName, Amount
+FROM            PROVIDER_PAYMENT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RefDate" DataSetColumn="RefDate" />
+              <Mapping SourceColumn="CustomerName" DataSetColumn="CustomerName" />
+              <Mapping SourceColumn="CustomerAddress" DataSetColumn="CustomerAddress" />
+              <Mapping SourceColumn="CustomerTax" DataSetColumn="CustomerTax" />
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="RefID" DataSetColumn="RefID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPayment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPayment" msprop:Generator_DataSetName="dsPayment" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PROVIDER_PAYMENT" msprop:Generator_UserTableName="PROVIDER_PAYMENT" msprop:Generator_RowDeletedName="PROVIDER_PAYMENTRowDeleted" msprop:Generator_RowChangedName="PROVIDER_PAYMENTRowChanged" msprop:Generator_RowClassName="PROVIDER_PAYMENTRow" msprop:Generator_RowChangingName="PROVIDER_PAYMENTRowChanging" msprop:Generator_RowEvArgName="PROVIDER_PAYMENTRowChangeEvent" msprop:Generator_RowEvHandlerName="PROVIDER_PAYMENTRowChangeEventHandler" msprop:Generator_TableClassName="PROVIDER_PAYMENTDataTable" msprop:Generator_TableVarName="tablePROVIDER_PAYMENT" msprop:Generator_RowDeletingName="PROVIDER_PAYMENTRowDeleting" msprop:Generator_TablePropName="PROVIDER_PAYMENT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RefDate" msprop:Generator_UserColumnName="RefDate" msprop:Generator_ColumnVarNameInTable="columnRefDate" msprop:Generator_ColumnPropNameInRow="RefDate" msprop:Generator_ColumnPropNameInTable="RefDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_UserColumnName="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerAddress" msprop:Generator_UserColumnName="CustomerAddress" msprop:Generator_ColumnVarNameInTable="columnCustomerAddress" msprop:Generator_ColumnPropNameInRow="CustomerAddress" msprop:Generator_ColumnPropNameInTable="CustomerAddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerTax" msprop:Generator_UserColumnName="CustomerTax" msprop:Generator_ColumnVarNameInTable="columnCustomerTax" msprop:Generator_ColumnPropNameInRow="CustomerTax" msprop:Generator_ColumnPropNameInTable="CustomerTaxColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactName" msprop:Generator_UserColumnName="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,4 @@
+server=dmshongdanh.com;
+user id=dms56605_th;
+password=Trantuyetnhi@0711;
+database= dms56605_th;

@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<dsSALE xmlns="http://tempuri.org/dsSALE.xsd">
+  <SALE>
+    <IsPrint>false</IsPrint>
+    <IsBarcode>false</IsBarcode>
+    <ID>bc672339-2911-49cc-8fe1-d8c1b4f58a49</ID>
+    <RefID>BH000004</RefID>
+    <RefDate>2010-11-20T10:01:07.1699641+07:00</RefDate>
+    <RefOrgNo />
+    <RefType>0</RefType>
+    <CustomerID />
+    <CustomerName />
+    <CustomerAddress />
+    <Description />
+    <Amount>0</Amount>
+    <Payment>0</Payment>
+    <VatAmount>0</VatAmount>
+    <Discount>0</Discount>
+    <OldDebit>0</OldDebit>
+    <NewDebit>0</NewDebit>
+    <Name>Công Nợ </Name>
+    <DueDate>2011-01-01T00:00:00+07:00</DueDate>
+    <CustomerTel />
+  </SALE>
+  <SALE_DETAIL>
+    <Error>1</Error>
+    <StockID>K000001</StockID>
+    <Product_ID>HH000003</Product_ID>
+    <ItemID>HH000003</ItemID>
+    <Product_Name>Samsung R420 (Pentium Dual-Core T4300 2,16 GHz, RAM 2GB)</Product_Name>
+    <Product_Type_ID>0</Product_Type_ID>
+    <Unit>Cai</Unit>
+    <UnitConvert>1</UnitConvert>
+    <Vat>0</Vat>
+    <VatAmount>0</VatAmount>
+    <Quantity>0</Quantity>
+    <UnitPrice>17000000</UnitPrice>
+    <Amount>0</Amount>
+    <DiscountRate>0</DiscountRate>
+    <Discount>0</Discount>
+    <Batch />
+  </SALE_DETAIL>
+</dsSALE>

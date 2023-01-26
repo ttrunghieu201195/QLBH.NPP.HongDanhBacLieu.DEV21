@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsUPDATE" targetNamespace="http://tempuri.org/dsUPDATE.xsd" xmlns:mstns="http://tempuri.org/dsUPDATE.xsd" xmlns="http://tempuri.org/dsUPDATE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsUPDATE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsUPDATE" msprop:Generator_DataSetName="dsUPDATE" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UPDATE" msprop:Generator_UserTableName="UPDATE" msprop:Generator_RowDeletedName="UPDATERowDeleted" msprop:Generator_RowChangedName="UPDATERowChanged" msprop:Generator_RowClassName="UPDATERow" msprop:Generator_RowChangingName="UPDATERowChanging" msprop:Generator_RowEvArgName="UPDATERowChangeEvent" msprop:Generator_RowEvHandlerName="UPDATERowChangeEventHandler" msprop:Generator_TableClassName="UPDATEDataTable" msprop:Generator_TableVarName="tableUPDATE" msprop:Generator_RowDeletingName="UPDATERowDeleting" msprop:Generator_TablePropName="UPDATE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ApplicationID" msprop:Generator_UserColumnName="ApplicationID" msprop:Generator_ColumnVarNameInTable="columnApplicationID" msprop:Generator_ColumnPropNameInRow="ApplicationID" msprop:Generator_ColumnPropNameInTable="ApplicationIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ApplicationName" msprop:Generator_UserColumnName="ApplicationName" msprop:Generator_ColumnVarNameInTable="columnApplicationName" msprop:Generator_ColumnPropNameInRow="ApplicationName" msprop:Generator_ColumnPropNameInTable="ApplicationNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OldVersion" msprop:Generator_UserColumnName="OldVersion" msprop:Generator_ColumnVarNameInTable="columnOldVersion" msprop:Generator_ColumnPropNameInRow="OldVersion" msprop:Generator_ColumnPropNameInTable="OldVersionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NewVersion" msprop:Generator_UserColumnName="NewVersion" msprop:Generator_ColumnVarNameInTable="columnNewVersion" msprop:Generator_ColumnPropNameInRow="NewVersion" msprop:Generator_ColumnPropNameInTable="NewVersionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="UpdateLink" msprop:Generator_UserColumnName="UpdateLink" msprop:Generator_ColumnVarNameInTable="columnUpdateLink" msprop:Generator_ColumnPropNameInRow="UpdateLink" msprop:Generator_ColumnPropNameInTable="UpdateLinkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PackNo" msprop:Generator_UserColumnName="PackNo" msprop:Generator_ColumnVarNameInTable="columnPackNo" msprop:Generator_ColumnPropNameInRow="PackNo" msprop:Generator_ColumnPropNameInTable="PackNoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SoftType" msprop:Generator_UserColumnName="SoftType" msprop:Generator_ColumnPropNameInRow="SoftType" msprop:Generator_ColumnVarNameInTable="columnSoftType" msprop:Generator_ColumnPropNameInTable="SoftTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ApplicationPath" msprop:Generator_UserColumnName="ApplicationPath" msprop:Generator_ColumnVarNameInTable="columnApplicationPath" msprop:Generator_ColumnPropNameInRow="ApplicationPath" msprop:Generator_ColumnPropNameInTable="ApplicationPathColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KillProcess" msprop:Generator_UserTableName="KillProcess" msprop:Generator_RowDeletedName="KillProcessRowDeleted" msprop:Generator_RowChangedName="KillProcessRowChanged" msprop:Generator_RowClassName="KillProcessRow" msprop:Generator_RowChangingName="KillProcessRowChanging" msprop:Generator_RowEvArgName="KillProcessRowChangeEvent" msprop:Generator_RowEvHandlerName="KillProcessRowChangeEventHandler" msprop:Generator_TableClassName="KillProcessDataTable" msprop:Generator_TableVarName="tableKillProcess" msprop:Generator_RowDeletingName="KillProcessRowDeleting" msprop:Generator_TablePropName="KillProcess">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KillProcess" msprop:Generator_UserColumnName="KillProcess" msprop:Generator_ColumnVarNameInTable="columnKillProcess" msprop:Generator_ColumnPropNameInRow="KillProcess" msprop:Generator_ColumnPropNameInTable="KillProcessColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SQL" msprop:Generator_UserTableName="SQL" msprop:Generator_RowDeletedName="SQLRowDeleted" msprop:Generator_TableClassName="SQLDataTable" msprop:Generator_RowChangedName="SQLRowChanged" msprop:Generator_RowClassName="SQLRow" msprop:Generator_RowChangingName="SQLRowChanging" msprop:Generator_RowEvArgName="SQLRowChangeEvent" msprop:Generator_RowEvHandlerName="SQLRowChangeEventHandler" msprop:Generator_TablePropName="SQL" msprop:Generator_TableVarName="tableSQL" msprop:Generator_RowDeletingName="SQLRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sql" msprop:Generator_UserColumnName="Sql" msprop:Generator_ColumnPropNameInRow="Sql" msprop:Generator_ColumnVarNameInTable="columnSql" msprop:Generator_ColumnPropNameInTable="SqlColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

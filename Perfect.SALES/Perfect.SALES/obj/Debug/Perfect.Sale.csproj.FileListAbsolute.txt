@@ -1,0 +1,24 @@
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.AssemblyReference.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Inventory.Properties.Resources.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Inventory.FrmMain.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.GenerateResource.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\PM.QLBH.exe.licenses
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.CoreCompileInputs.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.AssemblyReference.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.SuggestedBindingRedirects.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Inventory.Properties.Resources.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Inventory.FrmMain.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.GenerateResource.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\PM.QLBH.exe.licenses
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.CoreCompileInputs.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\PM.QLBH.exe.config
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\PM.QLBH.exe.manifest
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\PM.QLBH.application
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\PM.QLBH.exe
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\PM.QLBH.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\PM.QLBH.TrustInfo.xml
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\PM.QLBH.exe.manifest
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\PM.QLBH.application
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\Perfect.Sale.csproj.CopyComplete
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\PM.QLBH.exe
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.SALES\Perfect.SALES\obj\Debug\PM.QLBH.pdb

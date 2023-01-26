@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTRANSACTION" targetNamespace="http://tempuri.org/dsTRANSACTION.xsd" xmlns:mstns="http://tempuri.org/dsTRANSACTION.xsd" xmlns="http://tempuri.org/dsTRANSACTION.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_THANHTAMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_THANHTAMConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERP_THANHTAMConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TRANS_REFTableAdapter" GeneratorDataComponentClassName="TRANS_REFTableAdapter" Name="TRANS_REF" UserDataComponentName="TRANS_REFTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ERP_THANHTAMConnectionString (Settings)" DbObjectName="ERP31.dbo.TRANS_REF" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM TRANS_REF</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="RefID" DataSetColumn="RefID" />
+              <Mapping SourceColumn="RefOrgNo" DataSetColumn="RefOrgNo" />
+              <Mapping SourceColumn="RefType" DataSetColumn="RefType" />
+              <Mapping SourceColumn="RefDate" DataSetColumn="RefDate" />
+              <Mapping SourceColumn="TransFrom" DataSetColumn="TransFrom" />
+              <Mapping SourceColumn="TransTo" DataSetColumn="TransTo" />
+              <Mapping SourceColumn="Department_ID" DataSetColumn="Department_ID" />
+              <Mapping SourceColumn="Employee_ID" DataSetColumn="Employee_ID" />
+              <Mapping SourceColumn="Stock_ID" DataSetColumn="Stock_ID" />
+              <Mapping SourceColumn="Branch_ID" DataSetColumn="Branch_ID" />
+              <Mapping SourceColumn="Contract_ID" DataSetColumn="Contract_ID" />
+              <Mapping SourceColumn="Contract" DataSetColumn="Contract" />
+              <Mapping SourceColumn="Reason" DataSetColumn="Reason" />
+              <Mapping SourceColumn="Currency_ID" DataSetColumn="Currency_ID" />
+              <Mapping SourceColumn="ExchangeRate" DataSetColumn="ExchangeRate" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="FAmount" DataSetColumn="FAmount" />
+              <Mapping SourceColumn="FDiscount" DataSetColumn="FDiscount" />
+              <Mapping SourceColumn="IsClose" DataSetColumn="IsClose" />
+              <Mapping SourceColumn="Sorted" DataSetColumn="Sorted" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="User_ID" DataSetColumn="User_ID" />
+              <Mapping SourceColumn="Active" DataSetColumn="Active" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTRANSACTION" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsTRANSACTION" msprop:Generator_DataSetName="dsTRANSACTION" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRANS_REF" msprop:Generator_UserTableName="TRANS_REF" msprop:Generator_RowDeletedName="TRANS_REFRowDeleted" msprop:Generator_RowChangedName="TRANS_REFRowChanged" msprop:Generator_RowClassName="TRANS_REFRow" msprop:Generator_RowChangingName="TRANS_REFRowChanging" msprop:Generator_RowEvArgName="TRANS_REFRowChangeEvent" msprop:Generator_RowEvHandlerName="TRANS_REFRowChangeEventHandler" msprop:Generator_TableClassName="TRANS_REFDataTable" msprop:Generator_TableVarName="tableTRANS_REF" msprop:Generator_RowDeletingName="TRANS_REFRowDeleting" msprop:Generator_TablePropName="TRANS_REF">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RefID" msprop:Generator_UserColumnName="RefID" msprop:Generator_ColumnVarNameInTable="columnRefID" msprop:Generator_ColumnPropNameInRow="RefID" msprop:Generator_ColumnPropNameInTable="RefIDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefOrgNo" msprop:Generator_UserColumnName="RefOrgNo" msprop:Generator_ColumnVarNameInTable="columnRefOrgNo" msprop:Generator_ColumnPropNameInRow="RefOrgNo" msprop:Generator_ColumnPropNameInTable="RefOrgNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefType" msprop:Generator_UserColumnName="RefType" msprop:Generator_ColumnVarNameInTable="columnRefType" msprop:Generator_ColumnPropNameInRow="RefType" msprop:Generator_ColumnPropNameInTable="RefTypeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RefDate" msprop:Generator_UserColumnName="RefDate" msprop:Generator_ColumnVarNameInTable="columnRefDate" msprop:Generator_ColumnPropNameInRow="RefDate" msprop:Generator_ColumnPropNameInTable="RefDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TransFrom" msprop:Generator_UserColumnName="TransFrom" msprop:Generator_ColumnVarNameInTable="columnTransFrom" msprop:Generator_ColumnPropNameInRow="TransFrom" msprop:Generator_ColumnPropNameInTable="TransFromColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransTo" msprop:Generator_UserColumnName="TransTo" msprop:Generator_ColumnVarNameInTable="columnTransTo" msprop:Generator_ColumnPropNameInRow="TransTo" msprop:Generator_ColumnPropNameInTable="TransToColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department_ID" msprop:Generator_UserColumnName="Department_ID" msprop:Generator_ColumnVarNameInTable="columnDepartment_ID" msprop:Generator_ColumnPropNameInRow="Department_ID" msprop:Generator_ColumnPropNameInTable="Department_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_ID" msprop:Generator_UserColumnName="Employee_ID" msprop:Generator_ColumnVarNameInTable="columnEmployee_ID" msprop:Generator_ColumnPropNameInRow="Employee_ID" msprop:Generator_ColumnPropNameInTable="Employee_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock_ID" msprop:Generator_UserColumnName="Stock_ID" msprop:Generator_ColumnVarNameInTable="columnStock_ID" msprop:Generator_ColumnPropNameInRow="Stock_ID" msprop:Generator_ColumnPropNameInTable="Stock_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Branch_ID" msprop:Generator_UserColumnName="Branch_ID" msprop:Generator_ColumnVarNameInTable="columnBranch_ID" msprop:Generator_ColumnPropNameInRow="Branch_ID" msprop:Generator_ColumnPropNameInTable="Branch_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contract_ID" msprop:Generator_UserColumnName="Contract_ID" msprop:Generator_ColumnVarNameInTable="columnContract_ID" msprop:Generator_ColumnPropNameInRow="Contract_ID" msprop:Generator_ColumnPropNameInTable="Contract_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contract" msprop:Generator_UserColumnName="Contract" msprop:Generator_ColumnVarNameInTable="columnContract" msprop:Generator_ColumnPropNameInRow="Contract" msprop:Generator_ColumnPropNameInTable="ContractColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Reason" msprop:Generator_UserColumnName="Reason" msprop:Generator_ColumnVarNameInTable="columnReason" msprop:Generator_ColumnPropNameInRow="Reason" msprop:Generator_ColumnPropNameInTable="ReasonColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Currency_ID" msprop:Generator_UserColumnName="Currency_ID" msprop:Generator_ColumnVarNameInTable="columnCurrency_ID" msprop:Generator_ColumnPropNameInRow="Currency_ID" msprop:Generator_ColumnPropNameInTable="Currency_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExchangeRate" msprop:Generator_UserColumnName="ExchangeRate" msprop:Generator_ColumnVarNameInTable="columnExchangeRate" msprop:Generator_ColumnPropNameInRow="ExchangeRate" msprop:Generator_ColumnPropNameInTable="ExchangeRateColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Discount" msprop:Generator_UserColumnName="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FAmount" msprop:Generator_UserColumnName="FAmount" msprop:Generator_ColumnVarNameInTable="columnFAmount" msprop:Generator_ColumnPropNameInRow="FAmount" msprop:Generator_ColumnPropNameInTable="FAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FDiscount" msprop:Generator_UserColumnName="FDiscount" msprop:Generator_ColumnVarNameInTable="columnFDiscount" msprop:Generator_ColumnPropNameInRow="FDiscount" msprop:Generator_ColumnPropNameInTable="FDiscountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IsClose" msprop:Generator_UserColumnName="IsClose" msprop:Generator_ColumnVarNameInTable="columnIsClose" msprop:Generator_ColumnPropNameInRow="IsClose" msprop:Generator_ColumnPropNameInTable="IsCloseColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Sorted" msprop:Generator_UserColumnName="Sorted" msprop:Generator_ColumnVarNameInTable="columnSorted" msprop:Generator_ColumnPropNameInRow="Sorted" msprop:Generator_ColumnPropNameInTable="SortedColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="User_ID" msprop:Generator_UserColumnName="User_ID" msprop:Generator_ColumnVarNameInTable="columnUser_ID" msprop:Generator_ColumnPropNameInRow="User_ID" msprop:Generator_ColumnPropNameInTable="User_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_UserColumnName="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

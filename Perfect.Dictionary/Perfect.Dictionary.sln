@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perfect.Dictionary", "Perfect.Dictionary\Perfect.Dictionary.csproj", "{B5233819-2304-4217-AE47-69AF35BEC6ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Style Enforcer", "Code Style Enforcer", "{36B2AE18-61DF-4163-AE65-2FC0E364ED7A}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Documents and Settings\Tran Hoang Tam\My Documents\Code Style Enforcer\CustomRules\ImplementationRules.xml = C:\Documents and Settings\Tran Hoang Tam\My Documents\Code Style Enforcer\CustomRules\ImplementationRules.xml
+		C:\Documents and Settings\Tran Hoang Tam\My Documents\Code Style Enforcer\CustomRules\NameRules.xml = C:\Documents and Settings\Tran Hoang Tam\My Documents\Code Style Enforcer\CustomRules\NameRules.xml
+		C:\Documents and Settings\Tran Hoang Tam\My Documents\Code Style Enforcer\CustomRules\VisibilityRules.xml = C:\Documents and Settings\Tran Hoang Tam\My Documents\Code Style Enforcer\CustomRules\VisibilityRules.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perfect.Common", "..\Perfect.Common\Perfect.General\Perfect.Common.csproj", "{22BFD379-2273-4605-822E-E1EE6121C7C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perfect.Inventory", "..\Perfect.SALES\Perfect.SALES\Perfect.Inventory.csproj", "{DA0CF8F2-6BF6-4B4F-BCE8-58E64270EC4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perfect.Data.SqlHelper", "..\Perfect.Data.SqlHelper\Perfect.Data.SqlHelper.csproj", "{49C677AC-3590-41E5-BDB7-D65702C9E4C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perfect.Data.Extra", "..\Perfect.Data.Extra\Perfect.Data.Extra\Perfect.Data.Extra.csproj", "{1E69717D-54E9-45EB-AA28-52BC5F812D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perfect.Security", "..\Perfect.Security\Perfect.Security\Perfect.Security.csproj", "{339FD8E4-014A-4E7F-80FB-5985DBAD9865}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5233819-2304-4217-AE47-69AF35BEC6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5233819-2304-4217-AE47-69AF35BEC6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5233819-2304-4217-AE47-69AF35BEC6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5233819-2304-4217-AE47-69AF35BEC6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BFD379-2273-4605-822E-E1EE6121C7C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BFD379-2273-4605-822E-E1EE6121C7C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BFD379-2273-4605-822E-E1EE6121C7C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BFD379-2273-4605-822E-E1EE6121C7C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA0CF8F2-6BF6-4B4F-BCE8-58E64270EC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA0CF8F2-6BF6-4B4F-BCE8-58E64270EC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA0CF8F2-6BF6-4B4F-BCE8-58E64270EC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA0CF8F2-6BF6-4B4F-BCE8-58E64270EC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C677AC-3590-41E5-BDB7-D65702C9E4C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C677AC-3590-41E5-BDB7-D65702C9E4C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C677AC-3590-41E5-BDB7-D65702C9E4C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C677AC-3590-41E5-BDB7-D65702C9E4C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E69717D-54E9-45EB-AA28-52BC5F812D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E69717D-54E9-45EB-AA28-52BC5F812D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E69717D-54E9-45EB-AA28-52BC5F812D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E69717D-54E9-45EB-AA28-52BC5F812D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339FD8E4-014A-4E7F-80FB-5985DBAD9865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339FD8E4-014A-4E7F-80FB-5985DBAD9865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339FD8E4-014A-4E7F-80FB-5985DBAD9865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339FD8E4-014A-4E7F-80FB-5985DBAD9865}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		CodeStyleEnforcer_Active = -1
+		CodeStyleEnforcer_RulesLocation = 0
+		SolutionGuid = {F7A8B14C-B8D3-403F-9304-DB0F23CABF6F}
+	EndGlobalSection
+EndGlobal

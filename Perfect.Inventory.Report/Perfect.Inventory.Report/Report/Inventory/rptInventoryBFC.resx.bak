@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="DevExpress.Utils.v9.3" name="DevExpress.Utils.v9.3, Version=9.3.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="riStockName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Csv.EncodingType" type="DevExpress.XtraPrinting.EncodingType, DevExpress.Utils.v9.3">
+    <value>Default</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrSign3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 17</value>
+  </data>
+  <data name="xrTableCell10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="riStockName.Text" xml:space="preserve">
+    <value>Kho Hàng:</value>
+  </data>
+  <data name="riSign2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 75</value>
+  </data>
+  <data name="riAccountingRepository.Text" xml:space="preserve">
+    <value>Kế Toán Kho
+</value>
+  </data>
+  <data name="xrLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 39</value>
+  </data>
+  <data name="riTotal.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrLabel2.Text" xml:space="preserve">
+    <value>xrLabel2</value>
+  </data>
+  <data name="xrLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 17</value>
+  </data>
+  <data name="xrTableCell15.Text" xml:space="preserve">
+    <value>xrTableCell15</value>
+  </data>
+  <data name="xrTableCell8.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrSUMAMT.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="riTotal.Text" xml:space="preserve">
+    <value> Tổng cộng</value>
+  </data>
+  <data name="riDateNote.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrSummary5.FormatString" xml:space="preserve">
+    <value>{0:##,##0.###}</value>
+  </data>
+  <data name="xrTable3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 25</value>
+  </data>
+  <data name="riSign3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrTableCell10.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="riSum.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell5.Text" xml:space="preserve">
+    <value>Tiêu Hao</value>
+  </data>
+  <data name="riChief.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 58</value>
+  </data>
+  <data name="xrSUMPRICE.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="riChief.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="riSum.Text" xml:space="preserve">
+    <value> Cộng</value>
+  </data>
+  <data name="xrTableCell14.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 17</value>
+  </data>
+  <data name="xrSUMAMT.Text" xml:space="preserve">
+    <value>xrSUMAMT</value>
+  </data>
+  <data name="riSign2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 17</value>
+  </data>
+  <data name="xrLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 39</value>
+  </data>
+  <data name="xrTableCell8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="xrSummary7.FormatString" xml:space="preserve">
+    <value>{0:##,##0.###}</value>
+  </data>
+  <data name="xrTableCell12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="riAccountingRepository.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 58</value>
+  </data>
+  <data name="xrTable2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 25</value>
+  </data>
+  <data name="xrSUMQTY.Text" xml:space="preserve">
+    <value>xrSUMQTY</value>
+  </data>
+  <data name="xrTableCell4.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14.25pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell14.Text" xml:space="preserve">
+    <value>xrTableCell14</value>
+  </data>
+  <data name="xrLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 0</value>
+  </data>
+  <data name="riSign3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 17</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Pdf.DocumentOptions.Keywords" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrTableCell9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="xrTable2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GroupFooter1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="xrTableCell3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrTableCell15.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell17.Text" xml:space="preserve">
+    <value>xrTableCell17</value>
+  </data>
+  <data name="riTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 17</value>
+  </data>
+  <data name="xrLabel5.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrLabel5.Text" xml:space="preserve">
+    <value>xrLabel5</value>
+  </data>
+  <data name="xrSign3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="xrTableCell7.Text" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="riStoreKeeper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 58</value>
+  </data>
+  <data name="riSign3.Text" xml:space="preserve">
+    <value>(Ký, ghi rõ họ tên)</value>
+  </data>
+  <data name="riSign2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Pdf.DocumentOptions.Author" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrSTT.Text" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="xrTable4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 0</value>
+  </data>
+  <data name="riFax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 39</value>
+  </data>
+  <data name="xrTable4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 25</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Xls.SheetName" xml:space="preserve">
+    <value>Sheet1</value>
+  </data>
+  <data name="xrLabel4.Text" xml:space="preserve">
+    <value>xrLabel4</value>
+  </data>
+  <data name="xrTable3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 0</value>
+  </data>
+  <data name="xrTableCell7.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrSign3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 75</value>
+  </data>
+  <data name="riChief.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 17</value>
+  </data>
+  <data name="xrUnitPrice.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell9.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 25</value>
+  </data>
+  <data name="riStoreKeeper.Text" xml:space="preserve">
+    <value>Thủ Kho</value>
+  </data>
+  <data name="riTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 39</value>
+  </data>
+  <data name="xrTableCell14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="riStoreKeeper.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell18.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell19.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Mht.Title" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="riStockID.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrLabel1.Text" xml:space="preserve">
+    <value>xrLabel1</value>
+  </data>
+  <data name="xrLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 67</value>
+  </data>
+  <data name="xrTableCell2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrLabel3.Text" xml:space="preserve">
+    <value>xrLabel3</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Html.Title" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="riChief.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrAmount.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 17</value>
+  </data>
+  <data name="xrTableCell12.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrProductName.Text" xml:space="preserve">
+    <value>Hàng hoá</value>
+  </data>
+  <data name="xrTableCell19.Text" xml:space="preserve">
+    <value>xrTableCell19</value>
+  </data>
+  <data name="xrLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="xrTableCell17.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="riFax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 17</value>
+  </data>
+  <data name="xrQuantity.Text" xml:space="preserve">
+    <value>Tồn Kho</value>
+  </data>
+  <data name="xrSign3.Text" xml:space="preserve">
+    <value>(Ký, ghi rõ họ tên)</value>
+  </data>
+  <data name="xrTableCell11.Text" xml:space="preserve">
+    <value>xrTableCell11</value>
+  </data>
+  <data name="riAccountingRepository.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrTableCell18.Text" xml:space="preserve">
+    <value>xrTableCell18</value>
+  </data>
+  <data name="riDateNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 40</value>
+  </data>
+  <data name="xrTableCell8.Text" xml:space="preserve">
+    <value>xrTableCell8</value>
+  </data>
+  <data name="riDateNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 17</value>
+  </data>
+  <data name="xrLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 17</value>
+  </data>
+  <data name="xrUnit.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="riStockID.Text" xml:space="preserve">
+    <value>Mã:</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Pdf.DocumentOptions.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrQuantity.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="riSign2.Text" xml:space="preserve">
+    <value>(Ký, ghi rõ họ tên)</value>
+  </data>
+  <data name="xrSign3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrTable1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 25</value>
+  </data>
+  <data name="riStoreKeeper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 17</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Text.EncodingType" type="DevExpress.XtraPrinting.EncodingType, DevExpress.Utils.v9.3">
+    <value>Default</value>
+  </data>
+  <data name="xrSTT.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell9.Text" xml:space="preserve">
+    <value>xrTableCell9</value>
+  </data>
+  <data name="riAccountingRepository.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="riTel.Text" xml:space="preserve">
+    <value>Tel:</value>
+  </data>
+  <data name="riStoreKeeper.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrTableCell10.Text" xml:space="preserve">
+    <value>xrTableCell10</value>
+  </data>
+  <data name="xrTable1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 108</value>
+  </data>
+  <data name="xrSummary2.FormatString" xml:space="preserve">
+    <value>{0:##,##0.###}</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Pdf.DocumentOptions.Subject" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrTableCell5.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrProductID.Text" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="riAccountingRepository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 17</value>
+  </data>
+  <data name="riChief.Text" xml:space="preserve">
+    <value>Phục Trách Căn Cứ</value>
+  </data>
+  <data name="xrSummary4.FormatString" xml:space="preserve">
+    <value>{0:##,##0.###}</value>
+  </data>
+  <data name="xrTableCell4.Text" xml:space="preserve">
+    <value>Định Mức</value>
+  </data>
+  <data name="xrTableCell16.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="riDateNote.Text" xml:space="preserve">
+    <value>Ngày.....tháng......năm ........</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Html.CharacterSet" xml:space="preserve">
+    <value>utf-8</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Pdf.DocumentOptions.Application" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrTableCell2.Text" xml:space="preserve">
+    <value>xrTableCell2</value>
+  </data>
+  <data name="xrSummary1.FormatString" xml:space="preserve">
+    <value>{0:##,##0.###}</value>
+  </data>
+  <data name="xrTableCell11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="xrTableCell11.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrAmount.Text" xml:space="preserve">
+    <value>HSD</value>
+  </data>
+  <data name="xrUnitPrice.Text" xml:space="preserve">
+    <value>Đặt Hàng</value>
+  </data>
+  <data name="xrTableCell16.Text" xml:space="preserve">
+    <value>xrTableCell16</value>
+  </data>
+  <data name="xrTable5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>717, 25</value>
+  </data>
+  <data name="riSign2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrProductName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrUnit.Text" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="xrProductID.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell12.Text" xml:space="preserve">
+    <value>xrTableCell12</value>
+  </data>
+  <data name="riSign3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 75</value>
+  </data>
+  <data name="riSign3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="rptInventoryBFC.ExportOptions.Mht.CharacterSet" xml:space="preserve">
+    <value>utf-8</value>
+  </data>
+  <data name="xrTableCell3.Text" xml:space="preserve">
+    <value>xrTableCell3</value>
+  </data>
+  <data name="xrSUMPRICE.Text" xml:space="preserve">
+    <value>xrSUMPRICE</value>
+  </data>
+  <data name="xrSUMQTY.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="riFax.Text" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="xrTable5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 0</value>
+  </data>
+  <metadata name="xrTableRow4.Name" xml:space="preserve">
+    <value>xrTableRow4</value>
+  </metadata>
+  <metadata name="dsInventoryOrders1.Name" xml:space="preserve">
+    <value>dsInventoryOrders1</value>
+  </metadata>
+  <metadata name="Stock_Name.Name" xml:space="preserve">
+    <value>Stock_Name</value>
+  </metadata>
+  <metadata name="xrTableCell2.Name" xml:space="preserve">
+    <value>xrTableCell2</value>
+  </metadata>
+  <metadata name="xrSign3.Name" xml:space="preserve">
+    <value>xrSign3</value>
+  </metadata>
+  <metadata name="xrLabel4.Name" xml:space="preserve">
+    <value>xrLabel4</value>
+  </metadata>
+  <metadata name="riTel.Name" xml:space="preserve">
+    <value>riTel</value>
+  </metadata>
+  <metadata name="xrTableCell18.Name" xml:space="preserve">
+    <value>xrTableCell18</value>
+  </metadata>
+  <metadata name="riStockID.Name" xml:space="preserve">
+    <value>riStockID</value>
+  </metadata>
+  <metadata name="riDateNote.Name" xml:space="preserve">
+    <value>riDateNote</value>
+  </metadata>
+  <metadata name="xrTableCell14.Name" xml:space="preserve">
+    <value>xrTableCell14</value>
+  </metadata>
+  <metadata name="xrTable5.Name" xml:space="preserve">
+    <value>xrTable5</value>
+  </metadata>
+  <metadata name="xrTableRow5.Name" xml:space="preserve">
+    <value>xrTableRow5</value>
+  </metadata>
+  <metadata name="riAccountingRepository.Name" xml:space="preserve">
+    <value>riAccountingRepository</value>
+  </metadata>
+  <metadata name="xrTableCell7.Name" xml:space="preserve">
+    <value>xrTableCell7</value>
+  </metadata>
+  <metadata name="xrAmount.Name" xml:space="preserve">
+    <value>xrAmount</value>
+  </metadata>
+  <metadata name="xrUnitPrice.Name" xml:space="preserve">
+    <value>xrUnitPrice</value>
+  </metadata>
+  <metadata name="calculatedField1.Name" xml:space="preserve">
+    <value>calculatedField1</value>
+  </metadata>
+  <metadata name="xrTableCell8.Name" xml:space="preserve">
+    <value>xrTableCell8</value>
+  </metadata>
+  <metadata name="iNVENTORY_REPORTTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>167, 17</value>
+  </metadata>
+  <metadata name="Created.Name" xml:space="preserve">
+    <value>Created</value>
+  </metadata>
+  <metadata name="ReportFooter.Name" xml:space="preserve">
+    <value>ReportFooter</value>
+  </metadata>
+  <metadata name="xrTableCell10.Name" xml:space="preserve">
+    <value>xrTableCell10</value>
+  </metadata>
+  <metadata name="xrLabel5.Name" xml:space="preserve">
+    <value>xrLabel5</value>
+  </metadata>
+  <metadata name="xrTableCell16.Name" xml:space="preserve">
+    <value>xrTableCell16</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="xrTable2.Name" xml:space="preserve">
+    <value>xrTable2</value>
+  </metadata>
+  <metadata name="xrTable3.Name" xml:space="preserve">
+    <value>xrTable3</value>
+  </metadata>
+  <metadata name="xrSUMPRICE.Name" xml:space="preserve">
+    <value>xrSUMPRICE</value>
+  </metadata>
+  <metadata name="riTotal.Name" xml:space="preserve">
+    <value>riTotal</value>
+  </metadata>
+  <metadata name="iNVENTORY_REPORTTableAdapter.Name" xml:space="preserve">
+    <value>iNVENTORY_REPORTTableAdapter</value>
+  </metadata>
+  <metadata name="xrProductID.Name" xml:space="preserve">
+    <value>xrProductID</value>
+  </metadata>
+  <metadata name="$this.Name" xml:space="preserve">
+    <value>rptInventoryBFC</value>
+  </metadata>
+  <metadata name="xrSUMQTY.Name" xml:space="preserve">
+    <value>xrSUMQTY</value>
+  </metadata>
+  <metadata name="xrTableCell17.Name" xml:space="preserve">
+    <value>xrTableCell17</value>
+  </metadata>
+  <metadata name="xrTableCell4.Name" xml:space="preserve">
+    <value>xrTableCell4</value>
+  </metadata>
+  <metadata name="riStockName.Name" xml:space="preserve">
+    <value>riStockName</value>
+  </metadata>
+  <metadata name="GroupHeader1.Name" xml:space="preserve">
+    <value>GroupHeader1</value>
+  </metadata>
+  <metadata name="xrTableCell12.Name" xml:space="preserve">
+    <value>xrTableCell12</value>
+  </metadata>
+  <metadata name="xrTableRow1.Name" xml:space="preserve">
+    <value>xrTableRow1</value>
+  </metadata>
+  <metadata name="xrTable1.Name" xml:space="preserve">
+    <value>xrTable1</value>
+  </metadata>
+  <metadata name="riChief.Name" xml:space="preserve">
+    <value>riChief</value>
+  </metadata>
+  <metadata name="xrProductName.Name" xml:space="preserve">
+    <value>xrProductName</value>
+  </metadata>
+  <metadata name="xrLabel2.Name" xml:space="preserve">
+    <value>xrLabel2</value>
+  </metadata>
+  <metadata name="xrTableCell5.Name" xml:space="preserve">
+    <value>xrTableCell5</value>
+  </metadata>
+  <metadata name="riStoreKeeper.Name" xml:space="preserve">
+    <value>riStoreKeeper</value>
+  </metadata>
+  <metadata name="Tel.Name" xml:space="preserve">
+    <value>Tel</value>
+  </metadata>
+  <metadata name="xrLabel1.Name" xml:space="preserve">
+    <value>xrLabel1</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>English (United States)</value>
+  </metadata>
+  <metadata name="xrTableRow2.Name" xml:space="preserve">
+    <value>xrTableRow2</value>
+  </metadata>
+  <metadata name="xrTableCell19.Name" xml:space="preserve">
+    <value>xrTableCell19</value>
+  </metadata>
+  <metadata name="xrUnit.Name" xml:space="preserve">
+    <value>xrUnit</value>
+  </metadata>
+  <metadata name="riSign3.Name" xml:space="preserve">
+    <value>riSign3</value>
+  </metadata>
+  <metadata name="xrSUMAMT.Name" xml:space="preserve">
+    <value>xrSUMAMT</value>
+  </metadata>
+  <metadata name="Fax.Name" xml:space="preserve">
+    <value>Fax</value>
+  </metadata>
+  <metadata name="GroupFooter1.Name" xml:space="preserve">
+    <value>GroupFooter1</value>
+  </metadata>
+  <metadata name="dsInventoryOrders1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="CompanyAddress.Name" xml:space="preserve">
+    <value>CompanyAddress</value>
+  </metadata>
+  <metadata name="Title.Name" xml:space="preserve">
+    <value>Title</value>
+  </metadata>
+  <metadata name="xrQuantity.Name" xml:space="preserve">
+    <value>xrQuantity</value>
+  </metadata>
+  <metadata name="xrTableCell15.Name" xml:space="preserve">
+    <value>xrTableCell15</value>
+  </metadata>
+  <metadata name="Detail.Name" xml:space="preserve">
+    <value>Detail</value>
+  </metadata>
+  <metadata name="riSign2.Name" xml:space="preserve">
+    <value>riSign2</value>
+  </metadata>
+  <metadata name="xrTableCell3.Name" xml:space="preserve">
+    <value>xrTableCell3</value>
+  </metadata>
+  <metadata name="xrTableRow3.Name" xml:space="preserve">
+    <value>xrTableRow3</value>
+  </metadata>
+  <metadata name="xrLabel3.Name" xml:space="preserve">
+    <value>xrLabel3</value>
+  </metadata>
+  <metadata name="Stock_ID.Name" xml:space="preserve">
+    <value>Stock_ID</value>
+  </metadata>
+  <metadata name="xrTableCell9.Name" xml:space="preserve">
+    <value>xrTableCell9</value>
+  </metadata>
+  <metadata name="CompanyName.Name" xml:space="preserve">
+    <value>CompanyName</value>
+  </metadata>
+  <metadata name="xrTableCell11.Name" xml:space="preserve">
+    <value>xrTableCell11</value>
+  </metadata>
+  <metadata name="riFax.Name" xml:space="preserve">
+    <value>riFax</value>
+  </metadata>
+  <metadata name="ReportHeader.Name" xml:space="preserve">
+    <value>ReportHeader</value>
+  </metadata>
+  <metadata name="xrTable4.Name" xml:space="preserve">
+    <value>xrTable4</value>
+  </metadata>
+  <metadata name="xrSTT.Name" xml:space="preserve">
+    <value>xrSTT</value>
+  </metadata>
+  <metadata name="riSum.Name" xml:space="preserve">
+    <value>riSum</value>
+  </metadata>
+</root>

@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F2E37D6-3C64-4A65-A828-73A16C904405}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Perfect.Inventory.Report</RootNamespace>
+    <AssemblyName>Perfect.Inventory.Report</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Extensions, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Perfect.Data.Extra, Version=3.0.6.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Perfect.Data.Extra.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Data.SqlHelper, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Perfect.Data.SqlHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Service, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Perfect.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Utils, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Perfect.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventoryDetail.Designer.cs">
+      <DependentUpon>dsInventoryDetail.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventoryLedger.Designer.cs">
+      <DependentUpon>dsInventoryLedger.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventoryLimit.Designer.cs">
+      <DependentUpon>dsInventoryLimit.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventoryOrders.Designer.cs">
+      <DependentUpon>dsInventoryOrders.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventoryQuantity.Designer.cs">
+      <DependentUpon>dsInventoryQuantity.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventoryRevenue.Designer.cs">
+      <DependentUpon>dsInventoryRevenue.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventorySummary.cs">
+      <DependentUpon>dsInventorySummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventorySummary.designer.cs">
+      <DependentUpon>dsInventorySummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet\dsInventorySummaryNoTransfer.Designer.cs">
+      <DependentUpon>dsInventorySummaryNoTransfer.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsStockCardDN.Designer.cs">
+      <DependentUpon>dsStockCardDN.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsSummary.cs">
+      <DependentUpon>dsSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet\dsSummary.Designer.cs">
+      <DependentUpon>dsSummary.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsTongHopNhapLuanChuyen.Designer.cs">
+      <DependentUpon>dsTongHopNhapLuanChuyen.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DataSet\dsTongHopXuatLuanChuyen.cs">
+      <DependentUpon>dsTongHopXuatLuanChuyen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSet\dsTongHopXuatLuanChuyen.Designer.cs">
+      <DependentUpon>dsTongHopXuatLuanChuyen.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryAVGPrice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryAVGPrice.designer.cs">
+      <DependentUpon>rptInventoryAVGPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\CustomerProduct\rptProductCustomer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\CustomerProduct\rptProductCustomer.designer.cs">
+      <DependentUpon>rptProductCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\CustomerProduct\DS\dsCUSTOMERPRODUCT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCUSTOMERPRODUCT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\CustomerProduct\rptCustomerProduct.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\CustomerProduct\rptCustomerProduct.designer.cs">
+      <DependentUpon>rptCustomerProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventory.designer.cs">
+      <DependentUpon>rptInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryOrders.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryOrders.Designer.cs">
+      <DependentUpon>rptInventoryOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryRevenue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryRevenue.Designer.cs">
+      <DependentUpon>rptInventoryRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryOlder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryOlder.Designer.cs">
+      <DependentUpon>rptInventoryOlder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryLimit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryLimit.Designer.cs">
+      <DependentUpon>rptInventoryLimit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryDate.Designer.cs">
+      <DependentUpon>rptInventoryDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\DS\dsInventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class\REPORT.cs" />
+    <Compile Include="Report\Inventory\rptInventoryDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryDetail.Designer.cs">
+      <DependentUpon>rptInventoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryLedgersStock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryLedgersStock.Designer.cs">
+      <DependentUpon>rptInventoryLedgersStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\InwardList\DS\dsINWARD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsINWARD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\OutwardList\DS\dsOUTWARD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOUTWARD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventorySummaryWithAVGUnitPrice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventorySummaryWithAVGUnitPrice.designer.cs">
+      <DependentUpon>rptInventorySummaryWithAVGUnitPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Summary\DS\dsSummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventoryQuantityDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventoryQuantityDate.Designer.cs">
+      <DependentUpon>rptInventoryQuantityDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Summary\DS\dsInventorySummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInventorySummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventorySummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventorySummary.designer.cs">
+      <DependentUpon>rptInventorySummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\StockCard\rptStockCardDN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\StockCard\rptStockCardDN.designer.cs">
+      <DependentUpon>rptStockCardDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventoryQuantity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Summary\rptInventoryQuantity.Designer.cs">
+      <DependentUpon>rptInventoryQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryBFC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Inventory\rptInventoryBFC.Designer.cs">
+      <DependentUpon>rptInventoryBFC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\InwardList\rptInwardList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\InwardList\rptInwardList.Designer.cs">
+      <DependentUpon>rptInwardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\InwardList\rptInwardListDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\InwardList\rptInwardListDetail.Designer.cs">
+      <DependentUpon>rptInwardListDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\OutwardList\rptOutwardList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\OutwardList\rptOutwardList.Designer.cs">
+      <DependentUpon>rptOutwardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\OutwardList\rptOutwardListDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\OutwardList\rptOutwardListDetail.Designer.cs">
+      <DependentUpon>rptOutwardListDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Summary\rptSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Summary\rptSummary.designer.cs">
+      <DependentUpon>rptSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Transfer\DS\dsTRANSFER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTRANSFER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferInward.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferInward.designer.cs">
+      <DependentUpon>rptTransferInward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferOutward.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferOutward.designer.cs">
+      <DependentUpon>rptTransferOutward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferList.Designer.cs">
+      <DependentUpon>rptTransferList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferListDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Transfer\rptTransferListDetail.Designer.cs">
+      <DependentUpon>rptTransferListDetail.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryAVGPrice.resx">
+      <DependentUpon>rptInventoryAVGPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\CustomerProduct\rptProductCustomer.resx">
+      <DependentUpon>rptProductCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\CustomerProduct\rptProductCustomer.vi-VN.resx">
+      <DependentUpon>rptProductCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\CustomerProduct\rptCustomerProduct.resx">
+      <DependentUpon>rptCustomerProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\CustomerProduct\rptCustomerProduct.vi-VN.resx">
+      <DependentUpon>rptCustomerProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventory.resx">
+      <DependentUpon>rptInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventory.vi-VN.resx">
+      <DependentUpon>rptInventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryBFC.vi-VN.resx">
+      <DependentUpon>rptInventoryBFC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryDate.vi-VN.resx">
+      <DependentUpon>rptInventoryDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryDetail.vi-VN.resx">
+      <DependentUpon>rptInventoryDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryLedgersStock.vi-VN.resx">
+      <DependentUpon>rptInventoryLedgersStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryLimit.vi-VN.resx">
+      <DependentUpon>rptInventoryLimit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryOlder.vi-VN.resx">
+      <DependentUpon>rptInventoryOlder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryOrders.resx">
+      <DependentUpon>rptInventoryOrders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryOrders.vi-VN.resx">
+      <DependentUpon>rptInventoryOrders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryRevenue.resx">
+      <DependentUpon>rptInventoryRevenue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryOlder.resx">
+      <DependentUpon>rptInventoryOlder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryLimit.resx">
+      <DependentUpon>rptInventoryLimit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryDate.resx">
+      <DependentUpon>rptInventoryDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryDetail.resx">
+      <DependentUpon>rptInventoryDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryLedgersStock.resx">
+      <DependentUpon>rptInventoryLedgersStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\InwardList\rptInwardList.vi-VN.resx">
+      <DependentUpon>rptInwardList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\InwardList\rptInwardListDetail.vi-VN.resx">
+      <DependentUpon>rptInwardListDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\OutwardList\rptOutwardList.vi-VN.resx">
+      <DependentUpon>rptOutwardList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventorySummaryWithAVGUnitPrice.resx">
+      <DependentUpon>rptInventorySummaryWithAVGUnitPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventorySummaryWithAVGUnitPrice.vi-VN.resx">
+      <DependentUpon>rptInventorySummaryWithAVGUnitPrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventoryQuantityDate.resx">
+      <DependentUpon>rptInventoryQuantityDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventoryQuantityDate.vi-VN.resx">
+      <DependentUpon>rptInventoryQuantityDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventorySummary.resx">
+      <DependentUpon>rptInventorySummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventorySummary.vi-VN.resx">
+      <DependentUpon>rptInventorySummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\StockCard\rptStockCardDN.resx">
+      <DependentUpon>rptStockCardDN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\StockCard\rptStockCardDN.vi-VN.resx">
+      <DependentUpon>rptStockCardDN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventoryQuantity.resx">
+      <DependentUpon>rptInventoryQuantity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Inventory\rptInventoryBFC.resx">
+      <DependentUpon>rptInventoryBFC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptInventoryQuantity.vi-VN.resx">
+      <DependentUpon>rptInventoryQuantity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\InwardList\rptInwardList.resx">
+      <DependentUpon>rptInwardList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\InwardList\rptInwardListDetail.resx">
+      <DependentUpon>rptInwardListDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\OutwardList\rptOutwardList.resx">
+      <DependentUpon>rptOutwardList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\OutwardList\rptOutwardListDetail.resx">
+      <DependentUpon>rptOutwardListDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptSummary.resx">
+      <DependentUpon>rptSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Summary\rptSummary.vi-VN.resx">
+      <DependentUpon>rptSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Transfer\rptTransferInward.resx">
+      <DependentUpon>rptTransferInward.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Transfer\rptTransferInward.vi-VN.resx">
+      <DependentUpon>rptTransferInward.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Transfer\rptTransferOutward.resx">
+      <DependentUpon>rptTransferOutward.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Transfer\rptTransferList.resx">
+      <DependentUpon>rptTransferList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Transfer\rptTransferListDetail.resx">
+      <DependentUpon>rptTransferListDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Transfer\rptTransferOutward.vi-VN.resx">
+      <DependentUpon>rptTransferOutward.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventoryDetail.xsc">
+      <DependentUpon>dsInventoryDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventoryDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventoryDetail.xss">
+      <DependentUpon>dsInventoryDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryLedger.xsc">
+      <DependentUpon>dsInventoryLedger.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryLedger.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventoryLedger.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventoryLedger.xss">
+      <DependentUpon>dsInventoryLedger.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryLimit.xsc">
+      <DependentUpon>dsInventoryLimit.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryLimit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventoryLimit.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventoryLimit.xss">
+      <DependentUpon>dsInventoryLimit.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryOrders.xsc">
+      <DependentUpon>dsInventoryOrders.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryOrders.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventoryOrders.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventoryOrders.xss">
+      <DependentUpon>dsInventoryOrders.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryQuantity.xsc">
+      <DependentUpon>dsInventoryQuantity.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryQuantity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventoryQuantity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventoryQuantity.xss">
+      <DependentUpon>dsInventoryQuantity.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryRevenue.xsc">
+      <DependentUpon>dsInventoryRevenue.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventoryRevenue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventoryRevenue.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventoryRevenue.xss">
+      <DependentUpon>dsInventoryRevenue.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventorySummary.xsc">
+      <DependentUpon>dsInventorySummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventorySummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventorySummary1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventorySummary.xss">
+      <DependentUpon>dsInventorySummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventorySummaryNoTransfer.xsc">
+      <DependentUpon>dsInventorySummaryNoTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsInventorySummaryNoTransfer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventorySummaryNoTransfer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsInventorySummaryNoTransfer.xss">
+      <DependentUpon>dsInventorySummaryNoTransfer.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsStockCardDN.xsc">
+      <DependentUpon>dsStockCardDN.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsStockCardDN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStockCardDN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsStockCardDN.xss">
+      <DependentUpon>dsStockCardDN.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsSummary.xsc">
+      <DependentUpon>dsSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsSummary.xss">
+      <DependentUpon>dsSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsTongHopNhapLuanChuyen.xsc">
+      <DependentUpon>dsTongHopNhapLuanChuyen.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsTongHopNhapLuanChuyen.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTongHopNhapLuanChuyen.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsTongHopNhapLuanChuyen.xss">
+      <DependentUpon>dsTongHopNhapLuanChuyen.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsTongHopXuatLuanChuyen.xsc">
+      <DependentUpon>dsTongHopXuatLuanChuyen.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSet\dsTongHopXuatLuanChuyen.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTongHopXuatLuanChuyen.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSet\dsTongHopXuatLuanChuyen.xss">
+      <DependentUpon>dsTongHopXuatLuanChuyen.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Inventory\CustomerProduct\DS\dsCUSTOMERPRODUCT.xsc">
+      <DependentUpon>dsCUSTOMERPRODUCT.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Inventory\CustomerProduct\DS\dsCUSTOMERPRODUCT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCUSTOMERPRODUCT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Inventory\CustomerProduct\DS\dsCUSTOMERPRODUCT.xss">
+      <DependentUpon>dsCUSTOMERPRODUCT.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Inventory\DS\dsInventory.xsc">
+      <DependentUpon>dsInventory.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Inventory\DS\dsInventory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\Inventory\DS\dsInventory.xss">
+      <DependentUpon>dsInventory.xsd</DependentUpon>
+    </None>
+    <None Include="Report\InwardList\DS\dsINWARD.xsc">
+      <DependentUpon>dsINWARD.xsd</DependentUpon>
+    </None>
+    <None Include="Report\InwardList\DS\dsINWARD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsINWARD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\InwardList\DS\dsINWARD.xss">
+      <DependentUpon>dsINWARD.xsd</DependentUpon>
+    </None>
+    <None Include="Report\OutwardList\DS\dsOUTWARD.xsc">
+      <DependentUpon>dsOUTWARD.xsd</DependentUpon>
+    </None>
+    <None Include="Report\OutwardList\DS\dsOUTWARD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOUTWARD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\OutwardList\DS\dsOUTWARD.xss">
+      <DependentUpon>dsOUTWARD.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Summary\DS\dsInventorySummary.xsc">
+      <DependentUpon>dsInventorySummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Summary\DS\dsInventorySummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventorySummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Summary\DS\dsInventorySummary.xss">
+      <DependentUpon>dsInventorySummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Summary\DS\dsSummary.xsc">
+      <DependentUpon>dsSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Summary\DS\dsSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Summary\DS\dsSummary.xss">
+      <DependentUpon>dsSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Transfer\DS\dsTRANSFER.xsc">
+      <DependentUpon>dsTRANSFER.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Transfer\DS\dsTRANSFER.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTRANSFER.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Transfer\DS\dsTRANSFER.xss">
+      <DependentUpon>dsTRANSFER.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Perfect.Common\Perfect.General\Perfect.Common.csproj">
+      <Project>{22bfd379-2273-4605-822e-e1ee6121c7c6}</Project>
+      <Name>Perfect.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Perfect.Dictionary\Perfect.Dictionary\Perfect.Dictionary.csproj">
+      <Project>{B5233819-2304-4217-AE47-69AF35BEC6ED}</Project>
+      <Name>Perfect.Dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Perfect.Net\Perfect.Net.csproj">
+      <Project>{DF613704-5A31-43A6-A1C0-09BE4980819B}</Project>
+      <Name>Perfect.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Perfect.Security\Perfect.Security\Perfect.Security.csproj">
+      <Project>{7AE5BCAD-E861-494D-BD0E-DB89480CCE84}</Project>
+      <Name>Perfect.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" -n --newline-flush</PostBuildEvent>
+  </PropertyGroup>
+</Project>

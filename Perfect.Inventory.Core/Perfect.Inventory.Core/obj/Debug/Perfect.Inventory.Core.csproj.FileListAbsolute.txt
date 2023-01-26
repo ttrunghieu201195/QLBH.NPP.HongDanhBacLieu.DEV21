@@ -1,0 +1,194 @@
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Core.dll.config
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Core.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Core.pdb
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\vi-VN\Perfect.Inventory.Core.resources.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.AssemblyReference.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.AccessWebsite.xfmAccessWebsite.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Common.Forms.xfmExportGridviewOptions.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Common.Forms.xfmPrintOptionsOutward.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.xfmAdjustment.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.xucAdjustment.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Adjustment.XfmAdjustmentDetails.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Adjustment.XfmInventoryAdjustment.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Adjustment.XucInventoryAdjustment.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.CarryForward.xfmCarryForward.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.DetailProductBook.Report.rptReportDetailProduct.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.DetailProductBook.xucDetailProduct.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Data.Core.xfmDatabaseFix.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Core.xfmLocks.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Import.XfmImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Import.XfrmExcel.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Debt.Customers.XucCustomerDebtInit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Debt.XfmCustomerDebtImports.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Standard.XucInitDetailListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Standard.XucInitInwardA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Standard.XucInitInwardListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.XfmInventoryInit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.XfmInventoryImports.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucCustomerProduct.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Dates.xucSummaryDate.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.TS.xucInventoryDetailWithAVGPrice.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.TS.XucInventoryByGroup.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.TS.xucInventoryDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.xucDetailAllStock.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucProductCustomer.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Revenue.xfmInventoryRevenue.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucInventorySummarys.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventoryRevenue.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventorySummaryWithAVGUnitPrice.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Summary.xucSummaryQuantity.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventoryOrders.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucInventoryOrdersBFC.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucInventoryDetailBFC.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventoryDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventorySummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventoryOrders.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventorySummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInwardA4.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInward2011.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.Report.RptStockInward.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.SALE.XfmInward.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.xucDetailListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.SALE.XucInwardA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.SALE.XucInwardListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockOutwardA402.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockOutwardA4.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Report.rptStockOutward_Bill80mm.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Dictionary.Product.xfmReplicationSales.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Dictionary.Product.xfmChangeInfo.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.xucRouteDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XfmOptionPrint.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XfmOutward.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XucDetailListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XucOutwardA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XucOutwardListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmPacket.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Packet.xucDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Packet.UI.xucDetailListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Sale.Transfer.xucPacketA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Packet.UI.xucPacketList.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Report.XfmReports.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.xfmSalesOrder.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.xucSalesOrder.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.StockCard.rptStockCard.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.StockCard.xucStockCard.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockTransfer.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XfmTransfer.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XucDetailListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XucTranferA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XucTransferListA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.MsgResc.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucManagers.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmSearch.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucSearch.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmManagers.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventoryDetailSummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.DetailProductBook.Report.rptReportDetailProduct.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInwardA4.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInward2011.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.Report.RptStockInward.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Report.XfmReports.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.GenerateResource.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.dll.licenses
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.CoreCompileInputs.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\vi-VN\Perfect.Inventory.Core.resources.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.CopyComplete
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Core.dll.config
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Core.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Core.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\vi-VN\Perfect.Inventory.Core.resources.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.AssemblyReference.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.AccessWebsite.xfmAccessWebsite.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Common.Forms.xfmExportGridviewOptions.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Common.Forms.xfmPrintOptionsOutward.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.xfmAdjustment.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.xucAdjustment.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Adjustment.XfmAdjustmentDetails.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Adjustment.XfmInventoryAdjustment.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Adjustment.XucInventoryAdjustment.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.CarryForward.xfmCarryForward.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.DetailProductBook.Report.rptReportDetailProduct.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.DetailProductBook.xucDetailProduct.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Data.Core.xfmDatabaseFix.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Core.xfmLocks.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Import.XfmImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Import.XfrmExcel.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Debt.Customers.XucCustomerDebtInit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Debt.XfmCustomerDebtImports.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Standard.XucInitDetailListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Standard.XucInitInwardA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.Standard.XucInitInwardListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.XfmInventoryInit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Init.XfmInventoryImports.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucCustomerProduct.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Dates.xucSummaryDate.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.TS.xucInventoryDetailWithAVGPrice.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.TS.XucInventoryByGroup.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.TS.xucInventoryDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Details.xucDetailAllStock.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucProductCustomer.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Revenue.xfmInventoryRevenue.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucInventorySummarys.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventoryRevenue.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventorySummaryWithAVGUnitPrice.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.Summary.xucSummaryQuantity.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventoryOrders.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucInventoryOrdersBFC.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucInventoryDetailBFC.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventoryDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventorySummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventoryOrders.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inventory.xucInventorySummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInwardA4.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInward2011.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.Report.RptStockInward.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.SALE.XfmInward.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.xucDetailListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.SALE.XucInwardA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.SALE.XucInwardListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockOutwardA402.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockOutwardA4.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Report.rptStockOutward_Bill80mm.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Dictionary.Product.xfmReplicationSales.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Dictionary.Product.xfmChangeInfo.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.xucRouteDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XfmOptionPrint.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XfmOutward.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XucDetailListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XucOutwardA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.XucOutwardListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmPacket.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Packet.xucDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Packet.UI.xucDetailListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Sale.Transfer.xucPacketA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Packet.UI.xucPacketList.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Report.XfmReports.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.xfmSalesOrder.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Outward.Sale.xucSalesOrder.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.StockCard.rptStockCard.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.StockCard.xucStockCard.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockTransfer.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XfmTransfer.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XucDetailListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XucTranferA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Transfer.SALE.XucTransferListA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.MsgResc.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucManagers.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmSearch.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xucSearch.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmManagers.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.xfmInventoryDetailSummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.DetailProductBook.Report.rptReportDetailProduct.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInwardA4.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Report.Report.rptStockInward2011.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Inward.Report.RptStockInward.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.Inventory.Report.XfmReports.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.GenerateResource.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.dll.licenses
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.CoreCompileInputs.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\vi-VN\Perfect.Inventory.Core.resources.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.csproj.CopyComplete
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Core\Perfect.Inventory.Core\obj\Debug\Perfect.Inventory.Core.pdb

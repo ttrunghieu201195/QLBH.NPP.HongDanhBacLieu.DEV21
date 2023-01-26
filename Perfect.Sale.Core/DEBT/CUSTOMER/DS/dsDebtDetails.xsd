@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDebtDetails" targetNamespace="http://tempuri.org/dsDebtDetails.xsd" xmlns:mstns="http://tempuri.org/dsDebtDetails.xsd" xmlns="http://tempuri.org/dsDebtDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="7" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_THANHTAMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_THANHTAMConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.ERP_THANHTAMConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_THANHTAMConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_THANHTAMConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.ERP_THANHTAMConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLBH_2_9_0_0ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLBH_2_9_0_0ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.QLBH_2_9_0_0ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HuynhGiaKhangConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HuynhGiaKhangConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.HuynhGiaKhangConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_QLBH_2_9_1_4_StockAuthConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_QLBH_2_9_1_4_StockAuthConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.ERP_QLBH_2_9_1_4_StockAuthConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_QLBH_2_9_1_4ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_QLBH_2_9_1_4ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.ERP_QLBH_2_9_1_4ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLBH_2_9_1_4ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLBH_2_9_1_4ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.QLBH_2_9_1_4ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hongdanhblConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hongdanhblConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Sale.Core.Properties.Settings.GlobalReference.Default.hongdanhblConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GET_DEBTDETAILTableAdapter" GeneratorDataComponentClassName="GET_DEBTDETAILTableAdapter" Name="GET_DEBTDETAIL" UserDataComponentName="GET_DEBTDETAILTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hongdanhblConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT NEWID() AS ID,
+       d.ID AS RefOrgNo,
+       c.CustomerName,
+       c.Customer_ID,
+       c.CustomerAddress,
+       d.RefID AS ChungTu,
+       d.RefDate AS Ngay,DATEDIFF(DAY, d.RefDate, GETDATE()) AS TuoiNo,
+       --dbo.CallExpire(d.RefDate, GETDATE()) AS TuoiNo,
+       d.Amount AS SoTien,
+       d.Payment AS DaTra,
+       d.Balance ConLai,
+       n.Name AS DienDai,
+       d.RefOrgNo AS SaleID,
+       cg.Customer_Group_Name
+FROM   DEBT d
+       LEFT OUTER JOIN CUSTOMER c
+            ON  d.CustomerID = c.Customer_ID
+       LEFT OUTER JOIN CUSTOMER_GROUP cg
+            ON  cg.Customer_Group_ID = c.Customer_Group_ID
+            LEFT OUTER JOIN NOTES n ON n.ID = d.[Description]
+WHERE  d.Balance &lt;&gt; 0
+       AND d.RefStatus = 0
+       AND d.TermID ='CN'
+       AND DATEDIFF(DAY, @FromDate, d.RefDate) &gt;= 0
+       AND DATEDIFF(DAY, @ToDate, d.RefDate) &lt;= 0
+ORDER BY
+       c.CustomerName</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="FromDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@FromDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ToDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@ToDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CustomerName" DataSetColumn="CustomerName" />
+              <Mapping SourceColumn="ChungTu" DataSetColumn="ChungTu" />
+              <Mapping SourceColumn="Ngay" DataSetColumn="Ngay" />
+              <Mapping SourceColumn="SoTien" DataSetColumn="SoTien" />
+              <Mapping SourceColumn="DaTra" DataSetColumn="DaTra" />
+              <Mapping SourceColumn="ConLai" DataSetColumn="ConLai" />
+              <Mapping SourceColumn="DienDai" DataSetColumn="DienDai" />
+              <Mapping SourceColumn="Seleted" DataSetColumn="Seleted" />
+              <Mapping SourceColumn="Customer_ID" DataSetColumn="Customer_ID" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="RefOrgNo" DataSetColumn="RefOrgNo" />
+              <Mapping SourceColumn="CustomerAddress" DataSetColumn="CustomerAddress" />
+              <Mapping SourceColumn="SaleID" DataSetColumn="SaleID" />
+              <Mapping SourceColumn="TuoiNo" DataSetColumn="TuoiNo" />
+              <Mapping SourceColumn="Customer_Group_Name" DataSetColumn="Customer_Group_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DetailTableAdapter" GeneratorDataComponentClassName="DetailTableAdapter" Name="Detail" UserDataComponentName="DetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hongdanhblConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT sod.Product_ID,
+       sod.ProductName,
+       sod.Unit,
+       u.Unit_Name,
+       sod.Quantity,
+       sod.UnitPrice,
+       sod.Amount,
+       sod.Outward_ID,
+       so.DiscountRate,
+       so.Discount,
+       so.Vat,
+       so.VatAmount,
+       so.Amount AS TotalAmount
+       
+FROM   STOCK_OUTWARD_DETAIL sod
+       LEFT OUTER JOIN STOCK_OUTWARD so
+            ON  so.ID = sod.Outward_ID
+       LEFT OUTER JOIN UNIT u
+			ON u.Unit_ID = sod.Unit</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Product_ID" DataSetColumn="Product_ID" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="Unit_Name" DataSetColumn="Unit_Name" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Outward_ID" DataSetColumn="Outward_ID" />
+              <Mapping SourceColumn="DiscountRate" DataSetColumn="DiscountRate" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="Vat" DataSetColumn="Vat" />
+              <Mapping SourceColumn="VatAmount" DataSetColumn="VatAmount" />
+              <Mapping SourceColumn="TotalAmount" DataSetColumn="TotalAmount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDebtDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsDebtDetails" msprop:Generator_DataSetName="dsDebtDetails" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GET_DEBTDETAIL" msprop:Generator_UserTableName="GET_DEBTDETAIL" msprop:Generator_RowDeletedName="GET_DEBTDETAILRowDeleted" msprop:Generator_RowChangedName="GET_DEBTDETAILRowChanged" msprop:Generator_RowClassName="GET_DEBTDETAILRow" msprop:Generator_RowChangingName="GET_DEBTDETAILRowChanging" msprop:Generator_RowEvArgName="GET_DEBTDETAILRowChangeEvent" msprop:Generator_RowEvHandlerName="GET_DEBTDETAILRowChangeEventHandler" msprop:Generator_TableClassName="GET_DEBTDETAILDataTable" msprop:Generator_TableVarName="tableGET_DEBTDETAIL" msprop:Generator_RowDeletingName="GET_DEBTDETAILRowDeleting" msprop:Generator_TablePropName="GET_DEBTDETAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerName" msprop:Generator_UserColumnName="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ChungTu" msprop:Generator_UserColumnName="ChungTu" msprop:Generator_ColumnVarNameInTable="columnChungTu" msprop:Generator_ColumnPropNameInRow="ChungTu" msprop:Generator_ColumnPropNameInTable="ChungTuColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ngay" msprop:Generator_UserColumnName="Ngay" msprop:Generator_ColumnVarNameInTable="columnNgay" msprop:Generator_ColumnPropNameInRow="Ngay" msprop:Generator_ColumnPropNameInTable="NgayColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SoTien" msprop:Generator_UserColumnName="SoTien" msprop:Generator_ColumnVarNameInTable="columnSoTien" msprop:Generator_ColumnPropNameInRow="SoTien" msprop:Generator_ColumnPropNameInTable="SoTienColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DaTra" msprop:Generator_UserColumnName="DaTra" msprop:Generator_ColumnVarNameInTable="columnDaTra" msprop:Generator_ColumnPropNameInRow="DaTra" msprop:Generator_ColumnPropNameInTable="DaTraColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ConLai" msprop:Generator_UserColumnName="ConLai" msprop:Generator_ColumnVarNameInTable="columnConLai" msprop:Generator_ColumnPropNameInRow="ConLai" msprop:Generator_ColumnPropNameInTable="ConLaiColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DienDai" msprop:Generator_UserColumnName="DienDai" msprop:Generator_ColumnVarNameInTable="columnDienDai" msprop:Generator_ColumnPropNameInRow="DienDai" msprop:Generator_ColumnPropNameInTable="DienDaiColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Seleted" msprop:Generator_UserColumnName="Seleted" msprop:Generator_ColumnPropNameInRow="Seleted" msprop:Generator_ColumnVarNameInTable="columnSeleted" msprop:Generator_ColumnPropNameInTable="SeletedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Customer_ID" msprop:Generator_UserColumnName="Customer_ID" msprop:Generator_ColumnPropNameInRow="Customer_ID" msprop:Generator_ColumnVarNameInTable="columnCustomer_ID" msprop:Generator_ColumnPropNameInTable="Customer_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RefOrgNo" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="RefOrgNo" msprop:Generator_ColumnVarNameInTable="columnRefOrgNo" msprop:Generator_ColumnPropNameInRow="RefOrgNo" msprop:Generator_ColumnPropNameInTable="RefOrgNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerAddress" msprop:Generator_UserColumnName="CustomerAddress" msprop:Generator_ColumnVarNameInTable="columnCustomerAddress" msprop:Generator_ColumnPropNameInRow="CustomerAddress" msprop:Generator_ColumnPropNameInTable="CustomerAddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SaleID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="SaleID" msprop:Generator_ColumnVarNameInTable="columnSaleID" msprop:Generator_ColumnPropNameInRow="SaleID" msprop:Generator_ColumnPropNameInTable="SaleIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TuoiNo" msdata:ReadOnly="true" msprop:Generator_UserColumnName="TuoiNo" msprop:Generator_ColumnPropNameInRow="TuoiNo" msprop:Generator_ColumnVarNameInTable="columnTuoiNo" msprop:Generator_ColumnPropNameInTable="TuoiNoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Customer_Group_Name" msprop:Generator_UserColumnName="Customer_Group_Name" msprop:Generator_ColumnPropNameInRow="Customer_Group_Name" msprop:Generator_ColumnVarNameInTable="columnCustomer_Group_Name" msprop:Generator_ColumnPropNameInTable="Customer_Group_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Detail" msprop:Generator_UserTableName="Detail" msprop:Generator_RowDeletedName="DetailRowDeleted" msprop:Generator_RowChangedName="DetailRowChanged" msprop:Generator_RowClassName="DetailRow" msprop:Generator_RowChangingName="DetailRowChanging" msprop:Generator_RowEvArgName="DetailRowChangeEvent" msprop:Generator_RowEvHandlerName="DetailRowChangeEventHandler" msprop:Generator_TableClassName="DetailDataTable" msprop:Generator_TableVarName="tableDetail" msprop:Generator_RowDeletingName="DetailRowDeleting" msprop:Generator_TablePropName="Detail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product_ID" msprop:Generator_UserColumnName="Product_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInTable="UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit_Name" msprop:Generator_UserColumnName="Unit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitPrice" msprop:Generator_UserColumnName="UnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Outward_ID" msprop:Generator_UserColumnName="Outward_ID" msprop:Generator_ColumnPropNameInRow="Outward_ID" msprop:Generator_ColumnVarNameInTable="columnOutward_ID" msprop:Generator_ColumnPropNameInTable="Outward_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiscountRate" msprop:Generator_UserColumnName="DiscountRate" msprop:Generator_ColumnPropNameInRow="DiscountRate" msprop:Generator_ColumnVarNameInTable="columnDiscountRate" msprop:Generator_ColumnPropNameInTable="DiscountRateColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Discount" msprop:Generator_UserColumnName="Discount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Vat" msprop:Generator_UserColumnName="Vat" msprop:Generator_ColumnPropNameInRow="Vat" msprop:Generator_ColumnVarNameInTable="columnVat" msprop:Generator_ColumnPropNameInTable="VatColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="VatAmount" msprop:Generator_UserColumnName="VatAmount" msprop:Generator_ColumnPropNameInRow="VatAmount" msprop:Generator_ColumnVarNameInTable="columnVatAmount" msprop:Generator_ColumnPropNameInTable="VatAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalAmount" msprop:Generator_UserColumnName="TotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="GET_DEBTDETAIL_Detail" msdata:parent="GET_DEBTDETAIL" msdata:child="Detail" msdata:parentkey="ChungTu" msdata:childkey="Outward_ID" msprop:Generator_UserRelationName="GET_DEBTDETAIL_Detail" msprop:Generator_RelationVarName="relationGET_DEBTDETAIL_Detail" msprop:Generator_UserChildTable="Detail" msprop:Generator_UserParentTable="GET_DEBTDETAIL" msprop:Generator_ParentPropName="GET_DEBTDETAILRow" msprop:Generator_ChildPropName="GetDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

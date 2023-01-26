@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAdjustment" targetNamespace="http://tempuri.org/dsAdjustment.xsd" xmlns:mstns="http://tempuri.org/dsAdjustment.xsd" xmlns="http://tempuri.org/dsAdjustment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="5" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_THANHTAMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_THANHTAMConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERP_THANHTAMConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERPConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERPConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERPConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERPV6ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERPV6ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERPV6ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLBH_2_9_1_6ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLBH_2_9_1_6ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.QLBH_2_9_1_6ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_QLBH_2_9_1_6ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_QLBH_2_9_1_6ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERP_QLBH_2_9_1_6ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hongdanhblConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hongdanhblConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.hongdanhblConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ADJUSTMENT_DETAILTableAdapter" GeneratorDataComponentClassName="ADJUSTMENT_DETAILTableAdapter" Name="ADJUSTMENT_DETAIL" UserDataComponentName="ADJUSTMENT_DETAILTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hongdanhblConnectionString1 (Settings)" DbObjectName="hongdanhbl.dbo.ADJUSTMENT_DETAIL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [ADJUSTMENT_DETAIL] WHERE (([ID] = @Original_ID) AND ([Adjustment_ID] = @Original_Adjustment_ID) AND ([Product_ID] = @Original_Product_ID) AND ((@IsNull_Product_Name = 1 AND [Product_Name] IS NULL) OR ([Product_Name] = @Original_Product_Name)) AND ((@IsNull_Stock_ID = 1 AND [Stock_ID] IS NULL) OR ([Stock_ID] = @Original_Stock_ID)) AND ((@IsNull_Unit = 1 AND [Unit] IS NULL) OR ([Unit] = @Original_Unit)) AND ((@IsNull_UnitConvert = 1 AND [UnitConvert] IS NULL) OR ([UnitConvert] = @Original_UnitConvert)) AND ((@IsNull_Width = 1 AND [Width] IS NULL) OR ([Width] = @Original_Width)) AND ((@IsNull_Height = 1 AND [Height] IS NULL) OR ([Height] = @Original_Height)) AND ((@IsNull_Orgin = 1 AND [Orgin] IS NULL) OR ([Orgin] = @Original_Orgin)) AND ((@IsNull_CurrentQty = 1 AND [CurrentQty] IS NULL) OR ([CurrentQty] = @Original_CurrentQty)) AND ((@IsNull_NewQty = 1 AND [NewQty] IS NULL) OR ([NewQty] = @Original_NewQty)) AND ((@IsNull_QtyDiff = 1 AND [QtyDiff] IS NULL) OR ([QtyDiff] = @Original_QtyDiff)) AND ((@IsNull_UnitPrice = 1 AND [UnitPrice] IS NULL) OR ([UnitPrice] = @Original_UnitPrice)) AND ((@IsNull_Amount = 1 AND [Amount] IS NULL) OR ([Amount] = @Original_Amount)) AND ((@IsNull_QtyConvert = 1 AND [QtyConvert] IS NULL) OR ([QtyConvert] = @Original_QtyConvert)) AND ((@IsNull_StoreID = 1 AND [StoreID] IS NULL) OR ([StoreID] = @Original_StoreID)) AND ((@IsNull_Batch = 1 AND [Batch] IS NULL) OR ([Batch] = @Original_Batch)) AND ((@IsNull_Serial = 1 AND [Serial] IS NULL) OR ([Serial] = @Original_Serial)) AND ((@IsNull_Description = 1 AND [Description] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_Sorted = 1 AND [Sorted] IS NULL) OR ([Sorted] = @Original_Sorted)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Guid" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Adjustment_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adjustment_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Product_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Product_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Product_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Product_Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Product_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Product_Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Stock_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stock_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Stock_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Stock_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Unit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Unit" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UnitConvert" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UnitConvert" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_UnitConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitConvert" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Width" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Width" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Height" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Height" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Orgin" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Orgin" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Orgin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Orgin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CurrentQty" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CurrentQty" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_CurrentQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CurrentQty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NewQty" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NewQty" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_NewQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="NewQty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_QtyDiff" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="QtyDiff" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_QtyDiff" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyDiff" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UnitPrice" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Amount" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Amount" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Amount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Amount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_QtyConvert" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="QtyConvert" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_QtyConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyConvert" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StoreID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StoreID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_StoreID" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="StoreID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Batch" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Batch" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Batch" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Batch" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Serial" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Serial" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Serial" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Serial" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Description" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Description" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Description" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Description" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sorted" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sorted" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Sorted" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Sorted" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [ADJUSTMENT_DETAIL] ([ID], [Adjustment_ID], [Product_ID], [Product_Name], [Stock_ID], [Unit], [UnitConvert], [Width], [Height], [Orgin], [CurrentQty], [NewQty], [QtyDiff], [UnitPrice], [Amount], [QtyConvert], [StoreID], [Batch], [Serial], [Description], [Sorted]) VALUES (@ID, @Adjustment_ID, @Product_ID, @Product_Name, @Stock_ID, @Unit, @UnitConvert, @Width, @Height, @Orgin, @CurrentQty, @NewQty, @QtyDiff, @UnitPrice, @Amount, @QtyConvert, @StoreID, @Batch, @Serial, @Description, @Sorted);
+SELECT ID, Adjustment_ID, Product_ID, Product_Name, Stock_ID, Unit, UnitConvert, Width, Height, Orgin, CurrentQty, NewQty, QtyDiff, UnitPrice, Amount, QtyConvert, StoreID, Batch, Serial, Description, Sorted FROM ADJUSTMENT_DETAIL WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Guid" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Adjustment_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adjustment_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Product_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Product_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Product_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Product_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Stock_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Stock_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Unit" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@UnitConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitConvert" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Width" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Height" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Orgin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Orgin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@CurrentQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CurrentQty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@NewQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="NewQty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@QtyDiff" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyDiff" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Amount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Amount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@QtyConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyConvert" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@StoreID" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="StoreID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Batch" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Batch" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Serial" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Serial" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Description" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Description" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Sorted" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Sorted" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID, Adjustment_ID, Product_ID, Product_Name, Stock_ID, Unit, UnitConvert, Width, Height, Orgin, CurrentQty, NewQty, QtyDiff, UnitPrice, Amount, QtyConvert, StoreID, 
+                         Batch, Serial, Description, Sorted
+FROM            ADJUSTMENT_DETAIL
+WHERE        (Adjustment_ID = @Adjustment_ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Adjustment_ID" ColumnName="Adjustment_ID" DataSourceName="ERP31.dbo.ADJUSTMENT_DETAIL" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@Adjustment_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="Adjustment_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [ADJUSTMENT_DETAIL] SET [ID] = @ID, [Adjustment_ID] = @Adjustment_ID, [Product_ID] = @Product_ID, [Product_Name] = @Product_Name, [Stock_ID] = @Stock_ID, [Unit] = @Unit, [UnitConvert] = @UnitConvert, [Width] = @Width, [Height] = @Height, [Orgin] = @Orgin, [CurrentQty] = @CurrentQty, [NewQty] = @NewQty, [QtyDiff] = @QtyDiff, [UnitPrice] = @UnitPrice, [Amount] = @Amount, [QtyConvert] = @QtyConvert, [StoreID] = @StoreID, [Batch] = @Batch, [Serial] = @Serial, [Description] = @Description, [Sorted] = @Sorted WHERE (([ID] = @Original_ID) AND ([Adjustment_ID] = @Original_Adjustment_ID) AND ([Product_ID] = @Original_Product_ID) AND ((@IsNull_Product_Name = 1 AND [Product_Name] IS NULL) OR ([Product_Name] = @Original_Product_Name)) AND ((@IsNull_Stock_ID = 1 AND [Stock_ID] IS NULL) OR ([Stock_ID] = @Original_Stock_ID)) AND ((@IsNull_Unit = 1 AND [Unit] IS NULL) OR ([Unit] = @Original_Unit)) AND ((@IsNull_UnitConvert = 1 AND [UnitConvert] IS NULL) OR ([UnitConvert] = @Original_UnitConvert)) AND ((@IsNull_Width = 1 AND [Width] IS NULL) OR ([Width] = @Original_Width)) AND ((@IsNull_Height = 1 AND [Height] IS NULL) OR ([Height] = @Original_Height)) AND ((@IsNull_Orgin = 1 AND [Orgin] IS NULL) OR ([Orgin] = @Original_Orgin)) AND ((@IsNull_CurrentQty = 1 AND [CurrentQty] IS NULL) OR ([CurrentQty] = @Original_CurrentQty)) AND ((@IsNull_NewQty = 1 AND [NewQty] IS NULL) OR ([NewQty] = @Original_NewQty)) AND ((@IsNull_QtyDiff = 1 AND [QtyDiff] IS NULL) OR ([QtyDiff] = @Original_QtyDiff)) AND ((@IsNull_UnitPrice = 1 AND [UnitPrice] IS NULL) OR ([UnitPrice] = @Original_UnitPrice)) AND ((@IsNull_Amount = 1 AND [Amount] IS NULL) OR ([Amount] = @Original_Amount)) AND ((@IsNull_QtyConvert = 1 AND [QtyConvert] IS NULL) OR ([QtyConvert] = @Original_QtyConvert)) AND ((@IsNull_StoreID = 1 AND [StoreID] IS NULL) OR ([StoreID] = @Original_StoreID)) AND ((@IsNull_Batch = 1 AND [Batch] IS NULL) OR ([Batch] = @Original_Batch)) AND ((@IsNull_Serial = 1 AND [Serial] IS NULL) OR ([Serial] = @Original_Serial)) AND ((@IsNull_Description = 1 AND [Description] IS NULL) OR ([Description] = @Original_Description)) AND ((@IsNull_Sorted = 1 AND [Sorted] IS NULL) OR ([Sorted] = @Original_Sorted)));
+SELECT ID, Adjustment_ID, Product_ID, Product_Name, Stock_ID, Unit, UnitConvert, Width, Height, Orgin, CurrentQty, NewQty, QtyDiff, UnitPrice, Amount, QtyConvert, StoreID, Batch, Serial, Description, Sorted FROM ADJUSTMENT_DETAIL WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Guid" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Adjustment_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adjustment_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Product_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Product_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Product_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Product_Name" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Stock_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Stock_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Unit" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@UnitConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitConvert" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Width" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Height" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Orgin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Orgin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@CurrentQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CurrentQty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@NewQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="NewQty" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@QtyDiff" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyDiff" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Amount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Amount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@QtyConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyConvert" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@StoreID" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="StoreID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Batch" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Batch" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Serial" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Serial" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Description" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Description" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Sorted" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Sorted" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Guid" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="UniqueIdentifier" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Adjustment_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Adjustment_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Product_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Product_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Product_Name" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Product_Name" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Product_Name" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Product_Name" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Stock_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stock_ID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Stock_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Stock_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Unit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Unit" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Unit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UnitConvert" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UnitConvert" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_UnitConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitConvert" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Width" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Width" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Width" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Height" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Height" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Height" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Orgin" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Orgin" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Orgin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Orgin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CurrentQty" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CurrentQty" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_CurrentQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CurrentQty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NewQty" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NewQty" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_NewQty" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="NewQty" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_QtyDiff" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="QtyDiff" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_QtyDiff" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyDiff" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UnitPrice" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Amount" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Amount" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Amount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Amount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_QtyConvert" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="QtyConvert" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_QtyConvert" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="QtyConvert" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_StoreID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="StoreID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_StoreID" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="StoreID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Batch" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Batch" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Batch" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Batch" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Serial" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Serial" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Serial" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Serial" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Description" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Description" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Description" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Description" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Sorted" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Sorted" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Sorted" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Sorted" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Adjustment_ID" DataSetColumn="Adjustment_ID" />
+              <Mapping SourceColumn="Product_ID" DataSetColumn="Product_ID" />
+              <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
+              <Mapping SourceColumn="Stock_ID" DataSetColumn="Stock_ID" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="UnitConvert" DataSetColumn="UnitConvert" />
+              <Mapping SourceColumn="Width" DataSetColumn="Width" />
+              <Mapping SourceColumn="Height" DataSetColumn="Height" />
+              <Mapping SourceColumn="Orgin" DataSetColumn="Orgin" />
+              <Mapping SourceColumn="CurrentQty" DataSetColumn="CurrentQty" />
+              <Mapping SourceColumn="NewQty" DataSetColumn="NewQty" />
+              <Mapping SourceColumn="QtyDiff" DataSetColumn="QtyDiff" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="QtyConvert" DataSetColumn="QtyConvert" />
+              <Mapping SourceColumn="StoreID" DataSetColumn="StoreID" />
+              <Mapping SourceColumn="Batch" DataSetColumn="Batch" />
+              <Mapping SourceColumn="Serial" DataSetColumn="Serial" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Sorted" DataSetColumn="Sorted" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="INVENTORY_GetList_AdjustmentTableAdapter" GeneratorDataComponentClassName="INVENTORY_GetList_AdjustmentTableAdapter" Name="INVENTORY_GetList_Adjustment" UserDataComponentName="INVENTORY_GetList_AdjustmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hongdanhblConnectionString1 (Settings)" DbObjectName="hongdanhbl.dbo.INVENTORY_GetList_Adjustment" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.INVENTORY_GetList_Adjustment</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Stock_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Stock_ID" DataSetColumn="Stock_ID" />
+              <Mapping SourceColumn="Product_ID" DataSetColumn="Product_ID" />
+              <Mapping SourceColumn="ItemID" DataSetColumn="ItemID" />
+              <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="CurrentQty" DataSetColumn="CurrentQty" />
+              <Mapping SourceColumn="NewQty" DataSetColumn="NewQty" />
+              <Mapping SourceColumn="QtyDiff" DataSetColumn="QtyDiff" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="UnitConvert" DataSetColumn="UnitConvert" />
+              <Mapping SourceColumn="Convert" DataSetColumn="Convert" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAdjustment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsAdjustment" msprop:Generator_UserDSName="dsAdjustment">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ADJUSTMENT_DETAIL" msprop:Generator_UserTableName="ADJUSTMENT_DETAIL" msprop:Generator_RowEvArgName="ADJUSTMENT_DETAILRowChangeEvent" msprop:Generator_TableVarName="tableADJUSTMENT_DETAIL" msprop:Generator_TablePropName="ADJUSTMENT_DETAIL" msprop:Generator_RowDeletingName="ADJUSTMENT_DETAILRowDeleting" msprop:Generator_RowChangingName="ADJUSTMENT_DETAILRowChanging" msprop:Generator_RowDeletedName="ADJUSTMENT_DETAILRowDeleted" msprop:Generator_RowEvHandlerName="ADJUSTMENT_DETAILRowChangeEventHandler" msprop:Generator_TableClassName="ADJUSTMENT_DETAILDataTable" msprop:Generator_RowChangedName="ADJUSTMENT_DETAILRowChanged" msprop:Generator_RowClassName="ADJUSTMENT_DETAILRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Adjustment_ID" msprop:Generator_ColumnVarNameInTable="columnAdjustment_ID" msprop:Generator_ColumnPropNameInRow="Adjustment_ID" msprop:Generator_ColumnPropNameInTable="Adjustment_IDColumn" msprop:Generator_UserColumnName="Adjustment_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" msprop:Generator_UserColumnName="Product_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" msprop:Generator_UserColumnName="Product_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock_ID" msprop:Generator_ColumnVarNameInTable="columnStock_ID" msprop:Generator_ColumnPropNameInRow="Stock_ID" msprop:Generator_ColumnPropNameInTable="Stock_IDColumn" msprop:Generator_UserColumnName="Stock_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" msprop:Generator_UserColumnName="Unit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitConvert" msprop:Generator_ColumnVarNameInTable="columnUnitConvert" msprop:Generator_ColumnPropNameInRow="UnitConvert" msprop:Generator_ColumnPropNameInTable="UnitConvertColumn" msprop:Generator_UserColumnName="UnitConvert" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" msprop:Generator_UserColumnName="Width" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Height" msprop:Generator_ColumnVarNameInTable="columnHeight" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" msprop:Generator_UserColumnName="Height" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Orgin" msprop:Generator_ColumnVarNameInTable="columnOrgin" msprop:Generator_ColumnPropNameInRow="Orgin" msprop:Generator_ColumnPropNameInTable="OrginColumn" msprop:Generator_UserColumnName="Orgin" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrentQty" msprop:Generator_ColumnVarNameInTable="columnCurrentQty" msprop:Generator_ColumnPropNameInRow="CurrentQty" msprop:Generator_ColumnPropNameInTable="CurrentQtyColumn" msprop:Generator_UserColumnName="CurrentQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NewQty" msprop:Generator_ColumnVarNameInTable="columnNewQty" msprop:Generator_ColumnPropNameInRow="NewQty" msprop:Generator_ColumnPropNameInTable="NewQtyColumn" msprop:Generator_UserColumnName="NewQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QtyDiff" msprop:Generator_ColumnVarNameInTable="columnQtyDiff" msprop:Generator_ColumnPropNameInRow="QtyDiff" msprop:Generator_ColumnPropNameInTable="QtyDiffColumn" msprop:Generator_UserColumnName="QtyDiff" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QtyConvert" msprop:Generator_ColumnVarNameInTable="columnQtyConvert" msprop:Generator_ColumnPropNameInRow="QtyConvert" msprop:Generator_ColumnPropNameInTable="QtyConvertColumn" msprop:Generator_UserColumnName="QtyConvert" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StoreID" msprop:Generator_ColumnVarNameInTable="columnStoreID" msprop:Generator_ColumnPropNameInRow="StoreID" msprop:Generator_ColumnPropNameInTable="StoreIDColumn" msprop:Generator_UserColumnName="StoreID" type="xs:long" minOccurs="0" />
+              <xs:element name="Batch" msprop:Generator_ColumnVarNameInTable="columnBatch" msprop:Generator_ColumnPropNameInRow="Batch" msprop:Generator_ColumnPropNameInTable="BatchColumn" msprop:Generator_UserColumnName="Batch" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Serial" msprop:Generator_ColumnVarNameInTable="columnSerial" msprop:Generator_ColumnPropNameInRow="Serial" msprop:Generator_ColumnPropNameInTable="SerialColumn" msprop:Generator_UserColumnName="Serial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sorted" msprop:Generator_ColumnVarNameInTable="columnSorted" msprop:Generator_ColumnPropNameInRow="Sorted" msprop:Generator_ColumnPropNameInTable="SortedColumn" msprop:Generator_UserColumnName="Sorted" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INVENTORY_GetList_Adjustment" msprop:Generator_UserTableName="INVENTORY_GetList_Adjustment" msprop:Generator_RowEvArgName="INVENTORY_GetList_AdjustmentRowChangeEvent" msprop:Generator_TableVarName="tableINVENTORY_GetList_Adjustment" msprop:Generator_TablePropName="INVENTORY_GetList_Adjustment" msprop:Generator_RowDeletingName="INVENTORY_GetList_AdjustmentRowDeleting" msprop:Generator_RowChangingName="INVENTORY_GetList_AdjustmentRowChanging" msprop:Generator_RowDeletedName="INVENTORY_GetList_AdjustmentRowDeleted" msprop:Generator_RowEvHandlerName="INVENTORY_GetList_AdjustmentRowChangeEventHandler" msprop:Generator_TableClassName="INVENTORY_GetList_AdjustmentDataTable" msprop:Generator_RowChangedName="INVENTORY_GetList_AdjustmentRowChanged" msprop:Generator_RowClassName="INVENTORY_GetList_AdjustmentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Stock_ID" msprop:Generator_ColumnVarNameInTable="columnStock_ID" msprop:Generator_ColumnPropNameInRow="Stock_ID" msprop:Generator_ColumnPropNameInTable="Stock_IDColumn" msprop:Generator_UserColumnName="Stock_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" msprop:Generator_UserColumnName="Product_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemID" msprop:Generator_ColumnVarNameInTable="columnItemID" msprop:Generator_ColumnPropNameInRow="ItemID" msprop:Generator_ColumnPropNameInTable="ItemIDColumn" msprop:Generator_UserColumnName="ItemID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" msprop:Generator_UserColumnName="Product_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" msprop:Generator_UserColumnName="Unit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrentQty" msprop:Generator_ColumnVarNameInTable="columnCurrentQty" msprop:Generator_ColumnPropNameInRow="CurrentQty" msprop:Generator_ColumnPropNameInTable="CurrentQtyColumn" msprop:Generator_UserColumnName="CurrentQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NewQty" msprop:Generator_ColumnVarNameInTable="columnNewQty" msprop:Generator_ColumnPropNameInRow="NewQty" msprop:Generator_ColumnPropNameInTable="NewQtyColumn" msprop:Generator_UserColumnName="NewQty" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QtyDiff" msprop:Generator_ColumnVarNameInTable="columnQtyDiff" msprop:Generator_ColumnPropNameInRow="QtyDiff" msprop:Generator_ColumnPropNameInTable="QtyDiffColumn" msprop:Generator_UserColumnName="QtyDiff" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitConvert" msprop:Generator_ColumnVarNameInTable="columnUnitConvert" msprop:Generator_ColumnPropNameInRow="UnitConvert" msprop:Generator_ColumnPropNameInTable="UnitConvertColumn" msprop:Generator_UserColumnName="UnitConvert" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Convert" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnConvert" msprop:Generator_ColumnPropNameInRow="Convert" msprop:Generator_ColumnPropNameInTable="ConvertColumn" msprop:Generator_UserColumnName="Convert" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

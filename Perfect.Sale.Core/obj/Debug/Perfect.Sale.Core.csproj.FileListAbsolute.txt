@@ -1,0 +1,114 @@
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Sale.Core.dll.config
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Sale.Core.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Sale.Core.pdb
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.AssemblyReference.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.REPORT.rptDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.REPORT.rptSummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.REPORT.rptTest.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.XucDebtDetails.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.XucDebtSummaryDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucDebtSummaryDetailC01.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucDebt_CashC.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucSummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucDebtTime.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.xucDebt_CashP.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.xucDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.XucSummaryDetails.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.xucSummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.INITS.Customer.UI.XucCustomerDebtInit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.xfmCustomerDebtInit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.INITS.Provider.UI.XucProviderDebtInit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.xfmProviderDebtInit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.INITS.XfmSaleInit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.MsgResc.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Cash.Cash.Payment.Report.rptPaymentInvoice.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Cash.Cash.Payment.Report.rptPaymentInvoice2011.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.XfmPayment.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.XfmPhieuChi.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.xucSaleAmountByDay.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.XucList.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.xucPayment.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Properties.Resources.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.Report.RptReceiptInvoice2011.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.XfmPhieuThu.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xfmPhieuThuTong.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xfmReceiptOptions.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xucSaleAmountByDay.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Cash.Cash.Receipt.Report.rptReceiptInvoice.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.XfmReiceipt.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.XucList.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xucReiceipt.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.Amount.rptSaleAmountByDay.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucPurchaseAmountByDay.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucPurchaseAmountByCustomer.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByDay.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByWeek.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.SaleQuantity.rptSaleQuantityByEmp.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.SaleQuantity.XucSaleQuantityByEmp.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.SaleQuantity.xucSaleQuantityByPro.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.XfmSaleAmountReport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByCustomer.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByProvince.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.GenerateResource.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.dll.licenses
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.CoreCompileInputs.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.CopyComplete
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Sale.Core.dll.config
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Sale.Core.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Sale.Core.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.AssemblyReference.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.REPORT.rptDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.REPORT.rptSummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.REPORT.rptTest.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.XucDebtDetails.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.XucDebtSummaryDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucDebtSummaryDetailC01.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucDebt_CashC.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucSummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.CUSTOMER.xucDebtTime.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.xucDebt_CashP.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.xucDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.XucSummaryDetails.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.DEBT.PROVIDER.xucSummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.INITS.Customer.UI.XucCustomerDebtInit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.xfmCustomerDebtInit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.INITS.Provider.UI.XucProviderDebtInit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.xfmProviderDebtInit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.INITS.XfmSaleInit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.MsgResc.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Cash.Cash.Payment.Report.rptPaymentInvoice.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Cash.Cash.Payment.Report.rptPaymentInvoice2011.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.XfmPayment.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.XfmPhieuChi.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.xucSaleAmountByDay.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.PAYMENT.XucList.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.xucPayment.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Properties.Resources.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.Report.RptReceiptInvoice2011.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.XfmPhieuThu.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xfmPhieuThuTong.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xfmReceiptOptions.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xucSaleAmountByDay.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Cash.Cash.Receipt.Report.rptReceiptInvoice.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.XfmReiceipt.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.XucList.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.REICEIPT.xucReiceipt.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.Amount.rptSaleAmountByDay.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucPurchaseAmountByDay.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucPurchaseAmountByCustomer.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByDay.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByWeek.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.SaleQuantity.rptSaleQuantityByEmp.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.SaleQuantity.XucSaleQuantityByEmp.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.SaleQuantity.xucSaleQuantityByPro.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.XfmSaleAmountReport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByCustomer.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.Report.control.XucSaleAmountByProvince.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.GenerateResource.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.dll.licenses
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.CoreCompileInputs.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.csproj.CopyComplete
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Sale.Core\obj\Debug\Perfect.Sale.Core.pdb

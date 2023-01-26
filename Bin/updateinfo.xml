@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<dsUPDATE xmlns="http://tempuri.org/dsUPDATE.xsd">
+  <UPDATE>
+    <ApplicationID>03a208c9-59c4-4e81-9e24-3322d0cab4ca</ApplicationID>
+    <ApplicationName>Phần Mềm Quản Lý Bán Hàng</ApplicationName>
+    <OldVersion>2.8.4.0</OldVersion>
+    <NewVersion>2.8.4.0</NewVersion>
+    <Priority>0</Priority>
+    <UpdateLink>http://update.perfect.com.vn/QLK/updateinfo.xml</UpdateLink>
+    <PackNo>3000</PackNo>
+    <SoftType>Standard</SoftType>
+    <ApplicationPath>D:\BanHang\ERP.Perfect.2.8.4.0\Bin</ApplicationPath>
+  </UPDATE>
+  <KillProcess>
+    <KillProcess>Perfect.Data</KillProcess>
+  </KillProcess>
+  <KillProcess>
+    <KillProcess>Perfect.Data.Config</KillProcess>
+  </KillProcess>
+  <KillProcess>
+    <KillProcess>PM.QLBH</KillProcess>
+  </KillProcess>
+  <KillProcess>
+    <KillProcess>Perfect.License</KillProcess>
+  </KillProcess>
+</dsUPDATE>

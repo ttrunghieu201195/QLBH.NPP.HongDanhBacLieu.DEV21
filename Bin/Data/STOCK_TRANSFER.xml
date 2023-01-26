@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<dsSTOCK_TRANSFER_DETAIL xmlns="http://tempuri.org/dsSTOCK_TRANSFER_DETAIL.xsd">
+  <STOCK_TRANSFER>
+    <FromStock_ID />
+    <ToStock_ID />
+    <IsBarcode>false</IsBarcode>
+    <IsPrint>false</IsPrint>
+    <ID>CK000002</ID>
+    <RefDate>2012-05-25T16:28:20.8114578+07:00</RefDate>
+    <RefType>9</RefType>
+    <Amount>0</Amount>
+    <Description />
+    <Active>true</Active>
+    <Employee_Name>LÊ THỊ THANH  HUYỀN</Employee_Name>
+    <Employee_ID>NV000003</Employee_ID>
+  </STOCK_TRANSFER>
+</dsSTOCK_TRANSFER_DETAIL>

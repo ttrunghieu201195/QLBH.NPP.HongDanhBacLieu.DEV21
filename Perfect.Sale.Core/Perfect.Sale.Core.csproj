@@ -1,0 +1,1313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3617383-A4E7-41F8-AF2B-5612CA99F79C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Perfect.Sale.Core</RootNamespace>
+    <AssemblyName>Perfect.Sale.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Extensions, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Perfect.Data.Extra, Version=3.0.6.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Perfect.Data.Extra.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Data.SqlHelper, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Perfect.Data.SqlHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Logonui, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Perfect.Logonui.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Service, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Perfect.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Utils, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Perfect.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUSSINESS\PURCHASE.cs" />
+    <Compile Include="BUSSINESS\PURCHASE_DETAIL.cs" />
+    <Compile Include="BUSSINESS\SALE.cs" />
+    <Compile Include="BUSSINESS\SALE_DETAIL.cs" />
+    <Compile Include="BUSSINESS\TRANS_CASH.cs" />
+    <Compile Include="Common\DS\dsEmployee.cs">
+      <DependentUpon>dsEmployee.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsPRODUCT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPRODUCT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsREFTYPE.Designer.cs">
+      <DependentUpon>dsREFTYPE.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Common\DS\dsSys_Company.cs">
+      <DependentUpon>dsSys_Company.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsSys_Company.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSys_Company.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsVAT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVAT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\Class\CUSTOMER_RECEIPT.cs" />
+    <Compile Include="DEBT\Class\CUSTOMER_RECEIPT_DETAIL.cs" />
+    <Compile Include="DEBT\Class\DEBT.cs" />
+    <Compile Include="DEBT\CUSTOMER\DS\dsDebtDetails.cs">
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\DS\dsDebtDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\DS\dsDebtSummaryDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtSummaryDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\DS\dsTMP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTMP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\REPORT\rptDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\REPORT\rptDetail.designer.cs">
+      <DependentUpon>rptDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\REPORT\rptSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\REPORT\rptSummary.designer.cs">
+      <DependentUpon>rptSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\REPORT\rptTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\REPORT\rptTest.Designer.cs">
+      <DependentUpon>rptTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebtDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebtDetails.Designer.cs">
+      <DependentUpon>xucDebtDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebtSummaryDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebtSummaryDetail.Designer.cs">
+      <DependentUpon>xucDebtSummaryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebtSummaryDetailC01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebtSummaryDetailC01.designer.cs">
+      <DependentUpon>xucDebtSummaryDetailC01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebt_CashC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDebt_CashC.Designer.cs">
+      <DependentUpon>xucDebt_CashC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucSummary.designer.cs">
+      <DependentUpon>xucSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\DS\dsDEBT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\CUSTOMER\xucDetail.designer.cs">
+      <DependentUpon>xucDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\Class\PROVIDER_PAYMENT.cs" />
+    <Compile Include="DEBT\Class\PROVIDER_PAYMENT_DETAIL.cs" />
+    <Compile Include="BUSSINESS\TRANS_DEBT.cs" />
+    <Compile Include="Common\DS\dsCashMethod1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCashMethod.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsCashTerm1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCashTerm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsCustomer1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsCustomerGroup1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomerGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsEmployee1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployee.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsProvider.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProvider.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DS\dsUnit1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUnit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\DS\dsDEBT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\DS\dsSummaryDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSummaryDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucDebt_CashP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucDebt_CashP.Designer.cs">
+      <DependentUpon>xucDebt_CashP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucDetail.designer.cs">
+      <DependentUpon>xucDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucSummaryDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucSummaryDetails.Designer.cs">
+      <DependentUpon>xucSummaryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DEBT\PROVIDER\xucSummary.designer.cs">
+      <DependentUpon>xucSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDebtDetails.cs">
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDebtDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDebtTime.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtTime.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS\dsDebtProvider.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtProvider.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INITS\Customer\Class\CUSTOMER_DEBT.cs" />
+    <Compile Include="INITS\Customer\DS\dsDEBT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INITS\Customer\UI\xucCustomerDebtInit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="INITS\Customer\UI\xucCustomerDebtInit.designer.cs">
+      <DependentUpon>xucCustomerDebtInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INITS\Customer\xfmCustomerDebtInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INITS\Customer\xfmCustomerDebtInit.designer.cs">
+      <DependentUpon>xfmCustomerDebtInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INITS\Provider\Class\PROVIDER_DEBT.cs" />
+    <Compile Include="INITS\Provider\DS\dsProviderDebtInit1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProviderDebtInit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INITS\Provider\UI\xucProviderDebtInit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="INITS\Provider\UI\xucProviderDebtInit.designer.cs">
+      <DependentUpon>xucProviderDebtInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INITS\Provider\xfmProviderDebtInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INITS\Provider\xfmProviderDebtInit.designer.cs">
+      <DependentUpon>xfmProviderDebtInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INITS\xfmSaleInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INITS\xfmSaleInit.Designer.cs">
+      <DependentUpon>xfmSaleInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MsgResc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MsgResc.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS\dsDEBT.cs">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS\dsDEBT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS\dsPayment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS\dsPhieuChi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPhieuChi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS\dsReport_PC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReport_PC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\Report\rptPaymentInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\Report\rptPaymentInvoice.designer.cs">
+      <DependentUpon>rptPaymentInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\Report\rptPaymentInvoice2011.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\Report\rptPaymentInvoice2011.designer.cs">
+      <DependentUpon>rptPaymentInvoice2011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\xfmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\xfmPayment.designer.cs">
+      <DependentUpon>xfmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\xfmPhieuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\xfmPhieuChi.Designer.cs">
+      <DependentUpon>xfmPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\xucDebtTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\xucDebtTime.designer.cs">
+      <DependentUpon>xucDebtTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\xucList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\xucList.Designer.cs">
+      <DependentUpon>xucList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\xucPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\xucPayment.designer.cs">
+      <DependentUpon>xucPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DEBT\CUSTOMER\REPORT\rptDetail.resx">
+      <DependentUpon>rptDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\REPORT\rptSummary.resx">
+      <DependentUpon>rptSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\REPORT\rptTest.resx">
+      <DependentUpon>rptTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\xucDebtDetails.resx">
+      <DependentUpon>xucDebtDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\xucDebtSummaryDetail.resx">
+      <DependentUpon>xucDebtSummaryDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\xucDebtSummaryDetailC01.resx">
+      <DependentUpon>xucDebtSummaryDetailC01.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\xucDebt_CashC.resx">
+      <DependentUpon>xucDebt_CashC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\xucSummary.resx">
+      <DependentUpon>xucSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\CUSTOMER\xucDetail.resx">
+      <DependentUpon>xucDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\PROVIDER\xucDebt_CashP.resx">
+      <DependentUpon>xucDebt_CashP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\PROVIDER\xucDetail.resx">
+      <DependentUpon>xucDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\PROVIDER\xucSummaryDetails.resx">
+      <DependentUpon>xucSummaryDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEBT\PROVIDER\xucSummary.resx">
+      <DependentUpon>xucSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INITS\Customer\UI\xucCustomerDebtInit.resx">
+      <DependentUpon>xucCustomerDebtInit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INITS\Customer\xfmCustomerDebtInit.resx">
+      <DependentUpon>xfmCustomerDebtInit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INITS\Provider\UI\xucProviderDebtInit.resx">
+      <DependentUpon>xucProviderDebtInit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INITS\Provider\xfmProviderDebtInit.resx">
+      <DependentUpon>xfmProviderDebtInit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INITS\xfmSaleInit.resx">
+      <DependentUpon>xfmSaleInit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgResc.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MsgResc.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\Report\rptPaymentInvoice.resx">
+      <DependentUpon>rptPaymentInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\Report\rptPaymentInvoice2011.resx">
+      <DependentUpon>rptPaymentInvoice2011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\xfmPayment.resx">
+      <DependentUpon>xfmPayment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\xfmPhieuChi.resx">
+      <DependentUpon>xfmPhieuChi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\xucDebtTime.resx">
+      <DependentUpon>xucDebtTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\xucList.resx">
+      <DependentUpon>xucList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\xucPayment.resx">
+      <DependentUpon>xucPayment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\Report\RptReceiptInvoice2011.resx">
+      <DependentUpon>RptReceiptInvoice2011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\xfmPhieuThu.resx">
+      <DependentUpon>xfmPhieuThu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\xfmPhieuThuTong.resx">
+      <DependentUpon>xfmPhieuThuTong.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\xfmReceiptOptions.resx">
+      <DependentUpon>xfmReceiptOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\xucDebtNote.resx">
+      <DependentUpon>xucDebtNote.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\Report\rptReceiptInvoice.resx">
+      <DependentUpon>rptReceiptInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\xfmReiceipt.resx">
+      <DependentUpon>xfmReiceipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\xucList.resx">
+      <DependentUpon>xucList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REICEIPT\xucReiceipt.resx">
+      <DependentUpon>xucReiceipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Amount\rptSaleAmountByDay.resx">
+      <DependentUpon>rptSaleAmountByDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\control\xucPurchaseAmountByDay.resx">
+      <DependentUpon>xucPurchaseAmountByDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\control\xucPurchaseAmountByCustomer.resx">
+      <DependentUpon>xucPurchaseAmountByCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\control\xucSaleAmountByDay.resx">
+      <DependentUpon>xucSaleAmountByDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\control\xucSaleAmountByWeek.resx">
+      <DependentUpon>xucSaleAmountByWeek.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SaleQuantity\rptSaleQuantityByEmp.resx">
+      <DependentUpon>rptSaleQuantityByEmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SaleQuantity\xucSaleQuantityByEmp.resx">
+      <DependentUpon>xucSaleQuantityByEmp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\SaleQuantity\xucSaleQuantityByPro.resx">
+      <DependentUpon>xucSaleQuantityByPro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\xfmSaleAmountReport.resx">
+      <DependentUpon>xfmSaleAmountReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\control\xucSaleAmountByCustomer.resx">
+      <DependentUpon>xucSaleAmountByCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\control\xucSaleAmountByProvince.resx">
+      <DependentUpon>xucSaleAmountByProvince.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Common\DS\dsCashMethod.xsc">
+      <DependentUpon>dsCashMethod.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsCashMethod.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCashMethod1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsCashMethod.xss">
+      <DependentUpon>dsCashMethod.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsCashTerm.xsc">
+      <DependentUpon>dsCashTerm.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsCashTerm.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCashTerm1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsCashTerm.xss">
+      <DependentUpon>dsCashTerm.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsCustomer.xsc">
+      <DependentUpon>dsCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsCustomer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomer1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsCustomer.xss">
+      <DependentUpon>dsCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsCustomerGroup.xsc">
+      <DependentUpon>dsCustomerGroup.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsCustomerGroup.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomerGroup1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsCustomerGroup.xss">
+      <DependentUpon>dsCustomerGroup.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsEmployee.xsc">
+      <DependentUpon>dsEmployee.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsEmployee.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployee1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsEmployee.xss">
+      <DependentUpon>dsEmployee.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsPRODUCT.xsc">
+      <DependentUpon>dsPRODUCT.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsPRODUCT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPRODUCT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\DS\dsPRODUCT.xss">
+      <DependentUpon>dsPRODUCT.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsProvider.xsc">
+      <DependentUpon>dsProvider.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsProvider.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProvider.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsProvider.xss">
+      <DependentUpon>dsProvider.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsREFTYPE.xsc">
+      <DependentUpon>dsREFTYPE.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsREFTYPE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsREFTYPE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsREFTYPE.xss">
+      <DependentUpon>dsREFTYPE.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsStock.xsc">
+      <DependentUpon>dsStock.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsStock.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStock.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsStock.xss">
+      <DependentUpon>dsStock.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsSys_Company.xsc">
+      <DependentUpon>dsSys_Company.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsSys_Company.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSys_Company.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\DS\dsSys_Company.xss">
+      <DependentUpon>dsSys_Company.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsUnit.xsc">
+      <DependentUpon>dsUnit.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsUnit.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUnit1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\DS\dsUnit.xss">
+      <DependentUpon>dsUnit.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsVAT.xsc">
+      <DependentUpon>dsVAT.xsd</DependentUpon>
+    </None>
+    <None Include="Common\DS\dsVAT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVAT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Common\DS\dsVAT.xss">
+      <DependentUpon>dsVAT.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDEBT.xsc">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDEBT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDEBT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDEBT.xss">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDebtDetails.xsc">
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDebtDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDebtDetails.xss">
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDebtSummaryDetail.xsc">
+      <DependentUpon>dsDebtSummaryDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDebtSummaryDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtSummaryDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsDebtSummaryDetail.xss">
+      <DependentUpon>dsDebtSummaryDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsTMP.xsc">
+      <DependentUpon>dsTMP.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsTMP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTMP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DEBT\CUSTOMER\DS\dsTMP.xss">
+      <DependentUpon>dsTMP.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\PROVIDER\DS\dsDEBT.xsc">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\PROVIDER\DS\dsDEBT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDEBT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DEBT\PROVIDER\DS\dsDEBT.xss">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\PROVIDER\DS\dsSummaryDetails.xsc">
+      <DependentUpon>dsSummaryDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DEBT\PROVIDER\DS\dsSummaryDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSummaryDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DEBT\PROVIDER\DS\dsSummaryDetails.xss">
+      <DependentUpon>dsSummaryDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsCustomer.xsc">
+      <DependentUpon>dsCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="dsCustomer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsCustomer.xss">
+      <DependentUpon>dsCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtDetails.xsc">
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDebtDetails.xss">
+      <DependentUpon>dsDebtDetails.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtTime.xsc">
+      <DependentUpon>dsDebtTime.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtTime.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtTime.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsDebtTime.xss">
+      <DependentUpon>dsDebtTime.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsDebtProvider.xsc">
+      <DependentUpon>dsDebtProvider.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsDebtProvider.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtProvider.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PAYMENT\DS\dsDebtProvider.xss">
+      <DependentUpon>dsDebtProvider.xsd</DependentUpon>
+    </None>
+    <None Include="INITS\Customer\DS\dsDEBT.xsc">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="INITS\Customer\DS\dsDEBT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDEBT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="INITS\Customer\DS\dsDEBT.xss">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="INITS\Provider\DS\dsProviderDebtInit.xsc">
+      <DependentUpon>dsProviderDebtInit.xsd</DependentUpon>
+    </None>
+    <None Include="INITS\Provider\DS\dsProviderDebtInit.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProviderDebtInit1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="INITS\Provider\DS\dsProviderDebtInit.xss">
+      <DependentUpon>dsProviderDebtInit.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsDEBT.xsc">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsDEBT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDEBT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS\dsDEBT.xss">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsPayment.xsc">
+      <DependentUpon>dsPayment.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsPayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPayment.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS\dsPayment.xss">
+      <DependentUpon>dsPayment.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsPhieuChi.xsc">
+      <DependentUpon>dsPhieuChi.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsPhieuChi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPhieuChi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS\dsPhieuChi.xss">
+      <DependentUpon>dsPhieuChi.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsReport_PC.xsc">
+      <DependentUpon>dsReport_PC.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS\dsReport_PC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReport_PC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS\dsReport_PC.xss">
+      <DependentUpon>dsReport_PC.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="REICEIPT\DS\dsDEBT.xsc">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsDEBT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDEBT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="REICEIPT\DS\dsDEBT.xss">
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsDebtNote.xsc">
+      <DependentUpon>dsDebtNote.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsDebtNote.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtNote.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="REICEIPT\DS\dsDebtNote.xss">
+      <DependentUpon>dsDebtNote.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsPhieuThu.xsc">
+      <DependentUpon>dsPhieuThu.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsPhieuThu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPhieuThu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="REICEIPT\DS\dsPhieuThu.xss">
+      <DependentUpon>dsPhieuThu.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsReceipt.xsc">
+      <DependentUpon>dsReceipt.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsReceipt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReceipt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="REICEIPT\DS\dsReceipt.xss">
+      <DependentUpon>dsReceipt.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsReport_PT.xsc">
+      <DependentUpon>dsReport_PT.xsd</DependentUpon>
+    </None>
+    <None Include="REICEIPT\DS\dsReport_PT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReport_PT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="REICEIPT\DS\dsReport_PT.xss">
+      <DependentUpon>dsReport_PT.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByCustomer.xsc">
+      <DependentUpon>dsSaleAmountByCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByCustomer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSaleAmountByCustomer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByCustomer.xss">
+      <DependentUpon>dsSaleAmountByCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByDay.xsc">
+      <DependentUpon>dsSaleAmountByDay.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByDay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSaleAmountByDay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByDay.xss">
+      <DependentUpon>dsSaleAmountByDay.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByProvince.xsc">
+      <DependentUpon>dsSaleAmountByProvince.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByProvince.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSaleAmountByProvince.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByProvince.xss">
+      <DependentUpon>dsSaleAmountByProvince.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByWeek.xsc">
+      <DependentUpon>dsSaleAmountByWeek.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByWeek.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSaleAmountByWeek.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DS\dsSaleAmountByWeek.xss">
+      <DependentUpon>dsSaleAmountByWeek.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleQuantity.xsc">
+      <DependentUpon>dsSaleQuantity.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DS\dsSaleQuantity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSaleQuantity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DS\dsSaleQuantity.xss">
+      <DependentUpon>dsSaleQuantity.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="BUSSINESS\SALE_CURRENCY.cs" />
+    <Compile Include="BUSSINESS\SALE_EXCHANGE_RATE.cs" />
+    <Compile Include="REICEIPT\DS\dsDebtNote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtNote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\DS\dsPhieuThu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPhieuThu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\DS\dsReport_PT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReport_PT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\Report\RptReceiptInvoice2011.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\Report\RptReceiptInvoice2011.designer.cs">
+      <DependentUpon>RptReceiptInvoice2011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\xfmPhieuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\xfmPhieuThu.Designer.cs">
+      <DependentUpon>xfmPhieuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\xfmPhieuThuTong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\xfmPhieuThuTong.Designer.cs">
+      <DependentUpon>xfmPhieuThuTong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\xfmReceiptOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\xfmReceiptOptions.Designer.cs">
+      <DependentUpon>xfmReceiptOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\xucDebtNote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\xucDebtNote.Designer.cs">
+      <DependentUpon>xucDebtNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\DS\dsDEBT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDEBT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\DS\dsReceipt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReceipt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\Report\rptReceiptInvoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\Report\rptReceiptInvoice.designer.cs">
+      <DependentUpon>rptReceiptInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\xfmReiceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\xfmReiceipt.designer.cs">
+      <DependentUpon>xfmReiceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\xucList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\xucList.Designer.cs">
+      <DependentUpon>xucList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REICEIPT\xucReiceipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REICEIPT\xucReiceipt.designer.cs">
+      <DependentUpon>xucReiceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Amount\dsSaleAmountByCustomer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Amount\dsSaleAmountByCustomer.Designer.cs">
+      <DependentUpon>dsSaleAmountByCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Amount\rptSaleAmountByDay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Amount\rptSaleAmountByDay.Designer.cs">
+      <DependentUpon>rptSaleAmountByDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\control\xucPurchaseAmountByDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\control\xucPurchaseAmountByDay.Designer.cs">
+      <DependentUpon>xucPurchaseAmountByDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\control\xucPurchaseAmountByCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\control\xucPurchaseAmountByCustomer.Designer.cs">
+      <DependentUpon>xucPurchaseAmountByCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByDay.Designer.cs">
+      <DependentUpon>xucSaleAmountByDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByWeek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByWeek.Designer.cs">
+      <DependentUpon>xucSaleAmountByWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DS\dsSaleAmountByProvince.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSaleAmountByProvince.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DS\dsSaleAmountByCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSaleAmountByCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DS\dsSaleAmountByDay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSaleAmountByDay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DS\dsSaleAmountByWeek.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSaleAmountByWeek.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DS\dsSaleQuantity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSaleQuantity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SaleQuantity\rptSaleQuantityByEmp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\SaleQuantity\rptSaleQuantityByEmp.designer.cs">
+      <DependentUpon>rptSaleQuantityByEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SaleQuantity\xucSaleQuantityByEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\SaleQuantity\xucSaleQuantityByEmp.Designer.cs">
+      <DependentUpon>xucSaleQuantityByEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\SaleQuantity\xucSaleQuantityByPro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\SaleQuantity\xucSaleQuantityByPro.designer.cs">
+      <DependentUpon>xucSaleQuantityByPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\xfmSaleAmountReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\xfmSaleAmountReport.designer.cs">
+      <DependentUpon>xfmSaleAmountReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByCustomer.Designer.cs">
+      <DependentUpon>xucSaleAmountByCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByProvince.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\control\xucSaleAmountByProvince.Designer.cs">
+      <DependentUpon>xucSaleAmountByProvince.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Perfect.Common\Perfect.General\Perfect.Common.csproj">
+      <Project>{22bfd379-2273-4605-822e-e1ee6121c7c6}</Project>
+      <Name>Perfect.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perfect.Dictionary\Perfect.Dictionary\Perfect.Dictionary.csproj">
+      <Project>{B5233819-2304-4217-AE47-69AF35BEC6ED}</Project>
+      <Name>Perfect.Dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perfect.Inventory.Core\Perfect.Inventory.Core\Perfect.Inventory.Core.csproj">
+      <Project>{D7561E3E-9E46-4F45-9795-2A5C44D09DA8}</Project>
+      <Name>Perfect.Inventory.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perfect.Inventory.Report\Perfect.Inventory.Report\Perfect.Inventory.Report.csproj">
+      <Project>{1F2E37D6-3C64-4A65-A828-73A16C904405}</Project>
+      <Name>Perfect.Inventory.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perfect.Net\Perfect.Net.csproj">
+      <Project>{DF613704-5A31-43A6-A1C0-09BE4980819B}</Project>
+      <Name>Perfect.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Perfect.Security\Perfect.Security\Perfect.Security.csproj">
+      <Project>{7AE5BCAD-E861-494D-BD0E-DB89480CCE84}</Project>
+      <Name>Perfect.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

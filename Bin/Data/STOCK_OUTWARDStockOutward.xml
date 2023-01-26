@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<dsSTOCK_OUTWARD_DETAIL xmlns="http://tempuri.org/dsSTOCK_OUTWARD_DETAIL.xsd">
+  <STOCK_OUTWARD>
+    <ID>BH000002</ID>
+    <RefDate>2012-02-16T09:54:33.8125995+07:00</RefDate>
+    <Customer_ID />
+    <Ref_OrgNo />
+    <Reason>Xuất Kho</Reason>
+    <IsPrint>false</IsPrint>
+    <IsBarcode>false</IsBarcode>
+    <Stock_ID />
+    <CustomerName />
+    <CustomerAddress />
+    <Amount>0</Amount>
+    <RefType>2</RefType>
+    <IsByStore>false</IsByStore>
+    <DeliveryDate>2012-02-16T09:54:33.8125995+07:00</DeliveryDate>
+    <Vat>0</Vat>
+    <VatAmount>0</VatAmount>
+    <RefStatus>0</RefStatus>
+    <DESCRIPTION />
+    <DiscountRate>0</DiscountRate>
+    <Discount>0</Discount>
+  </STOCK_OUTWARD>
+</dsSTOCK_OUTWARD_DETAIL>

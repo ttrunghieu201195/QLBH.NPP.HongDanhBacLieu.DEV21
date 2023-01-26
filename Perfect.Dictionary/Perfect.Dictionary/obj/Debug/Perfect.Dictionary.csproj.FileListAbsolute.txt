@@ -1,0 +1,178 @@
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Dictionary.dll.config
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Dictionary.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Dictionary.pdb
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.AssemblyReference.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcode.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcodeA4.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.RptBarcodeVertical.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.RptBarcodeVerticals.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcodeV_01.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptRollPaper.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcodeVerticalCustomMod.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.xfmPriceOptions.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.XfmPrintBarcode.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.XucPrintBarcode.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCarAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCar.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Common.xucCarAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Common.xucCurrencyAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCurrencyAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCurrencys.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucCustomerGroupAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.XfmCustomerGroupAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.XfmCustomerGroups.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.Debt.XfmCustomerDebtImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCustomersImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.usercontrol.Professional.XucCustomer.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucCustomerQuickAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.xfmCustomerAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.XfmCustomers.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.XfmDelieveryRouteAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.DelieveryRoute.XfmDelieveryRoute.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucDelieveryRouteAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Department.usercontrol.XucDepartmentAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Department.XfmDepartmentAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Department.XfmDepartments.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucEmployee30Add.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Employee.XfmEmployeeAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmEmployees.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmHistory.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.History.XucHistory.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmIndustryAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmIndustry.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucIndustryAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmNotesAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmNotes.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Unit.TS.xucNotes.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucNotesAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.xfmProductBrandAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.xfmProductBrand.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucProductBrandAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.ProductGroup.usercontrol.XucProductGroup.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.ProductGroup.usercontrol.XucProductGroupAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.ProductGroup.XfmProductGroupAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProductGroups.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProductGroupImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucItemA.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.XucItemAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmItemAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProducts.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product._502.TS.xfmProUnit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product._502.TS.xucProUnit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmChangeProduct.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmMergeProduct.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmGroupChanged.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmItemImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmItemSearch.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmProductDelete.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Properties.Resources.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Provider.Debt.XfmProviderDebtImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProviderImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Provider.usercontrol.Professional.XucProvider.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucProviderQuickAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProviderAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProviders.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucStockAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmStocksImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmStockAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Stock.XfmStocks.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucUnitAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmUnitImport.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmUnitAdd.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmUnits.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.UI.UBarcode.XucBaseBarcode.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.GenerateResource.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.dll.licenses
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.CoreCompileInputs.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.CopyComplete
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Dictionary.dll.config
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Dictionary.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Dictionary.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.AssemblyReference.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcode.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcodeA4.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.RptBarcodeVertical.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.RptBarcodeVerticals.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcodeV_01.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptRollPaper.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.Template.rptBarcodeVerticalCustomMod.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.xfmPriceOptions.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.XfmPrintBarcode.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Barcode.XucPrintBarcode.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCarAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCar.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Common.xucCarAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Common.xucCurrencyAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCurrencyAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCurrencys.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucCustomerGroupAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.XfmCustomerGroupAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.XfmCustomerGroups.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.Debt.XfmCustomerDebtImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmCustomersImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.usercontrol.Professional.XucCustomer.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucCustomerQuickAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.xfmCustomerAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Customer.XfmCustomers.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.XfmDelieveryRouteAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.DelieveryRoute.XfmDelieveryRoute.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucDelieveryRouteAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Department.usercontrol.XucDepartmentAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Department.XfmDepartmentAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Department.XfmDepartments.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucEmployee30Add.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Employee.XfmEmployeeAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmEmployees.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmHistory.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.History.XucHistory.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmIndustryAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmIndustry.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucIndustryAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmNotesAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmNotes.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Unit.TS.xucNotes.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucNotesAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.xfmProductBrandAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.CustomerGroup.xfmProductBrand.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucProductBrandAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.ProductGroup.usercontrol.XucProductGroup.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.ProductGroup.usercontrol.XucProductGroupAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.ProductGroup.XfmProductGroupAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProductGroups.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProductGroupImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucItemA.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.XucItemAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmItemAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProducts.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product._502.TS.xfmProUnit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product._502.TS.xucProUnit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmChangeProduct.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmMergeProduct.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmGroupChanged.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmItemImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmItemSearch.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Product.xfmProductDelete.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Properties.Resources.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Provider.Debt.XfmProviderDebtImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProviderImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Provider.usercontrol.Professional.XucProvider.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucProviderQuickAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProviderAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmProviders.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucStockAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmStocksImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmStockAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.Stock.XfmStocks.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xucUnitAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmUnitImport.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmUnitAdd.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.xfmUnits.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.UI.UBarcode.XucBaseBarcode.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.GenerateResource.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.dll.licenses
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.CoreCompileInputs.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.csproj.CopyComplete
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Dictionary\Perfect.Dictionary\obj\Debug\Perfect.Dictionary.pdb

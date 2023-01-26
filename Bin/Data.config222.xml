@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <SERVER>
+    <server>.\sql2005express</server>
+    <auth>0</auth>
+    <user>ixBfMQVJ1RnqGw16rrfXwg==</user>
+    <pass>Jg5crcqa9cUy1MBpVLAgUBDWOjgh8l5b</pass>
+    <database>hongdanhbl</database>
+    <ConnectString>74Lh+6TsfxbnnQLDECC/HwtUNsuOpHtFJepxj0GNyWhEQvbFBvnfd1lV7YK5h7N4yHiRGWysI+EdrBzgQDbM47ed+LWXA8MVK4g322Nm46yoBTWm/NQlkg==</ConnectString>
+  </SERVER>
+</NewDataSet>

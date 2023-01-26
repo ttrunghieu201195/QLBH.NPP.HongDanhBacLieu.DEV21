@@ -1,0 +1,4 @@
+<?xml version="1.0" standalone="yes"?>
+<Config>
+  <SQL ConnectionString="data source=ULTRABOOK\PERFECT;integrated security=SSPI;Initial Catalog=master;" />
+</Config>

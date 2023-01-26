@@ -1,0 +1,61 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="5">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Width">60</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Name">colCurrency_ID</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Width">180</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Name">colCurrencyName</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Width">150</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Name">colExchange</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Width">80</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">3</property>
+      <property name="Name">colActive</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Width">20</property>
+      <property name="VisibleIndex">-1</property>
+      <property name="Name">colActiveInt</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowFooter">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ShowDetailButtons">false</property>
+    <property name="ShowBands">false</property>
+    <property name="HeaderFilterButtonShowMode">Button</property>
+    <property name="ColumnAutoWidth">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+  </property>
+  <property name="Bands" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Columns" iskey="true" value="5">
+        <property name="Item1">colActiveInt</property>
+        <property name="Item2">colCurrency_ID</property>
+        <property name="Item3">colCurrencyName</property>
+        <property name="Item4">colExchange</property>
+        <property name="Item5">colActive</property>
+      </property>
+      <property name="Name">gridBand1</property>
+      <property name="Children" iskey="true" value="0" />
+      <property name="Width">470</property>
+    </property>
+  </property>
+  <property name="SortInfo">~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAFtEZXZFeHByZXNzLlh0cmFHcmlkLnY5LjMsIFZlcnNpb249OS4zLjMuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iODhkMTc1NGQ3MDBlNDlhBQEAAAA4RGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mb0NvbGxlY3Rpb24CAAAACmdyb3VwQ291bnQTQ29sbGVjdGlvbkJhc2UrbGlzdAADCBxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AgAAAAAAAAAJAwAAAAQDAAAAHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QDAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgUAAAgICQQAAAABAAAADAAAABAEAAAABAAAAAkFAAAADQMMBgAAABhEZXZFeHByZXNzLlh0cmFHcmlkLnY5LjMFBQAAAC5EZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvAgAAAAlTb3J0T3JkZXIKQ29sdW1uTmFtZQABCAYAAAACAAAABgcAAAAOY29sQ3VycmVuY3lfSUQL</property>
+  <property name="ActiveFilterString" />
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

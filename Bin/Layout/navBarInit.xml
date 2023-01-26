@@ -1,0 +1,324 @@
+﻿<XtraSerializer version="1.0" application="NavBarControl">
+  <property name="#LayoutVersion" />
+  <property name="ExplorerBarGroupInterval">-1</property>
+  <property name="ExplorerBarGroupOuterIndent">-1</property>
+  <property name="SkinExplorerBarViewScrollStyle">Default</property>
+  <property name="ExplorerBarShowGroupButtons">true</property>
+  <property name="NavigationPaneOverflowPanelUseSmallImages">true</property>
+  <property name="NavigationPaneMaxVisibleGroups">-1</property>
+  <property name="ShowGroupHint">true</property>
+  <property name="ShowLinkHint">true</property>
+  <property name="DragDropFlags">AllowDrag, AllowDrop</property>
+  <property name="LinkInterval">-1</property>
+  <property name="NavigationPaneGroupClientHeight">100</property>
+  <property name="SelectLinkOnPress">true</property>
+  <property name="Items" iskey="true" value="15">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">IInventory</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">1</property>
+      <property name="Visible">false</property>
+      <property name="Caption">Tồn Kho</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">ICustomerInit</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">9</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Khách Hàng</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">IProviderInit</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">9</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Nhà Cung Cấp</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">IEmployeeInit</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">6</property>
+      <property name="Visible">false</property>
+      <property name="Caption">Nhân Viên</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">false</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">ICashInit</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">9</property>
+      <property name="Visible">false</property>
+      <property name="Caption">Quỹ Tiền</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">false</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">IProduct</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Hàng Hoá</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">ICustomer</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Khách Hàng</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Name">IProvider</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Nhà Cung Cấp</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Name">IEmployee</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">6</property>
+      <property name="Visible">false</property>
+      <property name="Caption">Thêm Nhân Viên</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">false</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Name">ICash</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">9</property>
+      <property name="Visible">false</property>
+      <property name="Caption">Thêm Quỹ Tiền</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">false</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Name">niProductInit</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Tồn Kho</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Name">niImportExcel</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">12</property>
+      <property name="Visible">false</property>
+      <property name="Caption">Nhập từ Excel</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Name">niList</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">11</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Theo Kỳ</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Name">niListProduct</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">11</property>
+      <property name="Visible">true</property>
+      <property name="Caption">Theo Hàng Hoá</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Name">niExcelFile</property>
+      <property name="CanDrag">true</property>
+      <property name="SmallImageIndex">10</property>
+      <property name="Visible">true</property>
+      <property name="Caption">File Excel Mẫu</property>
+      <property name="StyleDisabledName" />
+      <property name="Tag" isnull="true" />
+      <property name="Enabled">true</property>
+      <property name="LargeImageIndex">-1</property>
+    </property>
+  </property>
+  <property name="BorderStyle">Default</property>
+  <property name="ActiveGroupName">navBarGroup1</property>
+  <property name="AllowSelectedLink">false</property>
+  <property name="EachGroupHasSelectedLink">false</property>
+  <property name="Groups" iskey="true" value="4">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="GroupCaptionUseImage">Default</property>
+      <property name="ItemLinks" iskey="true" value="3">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">niProductInit</property>
+        </property>
+        <property name="Item2" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">IInventory</property>
+        </property>
+        <property name="Item3" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">niImportExcel</property>
+        </property>
+      </property>
+      <property name="Name">navInventoryInit</property>
+      <property name="Caption">Tồn Kho Đầu Kỳ</property>
+      <property name="LargeImageIndex">-1</property>
+      <property name="Tag" isnull="true" />
+      <property name="Visible">true</property>
+      <property name="Expanded">false</property>
+      <property name="SmallImageIndex">-1</property>
+      <property name="ControlContainerName" />
+      <property name="GroupClientHeight">-1</property>
+      <property name="GroupStyle">Default</property>
+      <property name="NavigationPaneVisible">true</property>
+      <property name="DragDropFlags">Default</property>
+      <property name="SelectedLinkIndex">-1</property>
+      <property name="TopVisibleLinkIndex">0</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="GroupCaptionUseImage">Default</property>
+      <property name="ItemLinks" iskey="true" value="2">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">niList</property>
+        </property>
+        <property name="Item2" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">niListProduct</property>
+        </property>
+      </property>
+      <property name="Name">navBarGroup1</property>
+      <property name="Caption">Bảng Kê</property>
+      <property name="LargeImageIndex">-1</property>
+      <property name="Tag" isnull="true" />
+      <property name="Visible">true</property>
+      <property name="Expanded">true</property>
+      <property name="SmallImageIndex">-1</property>
+      <property name="ControlContainerName" />
+      <property name="GroupClientHeight">-1</property>
+      <property name="GroupStyle">Default</property>
+      <property name="NavigationPaneVisible">true</property>
+      <property name="DragDropFlags">Default</property>
+      <property name="SelectedLinkIndex">-1</property>
+      <property name="TopVisibleLinkIndex">0</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="GroupCaptionUseImage">Default</property>
+      <property name="ItemLinks" iskey="true" value="4">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">ICustomerInit</property>
+        </property>
+        <property name="Item2" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">IProviderInit</property>
+        </property>
+        <property name="Item3" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">IEmployeeInit</property>
+        </property>
+        <property name="Item4" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">ICashInit</property>
+        </property>
+      </property>
+      <property name="Name">IGInit</property>
+      <property name="Caption">Công Nợ Đầu Kỳ</property>
+      <property name="LargeImageIndex">-1</property>
+      <property name="Tag" isnull="true" />
+      <property name="Visible">true</property>
+      <property name="Expanded">false</property>
+      <property name="SmallImageIndex">-1</property>
+      <property name="ControlContainerName" />
+      <property name="GroupClientHeight">-1</property>
+      <property name="GroupStyle">Default</property>
+      <property name="NavigationPaneVisible">true</property>
+      <property name="DragDropFlags">Default</property>
+      <property name="SelectedLinkIndex">-1</property>
+      <property name="TopVisibleLinkIndex">0</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="GroupCaptionUseImage">Default</property>
+      <property name="ItemLinks" iskey="true" value="6">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">IProduct</property>
+        </property>
+        <property name="Item2" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">ICustomer</property>
+        </property>
+        <property name="Item3" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">IProvider</property>
+        </property>
+        <property name="Item4" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">IEmployee</property>
+        </property>
+        <property name="Item5" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">ICash</property>
+        </property>
+        <property name="Item6" isnull="true" iskey="true">
+          <property name="VisibleCore">true</property>
+          <property name="ItemName">niExcelFile</property>
+        </property>
+      </property>
+      <property name="Name">IGDictionary</property>
+      <property name="Caption">Thêm Danh Mục</property>
+      <property name="LargeImageIndex">-1</property>
+      <property name="Tag" isnull="true" />
+      <property name="Visible">true</property>
+      <property name="Expanded">false</property>
+      <property name="SmallImageIndex">-1</property>
+      <property name="ControlContainerName" />
+      <property name="GroupClientHeight">-1</property>
+      <property name="GroupStyle">Default</property>
+      <property name="NavigationPaneVisible">true</property>
+      <property name="DragDropFlags">Default</property>
+      <property name="SelectedLinkIndex">-1</property>
+      <property name="TopVisibleLinkIndex">0</property>
+    </property>
+  </property>
+</XtraSerializer>

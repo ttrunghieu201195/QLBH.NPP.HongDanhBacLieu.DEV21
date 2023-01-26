@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsStock_Card" targetNamespace="http://tempuri.org/dsStock_Card.xsd" xmlns:mstns="http://tempuri.org/dsStock_Card.xsd" xmlns="http://tempuri.org/dsStock_Card.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_Sale_2_9_1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_Sale_2_9_1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERP_Sale_2_9_1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="STOCK_CARDTableAdapter" GeneratorDataComponentClassName="STOCK_CARDTableAdapter" Name="STOCK_CARD" UserDataComponentName="STOCK_CARDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ERP_Sale_2_9_1ConnectionString (Settings)" DbObjectName="SELECT a.Stock_ID, a.Product_ID, a.Unit, SUM(a.RealQuantity) AS E_Quantity FROM ( SELECT id2.Stock_ID, id2.Product_ID, /*       id.Serial,*/ id2.Unit, CASE id2.RefStatus WHEN 1 THEN id2.Quantity ELSE (id2.Quantity * -1) END AS RealQuantity FROM INVENTORY_DETAIL id2 /*                                        AND id2.Stock_ID = @StockId*/ )a GROUP BY /*       a.Serial,*/ a.Product_ID, a.Unit, a.Stock_ID" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT CAST(NULL AS BIGINT) AS ID,
+       CAST(NULL AS VARCHAR(20)) AS RefNo,
+       CAST(NULL AS VARCHAR(20)) AS InRefNo,
+       CAST(NULL AS VARCHAR(20)) AS OutRefNo,
+       CAST('1/1/1753' AS DATETIME) AS RefDate,
+       CAST(NULL AS DATETIME) AS RefDateShow,
+       CAST(NULL AS BIGINT) AS RefType,
+       CAST(NULL AS BIGINT) AS RefStatus,
+       A.Stock_ID,
+       A.Product_ID,
+       CAST(NULL AS NVARCHAR(50)) AS Batch,	-- a.Batch,
+       CAST(NULL AS VARCHAR(50)) AS Serial,	-- a.Serial,
+       A.Unit,
+       CAST(NULL AS MONEY) AS Price,
+       CAST(NULL AS MONEY) AS Quantity,
+       CAST(NULL AS MONEY) AS UnitPrice,
+       CAST(NULL AS MONEY) AS Amount,
+       CAST(NULL AS MONEY) AS InQuantity,
+       CAST(NULL AS MONEY) AS OutQuantity,
+       A.E_Quantity AS RealQuantity,
+       A.E_Quantity AS E_Quantity,
+       CAST(-1 AS BIGINT) AS Sorted,
+       CAST(NULL AS NVARCHAR(250)) AS Product_Name,
+       CAST(NULL AS NVARCHAR(250)) AS Unit_Name,
+       CAST(NULL AS NVARCHAR(250)) AS [Description],
+       CAST(NULL AS NVARCHAR(250)) AS Stock_Name,
+       CAST(NULL AS NVARCHAR(250)) AS ReftypeName
+FROM   (
+           SELECT a.Stock_ID,
+                  a.Product_ID,
+                  a.Unit,
+                  SUM(a.RealQuantity) AS E_Quantity
+           FROM   (
+                      SELECT id2.Stock_ID,
+                             id2.Product_ID,
+                             --       id.Batch,
+                             --       id.Serial,
+                             id2.Unit,
+                             CASE id2.RefStatus
+                                  WHEN 1 THEN id2.Quantity
+                                  ELSE (id2.Quantity * -1)
+                             END AS RealQuantity
+                      FROM   INVENTORY_DETAIL id2
+                             --                                 WHERE  (
+                             --                                            DATEDIFF(DAY, @Fromdate, id2.RefDate)
+                             --                                            &lt; 0
+                             --                                            OR id2.RefType = 0
+                             --                                        )
+                             --                                        AND id2.Stock_ID = @StockId
+                  )a
+           GROUP BY
+                  --       a.Batch,
+                  --       a.Serial,
+                  a.Product_ID,
+                  a.Unit,
+                  a.Stock_ID
+       )A</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="RefNo" DataSetColumn="RefNo" />
+              <Mapping SourceColumn="RefDate" DataSetColumn="RefDate" />
+              <Mapping SourceColumn="Stock_ID" DataSetColumn="Stock_ID" />
+              <Mapping SourceColumn="Product_ID" DataSetColumn="Product_ID" />
+              <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
+              <Mapping SourceColumn="Batch" DataSetColumn="Batch" />
+              <Mapping SourceColumn="Serial" DataSetColumn="Serial" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Sorted" DataSetColumn="Sorted" />
+              <Mapping SourceColumn="InRefNo" DataSetColumn="InRefNo" />
+              <Mapping SourceColumn="OutRefNo" DataSetColumn="OutRefNo" />
+              <Mapping SourceColumn="RefDateShow" DataSetColumn="RefDateShow" />
+              <Mapping SourceColumn="RefType" DataSetColumn="RefType" />
+              <Mapping SourceColumn="RefStatus" DataSetColumn="RefStatus" />
+              <Mapping SourceColumn="InQuantity" DataSetColumn="InQuantity" />
+              <Mapping SourceColumn="OutQuantity" DataSetColumn="OutQuantity" />
+              <Mapping SourceColumn="RealQuantity" DataSetColumn="RealQuantity" />
+              <Mapping SourceColumn="E_Quantity" DataSetColumn="E_Quantity" />
+              <Mapping SourceColumn="Unit_Name" DataSetColumn="Unit_Name" />
+              <Mapping SourceColumn="Stock_Name" DataSetColumn="Stock_Name" />
+              <Mapping SourceColumn="ReftypeName" DataSetColumn="ReftypeName" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ERP_Sale_2_9_1ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillAllProduct" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillAllProduct" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillAllProduct">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>--DECLARE @Fromdate DATETIME
+--DECLARE @Todate DATETIME
+--DECLARE @StockId VARCHAR(20)
+--
+--SET @Fromdate = '7/16/2012'
+--SET @Todate = '12/31/2012'
+--SET @StockId = 'K000001'
+
+
+DECLARE @AnotherTbl TABLE(
+            ID INT NULL,
+            RefNo VARCHAR(20) NULL,
+            RefDate DATETIME NULL,
+            RefType INT NULL,
+            RefStatus INT NULL,
+            Stock_ID VARCHAR(20) NULL,
+            Product_ID VARCHAR(20) NULL,
+            Batch NVARCHAR(20) NULL,
+            Serial VARCHAR(50) NULL,
+            Unit NVARCHAR(50) NULL,
+            Price MONEY NULL,
+            Quantity MONEY NULL,
+            UnitPrice MONEY NULL,
+            Amount MONEY NULL,
+            InQuantity MONEY NULL,
+            OutQuantity MONEY NULL,
+            RealQuantity MONEY NULL,
+            E_Quantity MONEY NULL,
+            Sorted BIGINT NULL
+        )
+
+DECLARE cs2 CURSOR  
+FOR
+    SELECT *
+    FROM   (
+               SELECT CAST(NULL AS BIGINT) AS ID,
+                      CAST(NULL AS VARCHAR(20)) AS RefNo,
+                      CAST('1/1/1753' AS DATETIME) AS RefDate,
+                      CAST(NULL AS BIGINT) AS RefType,
+                      CAST(NULL AS BIGINT) AS RefStatus,
+                      A.Stock_ID,
+                      A.Product_ID,
+                      CAST(NULL AS NVARCHAR(50)) AS Batch,	-- a.Batch,
+                      CAST(NULL AS VARCHAR(50)) AS Serial,	-- a.Serial,
+                      A.Unit,
+                      CAST(NULL AS MONEY) AS Price,
+                      CAST(NULL AS MONEY) AS Quantity,
+                      CAST(NULL AS MONEY) AS UnitPrice,
+                      CAST(NULL AS MONEY) AS Amount,
+                      CAST(NULL AS MONEY) AS InQuantity,
+                      CAST(NULL AS MONEY) AS OutQuantity,
+                      A.E_Quantity AS RealQuantity,
+                      A.E_Quantity AS E_Quantity,
+                      CAST(-1 AS BIGINT) AS Sorted
+               FROM   (
+                          SELECT a.Stock_ID,
+                                 a.Product_ID,
+                                 a.Unit,
+                                 SUM(a.RealQuantity) AS E_Quantity
+                          FROM   (
+                                     SELECT id2.Stock_ID,
+                                            id2.Product_ID,
+                                            --       id.Batch,
+                                            --       id.Serial,
+                                            id2.Unit,
+                                            CASE id2.RefStatus
+                                                 WHEN 1 THEN id2.Quantity
+                                                 ELSE (id2.Quantity * -1)
+                                            END AS RealQuantity
+                                     FROM   INVENTORY_DETAIL id2
+                                     WHERE  (
+                                                DATEDIFF(DAY, @Fromdate, id2.RefDate) 
+                                                &lt; 0
+                                                OR id2.RefType = 0
+                                            )
+                                            AND id2.Stock_ID = @StockId
+                                 )a
+                          GROUP BY
+                                 --       a.Batch,
+                                 --       a.Serial,
+                                 a.Product_ID,
+                                 a.Unit,
+                                 a.Stock_ID
+                      )A
+               
+               UNION ALL
+               
+               SELECT id.ID,
+                      id.RefNo,
+                      id.RefDate,
+                      id.RefType,
+                      id.RefStatus,
+                      id.Stock_ID,
+                      id.Product_ID,
+                      id.Batch,
+                      id.Serial,
+                      id.Unit,
+                      id.Price,
+                      id.Quantity,
+                      id.UnitPrice,
+                      id.Amount,
+                      CASE id.RefStatus
+                           WHEN 1 THEN id.Quantity
+                           ELSE CAST(NULL AS MONEY)
+                      END AS InQuantity,
+                      CASE id.RefStatus
+                           WHEN 2 THEN id.Quantity
+                           ELSE CAST(NULL AS MONEY)
+                      END AS OutQuantity,
+                      CASE id.RefStatus
+                           WHEN 1 THEN id.Quantity
+                           ELSE (id.Quantity * -1)
+                      END AS RealQuantity,
+                      CAST(NULL AS MONEY) AS E_Quantity,
+                      id.Sorted
+               FROM   INVENTORY_DETAIL id
+               WHERE  DATEDIFF(DAY, @Fromdate, id.RefDate) &gt;= 0
+                      AND DATEDIFF(DAY, @Todate, id.RefDate) &lt;= 0
+                      AND id.RefType != 0
+                      AND id.Stock_ID = @StockId
+                          --ORDER BY
+                          --       id.Product_ID ASC,
+                          --       id.RefDate ASC,
+                          --       id.Sorted ASC
+           )STOCK_CARD
+    ORDER BY
+           STOCK_CARD.Product_ID ASC,
+           STOCK_CARD.RefDate ASC,
+           STOCK_CARD.Sorted ASC
+
+OPEN cs2    
+
+DECLARE @ID BIGINT    
+DECLARE @RefNo VARCHAR(20)    
+DECLARE @RefDate DATETIME
+DECLARE @RefType INT
+DECLARE @RefStatus INT
+DECLARE @Stock_ID VARCHAR(20)    
+DECLARE @Product_ID VARCHAR(20)    
+DECLARE @Batch NVARCHAR(50)
+DECLARE @Serial VARCHAR(50)
+DECLARE @Unit NVARCHAR(50)
+DECLARE @Price MONEY    
+DECLARE @Quantity MONEY    
+DECLARE @UnitPrice MONEY
+DECLARE @Amount MONEY
+DECLARE @InQuantity MONEY
+DECLARE @OutQuantity INT    
+DECLARE @RealQuantity MONEY    
+DECLARE @E_Quantity MONEY
+DECLARE @Temp VARCHAR(250)
+DECLARE @Sorted BIGINT
+
+DECLARE @Product_ID_Temp VARCHAR(20)
+SET @Product_ID_Temp = ''
+
+DECLARE @E_total MONEY
+SET @E_total = 0
+    
+FETCH NEXT FROM cs2 INTO @ID,@RefNo,@RefDate,@RefType,@RefStatus,@Stock_ID,
+@Product_ID,
+@Batch,
+@Serial,@Unit,@Price,@Quantity,@UnitPrice,@Amount,@InQuantity,@OutQuantity,@RealQuantity,
+@E_Quantity,@Sorted
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    IF (@Product_ID_Temp = @Product_ID)
+    BEGIN
+        SET @E_total = @E_total + @RealQuantity
+    END
+    ELSE
+    BEGIN
+        SET @E_total = @RealQuantity
+    END
+    SET @Product_ID_Temp = @Product_ID
+    INSERT INTO @AnotherTbl
+      (
+        ID,
+        RefNo,
+        RefDate,
+        RefType,
+        RefStatus,
+        Stock_ID,
+        Product_ID,
+        Batch,
+        Serial,
+        Unit,
+        Price,
+        Quantity,
+        UnitPrice,
+        Amount,
+        InQuantity,
+        OutQuantity,
+        RealQuantity,
+        E_Quantity,
+        Sorted
+      )
+    VALUES
+      (
+        @ID,
+        @RefNo,
+        @RefDate,
+        @RefType,
+        @RefStatus,
+        @Stock_ID,
+        @Product_ID,
+        @Batch,
+        @Serial,
+        @Unit,
+        @Price,
+        @Quantity,
+        @UnitPrice,
+        @Amount,
+        @InQuantity,
+        @OutQuantity,
+        @RealQuantity,
+        @E_total,
+        @Sorted
+      )
+    
+    FETCH NEXT FROM cs2 INTO @ID,@RefNo,@RefDate,@RefType,@RefStatus,
+    @Stock_ID,@Product_ID,
+    @Batch,
+    @Serial,@Unit,@Price,@Quantity,@UnitPrice,@Amount,@InQuantity,@OutQuantity,@RealQuantity,
+    @E_Quantity,@Sorted
+END    
+CLOSE cs2    
+DEALLOCATE cs2 
+
+SELECT TB.ID,
+       TB.RefNo,
+       CASE TB.RefStatus
+            WHEN 1 THEN TB.RefNo
+            ELSE CAST(NULL AS VARCHAR(20))
+       END AS InRefNo,
+       CASE TB.RefStatus
+            WHEN 2 THEN TB.RefNo
+            ELSE CAST(NULL AS VARCHAR(20))
+       END AS OutRefNo,
+       TB.RefDate,
+       CASE 
+            WHEN TB.ID IS NULL THEN CAST(NULL AS DATETIME)
+            ELSE TB.RefDate
+       END AS RefDateShow,
+       TB.RefType,
+       TB.RefStatus,
+       TB.Stock_ID,
+       TB.Product_ID,
+       TB.Batch,
+       TB.Serial,
+       TB.Unit,
+       TB.Price,
+       TB.Quantity,
+       TB.UnitPrice,
+       TB.Amount,
+       TB.InQuantity,
+       TB.OutQuantity,
+       TB.RealQuantity,
+       TB.E_Quantity,
+       TB.Sorted,
+       p.Product_Name,
+       u.Unit_Name,
+       CASE 
+            WHEN TB.ID IS NULL THEN N'Tồn đầu kỳ'
+            ELSE tr.[Description]
+       END AS [Description],
+       s.Stock_Name,
+       r.[Name] AS RefTypeName
+FROM   @AnotherTbl TB
+       LEFT OUTER JOIN PRODUCT p
+            ON  TB.Product_ID = p.Product_ID
+       LEFT OUTER JOIN UNIT u
+            ON  TB.Unit = u.Unit_ID
+       LEFT OUTER JOIN TRANS_REF tr
+            ON  TB.RefNo = tr.RefID
+            AND TB.RefType = tr.RefType
+       LEFT OUTER JOIN STOCK s
+            ON  TB.Stock_ID = s.Stock_ID
+       LEFT OUTER JOIN REFTYPE r
+            ON TB.RefType = r.ID
+ORDER BY
+       TB.Product_ID,
+       TB.RefDate,
+       Tb.Sorted</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fromdate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Todate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@StockId" Precision="0" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ERP_Sale_2_9_1ConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillOneProduct" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy1" GeneratorSourceName="FillOneProduct" GetMethodModifier="Public" GetMethodName="GetDataBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillOneProduct">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>
+--DECLARE @Fromdate DATETIME
+--DECLARE @Todate DATETIME
+--DECLARE @StockId VARCHAR(20)
+--DECLARE @ProductId VARCHAR(20)
+--DECLARE @ProductNAME NVARCHAR(250)
+--
+--SET @Fromdate = '7/16/2012'
+--SET @Todate = '12/31/2012'
+--SET @StockId = 'K000001'
+--SET @ProductId = 'HH000001'
+--SET @ProductNAME = N'Thuốc cảm'
+
+
+DECLARE @AnotherTbl TABLE(
+            ID INT NULL,
+            RefNo VARCHAR(20) NULL,
+            RefDate DATETIME NULL,
+            RefType INT NULL,
+            RefStatus INT NULL,
+            Stock_ID VARCHAR(20) NULL,
+            Product_ID VARCHAR(20) NULL,
+            Batch NVARCHAR(20) NULL,
+            Serial VARCHAR(50) NULL,
+            Unit NVARCHAR(50) NULL,
+            Price MONEY NULL,
+            Quantity MONEY NULL,
+            UnitPrice MONEY NULL,
+            Amount MONEY NULL,
+            InQuantity MONEY NULL,
+            OutQuantity MONEY NULL,
+            RealQuantity MONEY NULL,
+            E_Quantity MONEY NULL,
+            Sorted BIGINT NULL
+        )
+
+DECLARE cs2 CURSOR  
+FOR
+    SELECT *
+    FROM   (
+               SELECT CAST(NULL AS BIGINT) AS ID,
+                      CAST(NULL AS VARCHAR(20)) AS RefNo,
+                      CAST('1/1/1753' AS DATETIME) AS RefDate,
+                      CAST(NULL AS BIGINT) AS RefType,
+                      CAST(NULL AS BIGINT) AS RefStatus,
+                      A.Stock_ID,
+                      A.Product_ID,
+                      CAST(NULL AS NVARCHAR(50)) AS Batch,	-- a.Batch,
+                      CAST(NULL AS VARCHAR(50)) AS Serial,	-- a.Serial,
+                      A.Unit,
+                      CAST(NULL AS MONEY) AS Price,
+                      CAST(NULL AS MONEY) AS Quantity,
+                      CAST(NULL AS MONEY) AS UnitPrice,
+                      CAST(NULL AS MONEY) AS Amount,
+                      CAST(NULL AS MONEY) AS InQuantity,
+                      CAST(NULL AS MONEY) AS OutQuantity,
+                      A.E_Quantity AS RealQuantity,
+                      A.E_Quantity AS E_Quantity,
+                      CAST(-1 AS BIGINT) AS Sorted
+               FROM   (
+                          SELECT a.Stock_ID,
+                                 a.Product_ID,
+                                 a.Unit,
+                                 SUM(a.RealQuantity) AS E_Quantity
+                          FROM   (
+                                     SELECT id2.Stock_ID,
+                                            id2.Product_ID,
+                                            --       id.Batch,
+                                            --       id.Serial,
+                                            id2.Unit,
+                                            CASE id2.RefStatus
+                                                 WHEN 1 THEN id2.Quantity
+                                                 ELSE (id2.Quantity * -1)
+                                            END AS RealQuantity
+                                     FROM   INVENTORY_DETAIL id2
+                                     WHERE  (
+                                                DATEDIFF(DAY, @Fromdate, id2.RefDate) 
+                                                &lt; 0
+                                                OR id2.RefType = 0
+                                            )
+                                            AND id2.Stock_ID = @StockId
+                                            AND id2.Product_ID LIKE  @ProductId
+                                            AND id2.Product_Name LIKE @ProductNAME
+                                 )a
+                          GROUP BY
+                                 --       a.Batch,
+                                 --       a.Serial,
+                                 a.Product_ID,
+                                 a.Unit,
+                                 a.Stock_ID
+                      )A
+               
+               UNION ALL
+               
+               SELECT id.ID,
+                      id.RefNo,
+                      id.RefDate,
+                      id.RefType,
+                      id.RefStatus,
+                      id.Stock_ID,
+                      id.Product_ID,
+                      id.Batch,
+                      id.Serial,
+                      id.Unit,
+                      id.Price,
+                      id.Quantity,
+                      id.UnitPrice,
+                      id.Amount,
+                      CASE id.RefStatus
+                           WHEN 1 THEN id.Quantity
+                           ELSE CAST(NULL AS MONEY)
+                      END AS InQuantity,
+                      CASE id.RefStatus
+                           WHEN 2 THEN id.Quantity
+                           ELSE CAST(NULL AS MONEY)
+                      END AS OutQuantity,
+                      CASE id.RefStatus
+                           WHEN 1 THEN id.Quantity
+                           ELSE (id.Quantity * -1)
+                      END AS RealQuantity,
+                      CAST(NULL AS MONEY) AS E_Quantity,
+                      id.Sorted
+               FROM   INVENTORY_DETAIL id
+               WHERE  DATEDIFF(DAY, @Fromdate, id.RefDate) &gt;= 0
+                      AND DATEDIFF(DAY, @Todate, id.RefDate) &lt;= 0
+                      AND id.RefType != 0
+                      AND id.Stock_ID = @StockId
+                      AND id.Product_ID LIKE @ProductId
+                      AND id.Product_Name LIKE @ProductNAME
+                          --ORDER BY
+                          --       id.Product_ID ASC,
+                          --       id.RefDate ASC,
+                          --       id.Sorted ASC
+           )STOCK_CARD
+    ORDER BY
+           STOCK_CARD.Product_ID ASC,
+           STOCK_CARD.RefDate ASC,
+           STOCK_CARD.Sorted ASC
+
+OPEN cs2    
+
+DECLARE @ID BIGINT    
+DECLARE @RefNo VARCHAR(20)    
+DECLARE @RefDate DATETIME
+DECLARE @RefType INT
+DECLARE @RefStatus INT
+DECLARE @Stock_ID VARCHAR(20)    
+DECLARE @Product_ID VARCHAR(20)    
+DECLARE @Batch NVARCHAR(50)
+DECLARE @Serial VARCHAR(50)
+DECLARE @Unit NVARCHAR(50)
+DECLARE @Price MONEY    
+DECLARE @Quantity MONEY    
+DECLARE @UnitPrice MONEY
+DECLARE @Amount MONEY
+DECLARE @InQuantity MONEY
+DECLARE @OutQuantity INT    
+DECLARE @RealQuantity MONEY    
+DECLARE @E_Quantity MONEY
+DECLARE @Temp VARCHAR(250)
+DECLARE @Sorted BIGINT
+
+DECLARE @Product_ID_Temp VARCHAR(20)
+SET @Product_ID_Temp = ''
+
+DECLARE @E_total MONEY
+SET @E_total = 0
+    
+FETCH NEXT FROM cs2 INTO @ID,@RefNo,@RefDate,@RefType,@RefStatus,@Stock_ID,
+@Product_ID,
+@Batch,
+@Serial,@Unit,@Price,@Quantity,@UnitPrice,@Amount,@InQuantity,@OutQuantity,@RealQuantity,
+@E_Quantity,@Sorted
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    IF (@Product_ID_Temp = @Product_ID)
+    BEGIN
+        SET @E_total = @E_total + @RealQuantity
+    END
+    ELSE
+    BEGIN
+        SET @E_total = @RealQuantity
+    END
+    SET @Product_ID_Temp = @Product_ID
+    INSERT INTO @AnotherTbl
+      (
+        ID,
+        RefNo,
+        RefDate,
+        RefType,
+        RefStatus,
+        Stock_ID,
+        Product_ID,
+        Batch,
+        Serial,
+        Unit,
+        Price,
+        Quantity,
+        UnitPrice,
+        Amount,
+        InQuantity,
+        OutQuantity,
+        RealQuantity,
+        E_Quantity,
+        Sorted
+      )
+    VALUES
+      (
+        @ID,
+        @RefNo,
+        @RefDate,
+        @RefType,
+        @RefStatus,
+        @Stock_ID,
+        @Product_ID,
+        @Batch,
+        @Serial,
+        @Unit,
+        @Price,
+        @Quantity,
+        @UnitPrice,
+        @Amount,
+        @InQuantity,
+        @OutQuantity,
+        @RealQuantity,
+        @E_total,
+        @Sorted
+      )
+    
+    FETCH NEXT FROM cs2 INTO @ID,@RefNo,@RefDate,@RefType,@RefStatus,
+    @Stock_ID,@Product_ID,
+    @Batch,
+    @Serial,@Unit,@Price,@Quantity,@UnitPrice,@Amount,@InQuantity,@OutQuantity,@RealQuantity,
+    @E_Quantity,@Sorted
+END    
+CLOSE cs2    
+DEALLOCATE cs2 
+
+SELECT TB.ID,
+       TB.RefNo,
+       CASE TB.RefStatus
+            WHEN 1 THEN TB.RefNo
+            ELSE CAST(NULL AS VARCHAR(20))
+       END AS InRefNo,
+       CASE TB.RefStatus
+            WHEN 2 THEN TB.RefNo
+            ELSE CAST(NULL AS VARCHAR(20))
+       END AS OutRefNo,
+       TB.RefDate,
+       CASE 
+            WHEN TB.ID IS NULL THEN CAST(NULL AS DATETIME)
+            ELSE TB.RefDate
+       END AS RefDateShow,
+       TB.RefType,
+       TB.RefStatus,
+       TB.Stock_ID,
+       TB.Product_ID,
+       TB.Batch,
+       TB.Serial,
+       TB.Unit,
+       TB.Price,
+       TB.Quantity,
+       TB.UnitPrice,
+       TB.Amount,
+       TB.InQuantity,
+       TB.OutQuantity,
+       TB.RealQuantity,
+       TB.E_Quantity,
+       TB.Sorted,
+       p.Product_Name,
+       u.Unit_Name,
+       CASE 
+            WHEN TB.ID IS NULL THEN N'Tồn đầu kỳ'
+            ELSE tr.[Description]
+       END AS [Description],
+       s.Stock_Name,
+       r.[Name] AS RefTypeName
+FROM   @AnotherTbl TB
+       LEFT OUTER JOIN PRODUCT p
+            ON  TB.Product_ID = p.Product_ID
+       LEFT OUTER JOIN UNIT u
+            ON  TB.Unit = u.Unit_ID
+       LEFT OUTER JOIN TRANS_REF tr
+            ON  TB.RefNo = tr.RefID
+            AND TB.RefType = tr.RefType
+       LEFT OUTER JOIN STOCK s
+            ON  TB.Stock_ID = s.Stock_ID
+       LEFT OUTER JOIN REFTYPE r
+            ON TB.RefType = r.ID
+ORDER BY
+       TB.Product_ID,
+       TB.RefDate,
+       Tb.Sorted</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Fromdate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Todate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@StockId" Precision="0" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ProductId" Precision="0" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ProductNAME" Precision="0" Scale="0" Size="0" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsStock_Card" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsStock_Card" msprop:Generator_UserDSName="dsStock_Card" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="STOCK_CARD" msprop:Generator_UserTableName="STOCK_CARD" msprop:Generator_RowDeletedName="STOCK_CARDRowDeleted" msprop:Generator_TableClassName="STOCK_CARDDataTable" msprop:Generator_RowChangedName="STOCK_CARDRowChanged" msprop:Generator_RowClassName="STOCK_CARDRow" msprop:Generator_RowChangingName="STOCK_CARDRowChanging" msprop:Generator_RowEvArgName="STOCK_CARDRowChangeEvent" msprop:Generator_RowEvHandlerName="STOCK_CARDRowChangeEventHandler" msprop:Generator_TablePropName="STOCK_CARD" msprop:Generator_TableVarName="tableSTOCK_CARD" msprop:Generator_RowDeletingName="STOCK_CARDRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="RefNo" msprop:Generator_UserColumnName="RefNo" msprop:Generator_ColumnPropNameInRow="RefNo" msprop:Generator_ColumnVarNameInTable="columnRefNo" msprop:Generator_ColumnPropNameInTable="RefNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefDate" msprop:Generator_UserColumnName="RefDate" msprop:Generator_ColumnPropNameInRow="RefDate" msprop:Generator_ColumnVarNameInTable="columnRefDate" msprop:Generator_ColumnPropNameInTable="RefDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Stock_ID" msprop:Generator_UserColumnName="Stock_ID" msprop:Generator_ColumnPropNameInRow="Stock_ID" msprop:Generator_ColumnVarNameInTable="columnStock_ID" msprop:Generator_ColumnPropNameInTable="Stock_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_ID" msprop:Generator_UserColumnName="Product_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_UserColumnName="Product_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Batch" msprop:Generator_UserColumnName="Batch" msprop:Generator_ColumnPropNameInRow="Batch" msprop:Generator_ColumnVarNameInTable="columnBatch" msprop:Generator_ColumnPropNameInTable="BatchColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Serial" msprop:Generator_UserColumnName="Serial" msprop:Generator_ColumnPropNameInRow="Serial" msprop:Generator_ColumnVarNameInTable="columnSerial" msprop:Generator_ColumnPropNameInTable="SerialColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInTable="UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitPrice" msprop:Generator_UserColumnName="UnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sorted" msprop:Generator_UserColumnName="Sorted" msprop:Generator_ColumnPropNameInRow="Sorted" msprop:Generator_ColumnVarNameInTable="columnSorted" msprop:Generator_ColumnPropNameInTable="SortedColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="InRefNo" msprop:Generator_UserColumnName="InRefNo" msprop:Generator_ColumnPropNameInRow="InRefNo" msprop:Generator_ColumnVarNameInTable="columnInRefNo" msprop:Generator_ColumnPropNameInTable="InRefNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OutRefNo" msprop:Generator_UserColumnName="OutRefNo" msprop:Generator_ColumnPropNameInRow="OutRefNo" msprop:Generator_ColumnVarNameInTable="columnOutRefNo" msprop:Generator_ColumnPropNameInTable="OutRefNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefDateShow" msprop:Generator_UserColumnName="RefDateShow" msprop:Generator_ColumnPropNameInRow="RefDateShow" msprop:Generator_ColumnVarNameInTable="columnRefDateShow" msprop:Generator_ColumnPropNameInTable="RefDateShowColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RefType" msprop:Generator_UserColumnName="RefType" msprop:Generator_ColumnPropNameInRow="RefType" msprop:Generator_ColumnVarNameInTable="columnRefType" msprop:Generator_ColumnPropNameInTable="RefTypeColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="RefStatus" msprop:Generator_UserColumnName="RefStatus" msprop:Generator_ColumnPropNameInRow="RefStatus" msprop:Generator_ColumnVarNameInTable="columnRefStatus" msprop:Generator_ColumnPropNameInTable="RefStatusColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="InQuantity" msprop:Generator_UserColumnName="InQuantity" msprop:Generator_ColumnPropNameInRow="InQuantity" msprop:Generator_ColumnVarNameInTable="columnInQuantity" msprop:Generator_ColumnPropNameInTable="InQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OutQuantity" msprop:Generator_UserColumnName="OutQuantity" msprop:Generator_ColumnPropNameInRow="OutQuantity" msprop:Generator_ColumnVarNameInTable="columnOutQuantity" msprop:Generator_ColumnPropNameInTable="OutQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RealQuantity" msprop:Generator_UserColumnName="RealQuantity" msprop:Generator_ColumnPropNameInRow="RealQuantity" msprop:Generator_ColumnVarNameInTable="columnRealQuantity" msprop:Generator_ColumnPropNameInTable="RealQuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="E_Quantity" msprop:Generator_UserColumnName="E_Quantity" msprop:Generator_ColumnPropNameInRow="E_Quantity" msprop:Generator_ColumnVarNameInTable="columnE_Quantity" msprop:Generator_ColumnPropNameInTable="E_QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Unit_Name" msprop:Generator_UserColumnName="Unit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stock_Name" msprop:Generator_UserColumnName="Stock_Name" msprop:Generator_ColumnPropNameInRow="Stock_Name" msprop:Generator_ColumnVarNameInTable="columnStock_Name" msprop:Generator_ColumnPropNameInTable="Stock_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReftypeName" msprop:Generator_UserColumnName="ReftypeName" msprop:Generator_ColumnPropNameInRow="ReftypeName" msprop:Generator_ColumnVarNameInTable="columnReftypeName" msprop:Generator_ColumnPropNameInTable="ReftypeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

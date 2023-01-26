@@ -1,0 +1,537 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22BFD379-2273-4605-822E-E1EE6121C7C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Perfect.Common</RootNamespace>
+    <AssemblyName>Perfect.Common</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2.Extensions, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Perfect.Data.SqlHelper, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Perfect.Data.SqlHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Perfect.Utils, Version=3.0.6.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Perfect.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\XProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\XProgressForm.designer.cs">
+      <DependentUpon>XProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBasicListP3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBasicListP3.designer.cs">
+      <DependentUpon>xucBasicListP3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseBasicB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseBasicB.Designer.cs">
+      <DependentUpon>xucBaseBasicB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBasicListL3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBasicListL3.designer.cs">
+      <DependentUpon>xucBasicListL3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBasicListP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBasicListP.designer.cs">
+      <DependentUpon>xucBasicListP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBasicListSearchProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBasicListSearchProduct.designer.cs">
+      <DependentUpon>xucBasicListSearchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucToolBar26.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucToolBar26.designer.cs">
+      <DependentUpon>xucToolBar26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseAdd26.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseAdd26.designer.cs">
+      <DependentUpon>xucBaseAdd26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseBasicA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseBasicA.Designer.cs">
+      <DependentUpon>xucBaseBasicA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseBarD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseBarD.Designer.cs">
+      <DependentUpon>xucBaseBarD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucToolBarD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucToolBarD.designer.cs">
+      <DependentUpon>xucToolBarD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseBarS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseBarS.Designer.cs">
+      <DependentUpon>xucBaseBarS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucToolBarL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucToolBarL.designer.cs">
+      <DependentUpon>xucToolBarL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucToolBarB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucToolBarB.designer.cs">
+      <DependentUpon>xucToolBarB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseXAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseXAdd.designer.cs">
+      <DependentUpon>xucBaseXAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\ProgressForm.designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\Class\clsOption.cs" />
+    <Compile Include="Common\Class\GreenFull.cs" />
+    <Compile Include="Common\Class\SYS_OPTION.cs" />
+    <Compile Include="Base\xucBasicListL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBasicListL.designer.cs">
+      <DependentUpon>xucBasicListL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseB.designer.cs">
+      <DependentUpon>xucBaseB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Class\TRANS_REF.cs" />
+    <Compile Include="DS\dsSTOCK.Designer.cs">
+      <DependentUpon>dsSTOCK.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DS\dsPRODUCT.Designer.cs">
+      <DependentUpon>dsPRODUCT.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DS\dsUNIT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUNIT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Forms\xfmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Forms\xfmBase.designer.cs">
+      <DependentUpon>xfmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Base\xucBaseAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseAdd.designer.cs">
+      <DependentUpon>xucBaseAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucToolBar.designer.cs">
+      <DependentUpon>xucToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseBasic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseBasic.Designer.cs">
+      <DependentUpon>xucBaseBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Forms\xfmBaseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Forms\xfmBaseAdd.Designer.cs">
+      <DependentUpon>xfmBaseAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BarLookAndFeelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CustomDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoadingCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\LoadingCircle.designer.cs">
+      <DependentUpon>LoadingCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SpinningProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SpinningProgress.designer.cs">
+      <DependentUpon>SpinningProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\xucBarcodeEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\xucBarcodeEdit.Designer.cs">
+      <DependentUpon>xucBarcodeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\xucComboEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\xucComboEdit.designer.cs">
+      <DependentUpon>xucComboEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\xucDateTimeSelectEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\xucDateTimeSelectEdit.Designer.cs">
+      <DependentUpon>xucDateTimeSelectEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\xucTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\xucTextEdit.Designer.cs">
+      <DependentUpon>xucTextEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\xucLookEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\xucLookEdit.Designer.cs">
+      <DependentUpon>xucLookEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBaseBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBaseBar.Designer.cs">
+      <DependentUpon>xucBaseBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucBarB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucBarB.Designer.cs">
+      <DependentUpon>xucBarB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\xucDetailList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\xucDetailList.Designer.cs">
+      <DependentUpon>xucDetailList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Base\XProgressForm.resx">
+      <DependentUpon>XProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBasicListP3.resx">
+      <DependentUpon>xucBasicListP3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseBasicB.resx">
+      <DependentUpon>xucBaseBasicB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBasicListL3.resx">
+      <DependentUpon>xucBasicListL3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBasicListP.resx">
+      <DependentUpon>xucBasicListP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBasicListSearchProduct.resx">
+      <DependentUpon>xucBasicListSearchProduct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucToolBar26.resx">
+      <DependentUpon>xucToolBar26.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseAdd26.resx">
+      <DependentUpon>xucBaseAdd26.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseBasicA.resx">
+      <DependentUpon>xucBaseBasicA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseBarD.resx">
+      <DependentUpon>xucBaseBarD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucToolBarD.resx">
+      <DependentUpon>xucToolBarD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseBarS.resx">
+      <DependentUpon>xucBaseBarS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseBar.resx">
+      <DependentUpon>xucBaseBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucToolBarL.resx">
+      <DependentUpon>xucToolBarL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucToolBarB.resx">
+      <DependentUpon>xucToolBarB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseXAdd.resx">
+      <DependentUpon>xucBaseXAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseAdd.resx">
+      <DependentUpon>xucBaseAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBasicListL.resx">
+      <DependentUpon>xucBasicListL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseB.resx">
+      <DependentUpon>xucBaseB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Forms\xfmBase.resx">
+      <DependentUpon>xfmBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucToolBar.resx">
+      <DependentUpon>xucToolBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBaseBasic.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>xucBaseBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucBarB.resx">
+      <DependentUpon>xucBarB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\xucDetailList.resx">
+      <DependentUpon>xucDetailList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CustomDesignForm.resx">
+      <DependentUpon>CustomDesignForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SpinningProgress.resx">
+      <DependentUpon>SpinningProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\xucBarcodeEdit.resx">
+      <DependentUpon>xucBarcodeEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\xucComboEdit.resx">
+      <DependentUpon>xucComboEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\xucDateTimeSelectEdit.resx">
+      <DependentUpon>xucDateTimeSelectEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DS\dsSTOCK.xsc">
+      <DependentUpon>dsSTOCK.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsSTOCK.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSTOCK.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\dsSTOCK.xss">
+      <DependentUpon>dsSTOCK.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsPRODUCT.xsc">
+      <DependentUpon>dsPRODUCT.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsPRODUCT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPRODUCT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\dsPRODUCT.xss">
+      <DependentUpon>dsPRODUCT.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsUNIT.xsc">
+      <DependentUpon>dsUNIT.xsd</DependentUpon>
+    </None>
+    <None Include="DS\dsUNIT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUNIT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS\dsUNIT.xss">
+      <DependentUpon>dsUNIT.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\XRBarCode.bmp" />
+    <None Include="Resources\flash-screen -blue_white_1.jpg" />
+    <None Include="Resources\flash-screen blue_white.jpg" />
+    <None Include="Resources\flash-screen.png" />
+    <None Include="Resources\flash-screen - blue.jpg" />
+    <None Include="Resources\flash-screen - yellow1.jpg" />
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>if /I "$(ConfigurationName)" == "Release" Eazfuscator.NET.exe "$(TargetPath)" --msbuild-project-path "$(ProjectPath)" --msbuild-project-configuration "$(ConfigurationName)" -n --newline-flush</PostBuildEvent>
+  </PropertyGroup>
+</Project>

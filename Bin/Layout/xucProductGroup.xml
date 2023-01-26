@@ -1,0 +1,58 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="Columns" iskey="true" value="5">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Width">164</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Name">colProductGroup_ID</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Width">180</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">1</property>
+      <property name="Name">colProductGroup_Name</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Width">150</property>
+      <property name="Visible">true</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Name">colDescription</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="VisibleIndex">-1</property>
+      <property name="Name">colIsMain</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Width">20</property>
+      <property name="VisibleIndex">-1</property>
+      <property name="Name">colActive</property>
+    </property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowFooter">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="ShowDetailButtons">false</property>
+    <property name="ShowBands">false</property>
+    <property name="HeaderFilterButtonShowMode">Button</property>
+    <property name="ColumnAutoWidth">true</property>
+    <property name="ShowAutoFilterRow">true</property>
+  </property>
+  <property name="Bands" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Columns" iskey="true" value="5">
+        <property name="Item1">colProductGroup_ID</property>
+        <property name="Item2">colProductGroup_Name</property>
+        <property name="Item3">colDescription</property>
+        <property name="Item4">colIsMain</property>
+        <property name="Item5">colActive</property>
+      </property>
+      <property name="Name">gridBand1</property>
+      <property name="Children" iskey="true" value="0" />
+      <property name="Width">494</property>
+    </property>
+  </property>
+  <property name="ActiveFilterString">[ProductGroup_ID] Like 'mm%'</property>
+  <property name="GroupSummarySortInfoState" />
+</XtraSerializer>

@@ -1,0 +1,118 @@
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Report.dll.config
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Report.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Report.pdb
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\vi-VN\Perfect.Inventory.Report.resources.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.AssemblyReference.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Properties.Resources.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryAVGPrice.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptProductCustomer.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptCustomerProduct.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventory.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOrders.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryRevenue.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOlder.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryLimit.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDate.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryLedgersStock.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummaryWithAVGUnitPrice.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantityDate.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptStockCardDN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantity.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryBFC.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.InwardList.rptInwardList.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInwardListDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptOutwardList.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptOutwardListDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptSummary.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferInward.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferOutward.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptTransferList.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptTransferListDetail.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptProductCustomer.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptCustomerProduct.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventory.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryBFC.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDate.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDetail.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryLedgersStock.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryLimit.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOlder.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOrders.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.InwardList.rptInwardList.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInwardListDetail.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptOutwardList.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummaryWithAVGUnitPrice.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantityDate.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummary.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptStockCardDN.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantity.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptSummary.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferInward.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferOutward.vi-VN.resources
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.GenerateResource.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.CoreCompileInputs.cache
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\vi-VN\Perfect.Inventory.Report.resources.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.CopyComplete
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.dll
+D:\MY PROJECT\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Report.dll.config
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Report.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\Perfect.Inventory.Report.pdb
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Bin\vi-VN\Perfect.Inventory.Report.resources.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.AssemblyReference.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Properties.Resources.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryAVGPrice.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptProductCustomer.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptCustomerProduct.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventory.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOrders.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryRevenue.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOlder.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryLimit.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDate.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryLedgersStock.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummaryWithAVGUnitPrice.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantityDate.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptStockCardDN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantity.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryBFC.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.InwardList.rptInwardList.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInwardListDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptOutwardList.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptOutwardListDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptSummary.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferInward.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferOutward.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptTransferList.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptTransferListDetail.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptProductCustomer.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptCustomerProduct.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventory.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryBFC.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDate.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryDetail.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryLedgersStock.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryLimit.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOlder.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.rptInventoryOrders.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.InwardList.rptInwardList.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInwardListDetail.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptOutwardList.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummaryWithAVGUnitPrice.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantityDate.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventorySummary.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptStockCardDN.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptInventoryQuantity.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.Report.rptSummary.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferInward.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.INVENTORY.San_Xuat.rptTransferOutward.vi-VN.resources
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.GenerateResource.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.CoreCompileInputs.cache
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\vi-VN\Perfect.Inventory.Report.resources.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.csproj.CopyComplete
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.dll
+D:\CODE\QLBH.NPP.HongDanhBacLieu.DEV21\Perfect.Inventory.Report\Perfect.Inventory.Report\obj\Debug\Perfect.Inventory.Report.pdb

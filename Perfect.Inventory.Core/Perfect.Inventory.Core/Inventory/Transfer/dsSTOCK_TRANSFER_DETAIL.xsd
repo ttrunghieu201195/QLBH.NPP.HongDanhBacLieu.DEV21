@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSTOCK_TRANSFER_DETAIL" targetNamespace="http://tempuri.org/dsSTOCK_TRANSFER_DETAIL.xsd" xmlns:mstns="http://tempuri.org/dsSTOCK_TRANSFER_DETAIL.xsd" xmlns="http://tempuri.org/dsSTOCK_TRANSFER_DETAIL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_THANHTAMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_THANHTAMConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.ERP_THANHTAMConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLKConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLKConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.QLKConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLBH2_7ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLBH2_7ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.QLBH2_7ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HuynhGiaKhangConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HuynhGiaKhangConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Perfect.Inventory.Core.Properties.Settings.GlobalReference.Default.HuynhGiaKhangConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="STOCK_TRANSFERTableAdapter" GeneratorDataComponentClassName="STOCK_TRANSFERTableAdapter" Name="STOCK_TRANSFER" UserDataComponentName="STOCK_TRANSFERTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HuynhGiaKhangConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        CAST(0 AS bit) AS IsPrint, CAST(0 AS bit) AS IsBarcode, STOCK_TRANSFER.ID, STOCK_TRANSFER.RefDate, STOCK_TRANSFER.RefType, 
+                         STOCK_TRANSFER.FromStock_ID, STOCK_TRANSFER.ToStock_ID, STOCK_TRANSFER.Amount, STOCK_TRANSFER.Description, STOCK_TRANSFER.Active, 
+                         EMPLOYEE.Employee_Name, EMPLOYEE.Employee_ID
+FROM            STOCK_TRANSFER INNER JOIN
+                         EMPLOYEE ON STOCK_TRANSFER.Sender_ID = EMPLOYEE.Employee_ID
+ORDER BY STOCK_TRANSFER.Sorted DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FromStock_ID" DataSetColumn="FromStock_ID" />
+              <Mapping SourceColumn="ToStock_ID" DataSetColumn="ToStock_ID" />
+              <Mapping SourceColumn="IsPrint" DataSetColumn="IsPrint" />
+              <Mapping SourceColumn="IsBarcode" DataSetColumn="IsBarcode" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="RefDate" DataSetColumn="RefDate" />
+              <Mapping SourceColumn="RefType" DataSetColumn="RefType" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Active" DataSetColumn="Active" />
+              <Mapping SourceColumn="Employee_Name" DataSetColumn="Employee_Name" />
+              <Mapping SourceColumn="Employee_ID" DataSetColumn="Employee_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="STOCK_TRANSFER_DETAILTableAdapter" GeneratorDataComponentClassName="STOCK_TRANSFER_DETAILTableAdapter" Name="STOCK_TRANSFER_DETAIL" UserDataComponentName="STOCK_TRANSFER_DETAILTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HuynhGiaKhangConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        0 AS Error, PRODUCT.Product_Type_ID, '' AS ErrorText, STOCK_TRANSFER_DETAIL.Product_ID, STOCK_TRANSFER_DETAIL.Product_ID AS ItemID, 
+                         STOCK_TRANSFER_DETAIL.Product_Name, STOCK_TRANSFER_DETAIL.OutStock, STOCK_TRANSFER_DETAIL.InStock, STOCK_TRANSFER_DETAIL.Unit, 
+                         STOCK_TRANSFER_DETAIL.UnitConvert, STOCK_TRANSFER_DETAIL.UnitPrice, STOCK_TRANSFER_DETAIL.Quantity, STOCK_TRANSFER_DETAIL.Amount, 
+                         STOCK_TRANSFER_DETAIL.Batch, STOCK_TRANSFER_DETAIL.Serial, STOCK_TRANSFER_DETAIL.Description, STOCK_TRANSFER_DETAIL.Sorted, 
+                         STOCK_TRANSFER_DETAIL.Transfer_ID, STOCK_TRANSFER_DETAIL.RefType, STOCK_TRANSFER_DETAIL.StoreID, STOCK_TRANSFER_DETAIL.QtyConvert, 
+                         STOCK_TRANSFER_DETAIL.ID, UNIT.Unit_Name
+FROM            STOCK_TRANSFER_DETAIL INNER JOIN
+                         PRODUCT ON STOCK_TRANSFER_DETAIL.Product_ID = PRODUCT.Product_ID INNER JOIN
+                         UNIT ON STOCK_TRANSFER_DETAIL.Unit = UNIT.Unit_ID
+WHERE        (STOCK_TRANSFER_DETAIL.Transfer_ID = @Transfer_ID)
+ORDER BY STOCK_TRANSFER_DETAIL.Sorted</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Transfer_ID" ColumnName="Transfer_ID" DataSourceName="[QLBH2.7].dbo.STOCK_TRANSFER_DETAIL" DataTypeServer="varchar(20)" DbType="AnsiString" Direction="Input" ParameterName="@Transfer_ID" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumn="Transfer_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Error" DataSetColumn="Error" />
+              <Mapping SourceColumn="Product_Type_ID" DataSetColumn="Product_Type_ID" />
+              <Mapping SourceColumn="ErrorText" DataSetColumn="ErrorText" />
+              <Mapping SourceColumn="Transfer_ID" DataSetColumn="Transfer_ID" />
+              <Mapping SourceColumn="Product_ID" DataSetColumn="Product_ID" />
+              <Mapping SourceColumn="ItemID" DataSetColumn="ItemID" />
+              <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
+              <Mapping SourceColumn="OutStock" DataSetColumn="OutStock" />
+              <Mapping SourceColumn="InStock" DataSetColumn="InStock" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="UnitConvert" DataSetColumn="UnitConvert" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Batch" DataSetColumn="Batch" />
+              <Mapping SourceColumn="Serial" DataSetColumn="Serial" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Sorted" DataSetColumn="Sorted" />
+              <Mapping SourceColumn="RefType" DataSetColumn="RefType" />
+              <Mapping SourceColumn="StoreID" DataSetColumn="StoreID" />
+              <Mapping SourceColumn="QtyConvert" DataSetColumn="QtyConvert" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Unit_Name" DataSetColumn="Unit_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="STOCK_TRANSFER_ByDateTableAdapter" GeneratorDataComponentClassName="STOCK_TRANSFER_ByDateTableAdapter" Name="STOCK_TRANSFER_ByDate" UserDataComponentName="STOCK_TRANSFER_ByDateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HuynhGiaKhangConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT CAST(0 AS BIT) AS IsPrint,
+       CAST(0 AS BIT) AS IsBarcode,
+       STOCK_TRANSFER.ID,
+       STOCK_TRANSFER.RefDate,
+       STOCK_TRANSFER.RefType,
+       STOCK_TRANSFER_DETAIL.OutStock AS FromStock_ID,
+       STOCK_TRANSFER_DETAIL.InStock AS ToStock_ID,
+       STOCK_TRANSFER.Amount,
+       STOCK_TRANSFER.Description,
+       STOCK_TRANSFER.Active,
+       EMPLOYEE.Employee_Name,
+       EMPLOYEE.Employee_ID
+FROM   STOCK_TRANSFER
+       INNER JOIN EMPLOYEE
+            ON  STOCK_TRANSFER.Sender_ID = EMPLOYEE.Employee_ID
+       INNER JOIN STOCK_TRANSFER_DETAIL
+            ON  STOCK_TRANSFER_DETAIL.Transfer_ID = STOCK_TRANSFER.ID
+WHERE  (DATEDIFF(DAY, @FromDate, STOCK_TRANSFER.RefDate) &gt;= 0)
+       AND (DATEDIFF(DAY, @ToDate, STOCK_TRANSFER.RefDate) &lt;= 0)
+       AND (STOCK_TRANSFER.RefType = 9)
+ORDER BY
+       STOCK_TRANSFER.Sorted DESC</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="FromDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@FromDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ToDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@ToDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IsPrint" DataSetColumn="IsPrint" />
+              <Mapping SourceColumn="IsBarcode" DataSetColumn="IsBarcode" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="RefDate" DataSetColumn="RefDate" />
+              <Mapping SourceColumn="RefType" DataSetColumn="RefType" />
+              <Mapping SourceColumn="FromStock_ID" DataSetColumn="FromStock_ID" />
+              <Mapping SourceColumn="ToStock_ID" DataSetColumn="ToStock_ID" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Active" DataSetColumn="Active" />
+              <Mapping SourceColumn="Employee_Name" DataSetColumn="Employee_Name" />
+              <Mapping SourceColumn="Employee_ID" DataSetColumn="Employee_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="STOCK_TRANSFER_DETAIL_ByDateTableAdapter" GeneratorDataComponentClassName="STOCK_TRANSFER_DETAIL_ByDateTableAdapter" Name="STOCK_TRANSFER_DETAIL_ByDate" UserDataComponentName="STOCK_TRANSFER_DETAIL_ByDateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HuynhGiaKhangConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        STOCK_TRANSFER_DETAIL.Product_ID, STOCK_TRANSFER_DETAIL.OutStock, STOCK_TRANSFER_DETAIL.InStock, STOCK_TRANSFER_DETAIL.Unit, 
+                         STOCK_TRANSFER_DETAIL.UnitPrice, STOCK_TRANSFER_DETAIL.Quantity, STOCK_TRANSFER_DETAIL.Amount, STOCK_TRANSFER_DETAIL.Batch, 
+                         STOCK_TRANSFER_DETAIL.Serial, STOCK_TRANSFER_DETAIL.Description, STOCK_TRANSFER_DETAIL.Transfer_ID, STOCK_TRANSFER_DETAIL.RefType, 
+                         STOCK_TRANSFER_DETAIL.ID, PRODUCT.Product_Name, UNIT.Unit_ID, UNIT.Unit_Name, STOCK.Stock_Name AS OutStock_Name, 
+                         STOCK_1.Stock_Name AS InStock_Name, STOCK_TRANSFER.RefDate
+FROM            STOCK_TRANSFER_DETAIL INNER JOIN
+                         PRODUCT ON STOCK_TRANSFER_DETAIL.Product_ID = PRODUCT.Product_ID INNER JOIN
+                         UNIT ON PRODUCT.Unit = UNIT.Unit_ID INNER JOIN
+                         STOCK ON STOCK_TRANSFER_DETAIL.OutStock = STOCK.Stock_ID INNER JOIN
+                         STOCK AS STOCK_1 ON STOCK_TRANSFER_DETAIL.InStock = STOCK_1.Stock_ID INNER JOIN
+                         STOCK_TRANSFER ON STOCK_TRANSFER_DETAIL.Transfer_ID = STOCK_TRANSFER.ID
+WHERE        (DATEDIFF(day, @FromDate, STOCK_TRANSFER.RefDate) &gt;= 0) AND (DATEDIFF(day, @ToDate, STOCK_TRANSFER.RefDate) &lt;= 0)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="FromDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@FromDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ToDate" ColumnName="" DataSourceName="" DataTypeServer="unknown" DbType="DateTime" Direction="Input" ParameterName="@ToDate" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Product_ID" DataSetColumn="Product_ID" />
+              <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
+              <Mapping SourceColumn="OutStock" DataSetColumn="OutStock" />
+              <Mapping SourceColumn="InStock" DataSetColumn="InStock" />
+              <Mapping SourceColumn="Unit" DataSetColumn="Unit" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Batch" DataSetColumn="Batch" />
+              <Mapping SourceColumn="Serial" DataSetColumn="Serial" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="Transfer_ID" DataSetColumn="Transfer_ID" />
+              <Mapping SourceColumn="RefType" DataSetColumn="RefType" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Unit_ID" DataSetColumn="Unit_ID" />
+              <Mapping SourceColumn="Unit_Name" DataSetColumn="Unit_Name" />
+              <Mapping SourceColumn="InStock_Name" DataSetColumn="InStockName" />
+              <Mapping SourceColumn="OutStock_Name" DataSetColumn="OutStockName" />
+              <Mapping SourceColumn="RefDate" DataSetColumn="RefDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSTOCK_TRANSFER_DETAIL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsSTOCK_TRANSFER_DETAIL" msprop:Generator_DataSetName="dsSTOCK_TRANSFER_DETAIL" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="STOCK_TRANSFER" msprop:Generator_UserTableName="STOCK_TRANSFER" msprop:Generator_RowDeletedName="STOCK_TRANSFERRowDeleted" msprop:Generator_RowChangedName="STOCK_TRANSFERRowChanged" msprop:Generator_RowClassName="STOCK_TRANSFERRow" msprop:Generator_RowChangingName="STOCK_TRANSFERRowChanging" msprop:Generator_RowEvArgName="STOCK_TRANSFERRowChangeEvent" msprop:Generator_RowEvHandlerName="STOCK_TRANSFERRowChangeEventHandler" msprop:Generator_TableClassName="STOCK_TRANSFERDataTable" msprop:Generator_TableVarName="tableSTOCK_TRANSFER" msprop:Generator_RowDeletingName="STOCK_TRANSFERRowDeleting" msprop:Generator_TablePropName="STOCK_TRANSFER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FromStock_ID" msprop:Generator_UserColumnName="FromStock_ID" msprop:Generator_ColumnVarNameInTable="columnFromStock_ID" msprop:Generator_ColumnPropNameInRow="FromStock_ID" msprop:Generator_ColumnPropNameInTable="FromStock_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToStock_ID" msprop:Generator_UserColumnName="ToStock_ID" msprop:Generator_ColumnVarNameInTable="columnToStock_ID" msprop:Generator_ColumnPropNameInRow="ToStock_ID" msprop:Generator_ColumnPropNameInTable="ToStock_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsBarcode" msprop:Generator_UserColumnName="IsBarcode" msprop:Generator_ColumnPropNameInRow="IsBarcode" msprop:Generator_ColumnVarNameInTable="columnIsBarcode" msprop:Generator_ColumnPropNameInTable="IsBarcodeColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsPrint" msdata:ReadOnly="true" msprop:Generator_UserColumnName="IsPrint" msprop:Generator_ColumnPropNameInRow="IsPrint" msprop:Generator_ColumnVarNameInTable="columnIsPrint" msprop:Generator_ColumnPropNameInTable="IsPrintColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefDate" msprop:Generator_UserColumnName="RefDate" msprop:Generator_ColumnPropNameInRow="RefDate" msprop:Generator_ColumnVarNameInTable="columnRefDate" msprop:Generator_ColumnPropNameInTable="RefDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RefType" msprop:Generator_UserColumnName="RefType" msprop:Generator_ColumnPropNameInRow="RefType" msprop:Generator_ColumnVarNameInTable="columnRefType" msprop:Generator_ColumnPropNameInTable="RefTypeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_UserColumnName="Active" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInTable="ActiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Employee_Name" msprop:Generator_UserColumnName="Employee_Name" msprop:Generator_ColumnPropNameInRow="Employee_Name" msprop:Generator_ColumnVarNameInTable="columnEmployee_Name" msprop:Generator_ColumnPropNameInTable="Employee_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_ID" msprop:Generator_UserColumnName="Employee_ID" msprop:Generator_ColumnPropNameInRow="Employee_ID" msprop:Generator_ColumnVarNameInTable="columnEmployee_ID" msprop:Generator_ColumnPropNameInTable="Employee_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReceiverName" msprop:Generator_UserColumnName="ReceiverName" msprop:Generator_ColumnVarNameInTable="columnReceiverName" msprop:Generator_ColumnPropNameInRow="ReceiverName" msprop:Generator_ColumnPropNameInTable="ReceiverNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Receiver_ID" msprop:Generator_UserColumnName="Receiver_ID" msprop:Generator_ColumnVarNameInTable="columnReceiver_ID" msprop:Generator_ColumnPropNameInRow="Receiver_ID" msprop:Generator_ColumnPropNameInTable="Receiver_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sender_ID" msprop:Generator_UserColumnName="Sender_ID" msprop:Generator_ColumnVarNameInTable="columnSender_ID" msprop:Generator_ColumnPropNameInRow="Sender_ID" msprop:Generator_ColumnPropNameInTable="Sender_IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SenderName" msprop:Generator_UserColumnName="SenderName" msprop:Generator_ColumnVarNameInTable="columnSenderName" msprop:Generator_ColumnPropNameInRow="SenderName" msprop:Generator_ColumnPropNameInTable="SenderNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="STOCK_TRANSFER_DETAIL" msprop:Generator_UserTableName="STOCK_TRANSFER_DETAIL" msprop:Generator_RowDeletedName="STOCK_TRANSFER_DETAILRowDeleted" msprop:Generator_RowChangedName="STOCK_TRANSFER_DETAILRowChanged" msprop:Generator_RowClassName="STOCK_TRANSFER_DETAILRow" msprop:Generator_RowChangingName="STOCK_TRANSFER_DETAILRowChanging" msprop:Generator_RowEvArgName="STOCK_TRANSFER_DETAILRowChangeEvent" msprop:Generator_RowEvHandlerName="STOCK_TRANSFER_DETAILRowChangeEventHandler" msprop:Generator_TableClassName="STOCK_TRANSFER_DETAILDataTable" msprop:Generator_TableVarName="tableSTOCK_TRANSFER_DETAIL" msprop:Generator_RowDeletingName="STOCK_TRANSFER_DETAILRowDeleting" msprop:Generator_TablePropName="STOCK_TRANSFER_DETAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Error" msprop:Generator_UserColumnName="Error" msprop:Generator_ColumnVarNameInTable="columnError" msprop:Generator_ColumnPropNameInRow="Error" msprop:Generator_ColumnPropNameInTable="ErrorColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="Product_Type_ID" msprop:Generator_UserColumnName="Product_Type_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_Type_ID" msprop:Generator_ColumnPropNameInRow="Product_Type_ID" msprop:Generator_ColumnPropNameInTable="Product_Type_IDColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="ErrorText" msprop:Generator_UserColumnName="ErrorText" msprop:Generator_ColumnVarNameInTable="columnErrorText" msprop:Generator_ColumnPropNameInRow="ErrorText" msprop:Generator_ColumnPropNameInTable="ErrorTextColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Transfer_ID" msprop:Generator_UserColumnName="Transfer_ID" msprop:Generator_ColumnVarNameInTable="columnTransfer_ID" msprop:Generator_ColumnPropNameInRow="Transfer_ID" msprop:Generator_ColumnPropNameInTable="Transfer_IDColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_ID" msprop:Generator_UserColumnName="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ItemID" msprop:Generator_UserColumnName="ItemID" msprop:Generator_ColumnVarNameInTable="columnItemID" msprop:Generator_ColumnPropNameInRow="ItemID" msprop:Generator_ColumnPropNameInTable="ItemIDColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_UserColumnName="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OutStock" msprop:Generator_UserColumnName="OutStock" msprop:Generator_ColumnVarNameInTable="columnOutStock" msprop:Generator_ColumnPropNameInRow="OutStock" msprop:Generator_ColumnPropNameInTable="OutStockColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InStock" msprop:Generator_UserColumnName="InStock" msprop:Generator_ColumnVarNameInTable="columnInStock" msprop:Generator_ColumnPropNameInRow="InStock" msprop:Generator_ColumnPropNameInTable="InStockColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitConvert" msprop:Generator_UserColumnName="UnitConvert" msprop:Generator_ColumnVarNameInTable="columnUnitConvert" msprop:Generator_ColumnPropNameInRow="UnitConvert" msprop:Generator_ColumnPropNameInTable="UnitConvertColumn" type="xs:decimal" default="1" minOccurs="0" />
+              <xs:element name="UnitPrice" msprop:Generator_UserColumnName="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="Batch" msprop:Generator_UserColumnName="Batch" msprop:Generator_ColumnVarNameInTable="columnBatch" msprop:Generator_ColumnPropNameInRow="Batch" msprop:Generator_ColumnPropNameInTable="BatchColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Serial" msprop:Generator_UserColumnName="Serial" msprop:Generator_ColumnVarNameInTable="columnSerial" msprop:Generator_ColumnPropNameInRow="Serial" msprop:Generator_ColumnPropNameInTable="SerialColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" default="" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sorted" msprop:Generator_UserColumnName="Sorted" msprop:Generator_ColumnVarNameInTable="columnSorted" msprop:Generator_ColumnPropNameInRow="Sorted" msprop:Generator_ColumnPropNameInTable="SortedColumn" type="xs:long" default="0" minOccurs="0" />
+              <xs:element name="RefType" msprop:Generator_UserColumnName="RefType" msprop:Generator_ColumnPropNameInRow="RefType" msprop:Generator_ColumnVarNameInTable="columnRefType" msprop:Generator_ColumnPropNameInTable="RefTypeColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="StoreID" msprop:Generator_UserColumnName="StoreID" msprop:Generator_ColumnPropNameInRow="StoreID" msprop:Generator_ColumnVarNameInTable="columnStoreID" msprop:Generator_ColumnPropNameInTable="StoreIDColumn" type="xs:long" default="0" minOccurs="0" />
+              <xs:element name="QtyConvert" msprop:Generator_UserColumnName="QtyConvert" msprop:Generator_ColumnPropNameInRow="QtyConvert" msprop:Generator_ColumnVarNameInTable="columnQtyConvert" msprop:Generator_ColumnPropNameInTable="QtyConvertColumn" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit_Name" msprop:Generator_UserColumnName="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InStockName" msprop:Generator_UserColumnName="InStockName" msprop:Generator_ColumnPropNameInRow="InStockName" msprop:Generator_ColumnVarNameInTable="columnInStockName" msprop:Generator_ColumnPropNameInTable="InStockNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OutStockName" msprop:Generator_UserColumnName="OutStockName" msprop:Generator_ColumnPropNameInRow="OutStockName" msprop:Generator_ColumnVarNameInTable="columnOutStockName" msprop:Generator_ColumnPropNameInTable="OutStockNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="STOCK_TRANSFER_ByDate" msprop:Generator_UserTableName="STOCK_TRANSFER_ByDate" msprop:Generator_RowDeletedName="STOCK_TRANSFER_ByDateRowDeleted" msprop:Generator_RowChangedName="STOCK_TRANSFER_ByDateRowChanged" msprop:Generator_RowClassName="STOCK_TRANSFER_ByDateRow" msprop:Generator_RowChangingName="STOCK_TRANSFER_ByDateRowChanging" msprop:Generator_RowEvArgName="STOCK_TRANSFER_ByDateRowChangeEvent" msprop:Generator_RowEvHandlerName="STOCK_TRANSFER_ByDateRowChangeEventHandler" msprop:Generator_TableClassName="STOCK_TRANSFER_ByDateDataTable" msprop:Generator_TableVarName="tableSTOCK_TRANSFER_ByDate" msprop:Generator_RowDeletingName="STOCK_TRANSFER_ByDateRowDeleting" msprop:Generator_TablePropName="STOCK_TRANSFER_ByDate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IsPrint" msprop:Generator_UserColumnName="IsPrint" msprop:Generator_ColumnPropNameInRow="IsPrint" msprop:Generator_ColumnVarNameInTable="columnIsPrint" msprop:Generator_ColumnPropNameInTable="IsPrintColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsBarcode" msprop:Generator_UserColumnName="IsBarcode" msprop:Generator_ColumnPropNameInRow="IsBarcode" msprop:Generator_ColumnVarNameInTable="columnIsBarcode" msprop:Generator_ColumnPropNameInTable="IsBarcodeColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefDate" msprop:Generator_UserColumnName="RefDate" msprop:Generator_ColumnPropNameInRow="RefDate" msprop:Generator_ColumnVarNameInTable="columnRefDate" msprop:Generator_ColumnPropNameInTable="RefDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RefType" msprop:Generator_UserColumnName="RefType" msprop:Generator_ColumnPropNameInRow="RefType" msprop:Generator_ColumnVarNameInTable="columnRefType" msprop:Generator_ColumnPropNameInTable="RefTypeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FromStock_ID" msprop:Generator_UserColumnName="FromStock_ID" msprop:Generator_ColumnPropNameInRow="FromStock_ID" msprop:Generator_ColumnVarNameInTable="columnFromStock_ID" msprop:Generator_ColumnPropNameInTable="FromStock_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ToStock_ID" msprop:Generator_UserColumnName="ToStock_ID" msprop:Generator_ColumnPropNameInRow="ToStock_ID" msprop:Generator_ColumnVarNameInTable="columnToStock_ID" msprop:Generator_ColumnPropNameInTable="ToStock_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_UserColumnName="Active" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInTable="ActiveColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Employee_Name" msprop:Generator_UserColumnName="Employee_Name" msprop:Generator_ColumnPropNameInRow="Employee_Name" msprop:Generator_ColumnVarNameInTable="columnEmployee_Name" msprop:Generator_ColumnPropNameInTable="Employee_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_ID" msprop:Generator_UserColumnName="Employee_ID" msprop:Generator_ColumnPropNameInRow="Employee_ID" msprop:Generator_ColumnVarNameInTable="columnEmployee_ID" msprop:Generator_ColumnPropNameInTable="Employee_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="STOCK_TRANSFER_DETAIL_ByDate" msprop:Generator_UserTableName="STOCK_TRANSFER_DETAIL_ByDate" msprop:Generator_RowDeletedName="STOCK_TRANSFER_DETAIL_ByDateRowDeleted" msprop:Generator_RowChangedName="STOCK_TRANSFER_DETAIL_ByDateRowChanged" msprop:Generator_RowClassName="STOCK_TRANSFER_DETAIL_ByDateRow" msprop:Generator_RowChangingName="STOCK_TRANSFER_DETAIL_ByDateRowChanging" msprop:Generator_RowEvArgName="STOCK_TRANSFER_DETAIL_ByDateRowChangeEvent" msprop:Generator_RowEvHandlerName="STOCK_TRANSFER_DETAIL_ByDateRowChangeEventHandler" msprop:Generator_TableClassName="STOCK_TRANSFER_DETAIL_ByDateDataTable" msprop:Generator_TableVarName="tableSTOCK_TRANSFER_DETAIL_ByDate" msprop:Generator_RowDeletingName="STOCK_TRANSFER_DETAIL_ByDateRowDeleting" msprop:Generator_TablePropName="STOCK_TRANSFER_DETAIL_ByDate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product_ID" msprop:Generator_UserColumnName="Product_ID" msprop:Generator_ColumnVarNameInTable="columnProduct_ID" msprop:Generator_ColumnPropNameInRow="Product_ID" msprop:Generator_ColumnPropNameInTable="Product_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_UserColumnName="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OutStock" msprop:Generator_UserColumnName="OutStock" msprop:Generator_ColumnVarNameInTable="columnOutStock" msprop:Generator_ColumnPropNameInRow="OutStock" msprop:Generator_ColumnPropNameInTable="OutStockColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InStock" msprop:Generator_UserColumnName="InStock" msprop:Generator_ColumnVarNameInTable="columnInStock" msprop:Generator_ColumnPropNameInRow="InStock" msprop:Generator_ColumnPropNameInTable="InStockColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitPrice" msprop:Generator_UserColumnName="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_UserColumnName="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Batch" msprop:Generator_UserColumnName="Batch" msprop:Generator_ColumnVarNameInTable="columnBatch" msprop:Generator_ColumnPropNameInRow="Batch" msprop:Generator_ColumnPropNameInTable="BatchColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Serial" msprop:Generator_UserColumnName="Serial" msprop:Generator_ColumnVarNameInTable="columnSerial" msprop:Generator_ColumnPropNameInRow="Serial" msprop:Generator_ColumnPropNameInTable="SerialColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Transfer_ID" msprop:Generator_UserColumnName="Transfer_ID" msprop:Generator_ColumnVarNameInTable="columnTransfer_ID" msprop:Generator_ColumnPropNameInRow="Transfer_ID" msprop:Generator_ColumnPropNameInTable="Transfer_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefType" msprop:Generator_UserColumnName="RefType" msprop:Generator_ColumnVarNameInTable="columnRefType" msprop:Generator_ColumnPropNameInRow="RefType" msprop:Generator_ColumnPropNameInTable="RefTypeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit_ID" msprop:Generator_UserColumnName="Unit_ID" msprop:Generator_ColumnVarNameInTable="columnUnit_ID" msprop:Generator_ColumnPropNameInRow="Unit_ID" msprop:Generator_ColumnPropNameInTable="Unit_IDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit_Name" msprop:Generator_UserColumnName="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InStockName" msprop:Generator_UserColumnName="InStockName" msprop:Generator_ColumnVarNameInTable="columnInStockName" msprop:Generator_ColumnPropNameInRow="InStockName" msprop:Generator_ColumnPropNameInTable="InStockNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OutStockName" msprop:Generator_UserColumnName="OutStockName" msprop:Generator_ColumnVarNameInTable="columnOutStockName" msprop:Generator_ColumnPropNameInRow="OutStockName" msprop:Generator_ColumnPropNameInTable="OutStockNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RefDate" msprop:Generator_UserColumnName="RefDate" msprop:Generator_ColumnPropNameInRow="RefDate" msprop:Generator_ColumnVarNameInTable="columnRefDate" msprop:Generator_ColumnPropNameInTable="RefDateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

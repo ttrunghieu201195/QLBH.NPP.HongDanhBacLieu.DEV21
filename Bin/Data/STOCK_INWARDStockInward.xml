@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="yes"?>
+<dsSTOCK_INWARD_DETAIL xmlns="http://tempuri.org/dsSTOCK_INWARD_DETAIL.xsd">
+  <STOCK_INWARD>
+    <ID>MH000001</ID>
+    <RefDate>2012-05-19T14:37:33.3579628+07:00</RefDate>
+    <Customer_ID />
+    <Ref_OrgNo />
+    <Reason />
+    <Stock_ID />
+    <CustomerName />
+    <CustomerAddress />
+    <Amount>11585000</Amount>
+    <Description />
+    <RefType>1</RefType>
+    <IsPrint>false</IsPrint>
+    <IsBarcode>false</IsBarcode>
+  </STOCK_INWARD>
+  <STOCK_INWARD_DETAIL>
+    <Product_ID>BNTC</Product_ID>
+    <ItemID>BNTC</ItemID>
+    <Stock_ID>K000001</Stock_ID>
+    <Quantity>1</Quantity>
+    <UnitPrice>4955000</UnitPrice>
+    <Amount>4955000</Amount>
+    <Unit>Bo</Unit>
+  </STOCK_INWARD_DETAIL>
+  <STOCK_INWARD_DETAIL>
+    <Product_ID>DDCRM</Product_ID>
+    <ItemID>DDCRM</ItemID>
+    <Stock_ID>K000001</Stock_ID>
+    <Quantity>1</Quantity>
+    <UnitPrice>1580000</UnitPrice>
+    <Amount>1580000</Amount>
+    <Unit>ml</Unit>
+  </STOCK_INWARD_DETAIL>
+  <STOCK_INWARD_DETAIL>
+    <Product_ID>SPHTTD02</Product_ID>
+    <ItemID>SPHTTD02</ItemID>
+    <Stock_ID>K000001</Stock_ID>
+    <Quantity>1</Quantity>
+    <UnitPrice>4200000</UnitPrice>
+    <Amount>4200000</Amount>
+    <Unit>Chai</Unit>
+  </STOCK_INWARD_DETAIL>
+  <STOCK_INWARD_DETAIL>
+    <Product_ID>KEGF01</Product_ID>
+    <ItemID>KEGF01</ItemID>
+    <Stock_ID>K000001</Stock_ID>
+    <Quantity>1</Quantity>
+    <UnitPrice>850000</UnitPrice>
+    <Amount>850000</Amount>
+    <Unit>ml</Unit>
+  </STOCK_INWARD_DETAIL>
+</dsSTOCK_INWARD_DETAIL>

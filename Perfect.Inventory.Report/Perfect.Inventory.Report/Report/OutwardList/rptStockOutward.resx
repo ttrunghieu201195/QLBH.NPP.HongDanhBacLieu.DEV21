@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrTotal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrSign3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="xrDateNote.Text" xml:space="preserve">
+    <value>Date...........................</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Html.CharacterSet" xml:space="preserve">
+    <value>utf-8</value>
+  </data>
+  <data name="xrFax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="xrSign4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="xrReceiver.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrDate.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="xrReceipt.Text" xml:space="preserve">
+    <value>Ref No:</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v9.3" name="DevExpress.Utils.v9.3, Version=9.3.2.0, Culture=neutral, PublicKeyToken=8d332da86fe888ab" />
+  <data name="xrChief.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrStoreKeeper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="xrSign3.Text" xml:space="preserve">
+    <value>(Sign, fullname)</value>
+  </data>
+  <data name="xrKeeper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="xrTableCell8.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrReceiver.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="xrLabel15.Text" xml:space="preserve">
+    <value>xrLabel15</value>
+  </data>
+  <data name="xrLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 17</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Pdf.DocumentOptions.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rptStockOutward.ExportOptions.Text.EncodingType" type="DevExpress.XtraPrinting.EncodingType, DevExpress.Utils.v9.3">
+    <value>Default</value>
+  </data>
+  <data name="xrTable3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 25</value>
+  </data>
+  <data name="xrTotal.Text" xml:space="preserve">
+    <value>Sub Total:</value>
+  </data>
+  <data name="xrTableCell10.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Csv.EncodingType" type="DevExpress.XtraPrinting.EncodingType, DevExpress.Utils.v9.3">
+    <value>Default</value>
+  </data>
+  <data name="xrKeeper.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrSign5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 83</value>
+  </data>
+  <data name="xrLabel14.Text" xml:space="preserve">
+    <value>xrLabel14</value>
+  </data>
+  <data name="xrDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 67</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Html.Title" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Pdf.DocumentOptions.Author" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
+  </data>
+  <data name="xrCustomer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 17</value>
+  </data>
+  <data name="xrTableCell14.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrSign4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 83</value>
+  </data>
+  <data name="xrDateNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 42</value>
+  </data>
+  <data name="xrTableCell17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrChief.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="xrReceiver.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrChief.Text" xml:space="preserve">
+    <value>Head Of Unit</value>
+  </data>
+  <data name="xrReceipt.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopRight</value>
+  </data>
+  <data name="xrStock.Text" xml:space="preserve">
+    <value>Pay Out Stock:</value>
+  </data>
+  <data name="xrSign2.Text" xml:space="preserve">
+    <value>(Sign, sealed ,fullname)</value>
+  </data>
+  <data name="xrLabel19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>542, 50</value>
+  </data>
+  <data name="xrChiefAccountant.Text" xml:space="preserve">
+    <value>Chief Accountant</value>
+  </data>
+  <data name="xrTable2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 25</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Xls.SheetName" xml:space="preserve">
+    <value>Sheet1</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Mht.Title" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="xrTableCell14.Text" xml:space="preserve">
+    <value>xrTableCell14</value>
+  </data>
+  <data name="xrLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 92</value>
+  </data>
+  <data name="xrSign5.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrLabel17.Text" xml:space="preserve">
+    <value>xrLabel17</value>
+  </data>
+  <data name="xrTable1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrReceipt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 17</value>
+  </data>
+  <data name="xrLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 17</value>
+  </data>
+  <data name="xrTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 67</value>
+  </data>
+  <data name="xrTable2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 0</value>
+  </data>
+  <data name="xrStoreKeeper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 67</value>
+  </data>
+  <data name="xrSign4.Text" xml:space="preserve">
+    <value>(Sign, fullname)</value>
+  </data>
+  <data name="xrLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 50</value>
+  </data>
+  <data name="xrLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 125</value>
+  </data>
+  <data name="xrStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 175</value>
+  </data>
+  <data name="xrAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 16</value>
+  </data>
+  <data name="xrReason.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 158</value>
+  </data>
+  <data name="xrChiefAccountant.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrTableRow1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrTableCell17.Text" xml:space="preserve">
+    <value>xrTableCell17</value>
+  </data>
+  <data name="xrProductName.Text" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="xrLabel16.Text" xml:space="preserve">
+    <value>xrLabel16</value>
+  </data>
+  <data name="xrLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 17</value>
+  </data>
+  <data name="xrChiefAccountant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 17</value>
+  </data>
+  <data name="xrLabel20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 17</value>
+  </data>
+  <data name="xrAddress.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="xrSign4.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrSign2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrChiefAccountant.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrKeeper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 67</value>
+  </data>
+  <data name="xrBatch.Text" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="xrLabel11.Text" xml:space="preserve">
+    <value>xrLabel11</value>
+  </data>
+  <data name="xrReceiver.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 67</value>
+  </data>
+  <data name="xrTableCell9.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 125</value>
+  </data>
+  <data name="xrSign1.Text" xml:space="preserve">
+    <value>(Sign, fullname)</value>
+  </data>
+  <data name="xrLabel20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>542, 67</value>
+  </data>
+  <data name="xrLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 67</value>
+  </data>
+  <data name="xrLabel19.Text" xml:space="preserve">
+    <value>xrLabel19</value>
+  </data>
+  <data name="xrLabel19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 17</value>
+  </data>
+  <data name="xrTableCell18.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="xrChiefAccountant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 67</value>
+  </data>
+  <data name="xrLabel1.Text" xml:space="preserve">
+    <value>xrLabel1</value>
+  </data>
+  <data name="xrLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 142</value>
+  </data>
+  <data name="xrStoreKeeper.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrTel.Text" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="xrLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 17</value>
+  </data>
+  <data name="xrLabel1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrLabel18.Text" xml:space="preserve">
+    <value>xrLabel18</value>
+  </data>
+  <data name="xrAmount.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="xrTableCell12.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrSummary1.FormatString" xml:space="preserve">
+    <value>{0:##,##0.####}</value>
+  </data>
+  <data name="xrLabel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 17</value>
+  </data>
+  <data name="xrSign3.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrTableCell17.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrKeeper.Text" xml:space="preserve">
+    <value>Prepared by</value>
+  </data>
+  <data name="xrLabel18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 175</value>
+  </data>
+  <data name="xrLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 67</value>
+  </data>
+  <data name="xrQuantity.Text" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="xrLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 33</value>
+  </data>
+  <data name="xrTableCell11.Text" xml:space="preserve">
+    <value>xrTableCell11</value>
+  </data>
+  <data name="xrSign5.Text" xml:space="preserve">
+    <value>(Sign, fullname)</value>
+  </data>
+  <data name="xrReason.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 16</value>
+  </data>
+  <data name="xrSign1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="xrDateNote.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrSign1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 17</value>
+  </data>
+  <data name="xrLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 25</value>
+  </data>
+  <data name="xrStoreKeeper.Text" xml:space="preserve">
+    <value>Store Keeper</value>
+  </data>
+  <data name="xrLabel20.Text" xml:space="preserve">
+    <value>xrLabel20</value>
+  </data>
+  <data name="xrLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 158</value>
+  </data>
+  <data name="xrChief.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 67</value>
+  </data>
+  <data name="xrTable3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 0</value>
+  </data>
+  <data name="xrDateNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 17</value>
+  </data>
+  <data name="xrTable1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 25</value>
+  </data>
+  <data name="xrTableCell18.Text" xml:space="preserve">
+    <value>xrTableCell18</value>
+  </data>
+  <data name="xrLabel13.Text" xml:space="preserve">
+    <value>xrLabel13</value>
+  </data>
+  <data name="xrTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 17</value>
+  </data>
+  <data name="xrTableCell9.Text" xml:space="preserve">
+    <value>xrTableCell9</value>
+  </data>
+  <data name="xrStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 16</value>
+  </data>
+  <data name="xrLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 17</value>
+  </data>
+  <data name="xrTableCell10.Text" xml:space="preserve">
+    <value>xrTableCell10</value>
+  </data>
+  <data name="xrTable1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 200</value>
+  </data>
+  <data name="xrReceiver.Text" xml:space="preserve">
+    <value>Receiver</value>
+  </data>
+  <data name="xrSign3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="xrLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 17</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Pdf.DocumentOptions.Application" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrSign2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="xrProductID.Text" xml:space="preserve">
+    <value>Product ID</value>
+  </data>
+  <data name="xrFax.Text" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="xrSign4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="xrSign5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Italic</value>
+  </data>
+  <data name="xrSign3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 83</value>
+  </data>
+  <data name="xrDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 17</value>
+  </data>
+  <data name="xrDate.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopRight</value>
+  </data>
+  <data name="xrTableCell13.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="xrCustomer.Text" xml:space="preserve">
+    <value>Receiver:
+</value>
+  </data>
+  <data name="xrSign2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 17</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Pdf.DocumentOptions.Keywords" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrFax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 67</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Pdf.DocumentOptions.Subject" xml:space="preserve">
+    <value />
+  </data>
+  <data name="xrTableCell11.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrTableCell13.Text" xml:space="preserve">
+    <value>xrTableCell13</value>
+  </data>
+  <data name="xrUnitPrice.Text" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="PageFooter.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrTotal.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>MiddleRight</value>
+  </data>
+  <data name="xrAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 142</value>
+  </data>
+  <data name="xrSign2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 83</value>
+  </data>
+  <data name="xrKeeper.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrReason.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="xrLabel12.Text" xml:space="preserve">
+    <value>xrLabel12</value>
+  </data>
+  <data name="xrUnit.Text" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="xrLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 14pt, style=Bold</value>
+  </data>
+  <data name="xrTableCell12.Text" xml:space="preserve">
+    <value>xrTableCell12</value>
+  </data>
+  <data name="xrReceipt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 50</value>
+  </data>
+  <data name="PageHeader.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopLeft</value>
+  </data>
+  <data name="xrChief.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrSign1.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Utils.v9.3">
+    <value>TopCenter</value>
+  </data>
+  <data name="xrSign1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 83</value>
+  </data>
+  <data name="rptStockOutward.ExportOptions.Mht.CharacterSet" xml:space="preserve">
+    <value>utf-8</value>
+  </data>
+  <data name="xrSign5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="xrStoreKeeper.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Times New Roman, 9.75pt, style=Bold</value>
+  </data>
+  <data name="xrSTT.Text" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="StockName.Name" xml:space="preserve">
+    <value>StockName</value>
+  </data>
+  <data name="CustomerName.Name" xml:space="preserve">
+    <value>CustomerName</value>
+  </data>
+  <data name="xrBatch.Name" xml:space="preserve">
+    <value>xrBatch</value>
+  </data>
+  <data name="xrTableRow3.Name" xml:space="preserve">
+    <value>xrTableRow3</value>
+  </data>
+  <data name="xrSign1.Name" xml:space="preserve">
+    <value>xrSign1</value>
+  </data>
+  <data name="xrLabel14.Name" xml:space="preserve">
+    <value>xrLabel14</value>
+  </data>
+  <data name="xrTableCell14.Name" xml:space="preserve">
+    <value>xrTableCell14</value>
+  </data>
+  <data name="$this.Name" xml:space="preserve">
+    <value>rptStockOutward</value>
+  </data>
+  <data name="xrReceiver.Name" xml:space="preserve">
+    <value>xrReceiver</value>
+  </data>
+  <data name="xrTel.Name" xml:space="preserve">
+    <value>xrTel</value>
+  </data>
+  <data name="xrFax.Name" xml:space="preserve">
+    <value>xrFax</value>
+  </data>
+  <data name="xrAmount.Name" xml:space="preserve">
+    <value>xrAmount</value>
+  </data>
+  <data name="xrUnitPrice.Name" xml:space="preserve">
+    <value>xrUnitPrice</value>
+  </data>
+  <data name="xrLabel15.Name" xml:space="preserve">
+    <value>xrLabel15</value>
+  </data>
+  <data name="xrLabel13.Name" xml:space="preserve">
+    <value>xrLabel13</value>
+  </data>
+  <data name="xrLabel12.Name" xml:space="preserve">
+    <value>xrLabel12</value>
+  </data>
+  <data name="Reason.Name" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="ReportFooter.Name" xml:space="preserve">
+    <value>ReportFooter</value>
+  </data>
+  <data name="xrTableCell10.Name" xml:space="preserve">
+    <value>xrTableCell10</value>
+  </data>
+  <data name="xrKeeper.Name" xml:space="preserve">
+    <value>xrKeeper</value>
+  </data>
+  <data name="PageHeader.Name" xml:space="preserve">
+    <value>PageHeader</value>
+  </data>
+  <data name="dsOrder21.Name" xml:space="preserve">
+    <value>dsOrder21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="xrTable3.Name" xml:space="preserve">
+    <value>xrTable3</value>
+  </data>
+  <data name="xrProductID.Name" xml:space="preserve">
+    <value>xrProductID</value>
+  </data>
+  <data name="xrAddress.Name" xml:space="preserve">
+    <value>xrAddress</value>
+  </data>
+  <data name="xrLabel17.Name" xml:space="preserve">
+    <value>xrLabel17</value>
+  </data>
+  <data name="PageFooter.Name" xml:space="preserve">
+    <value>PageFooter</value>
+  </data>
+  <data name="xrSign4.Name" xml:space="preserve">
+    <value>xrSign4</value>
+  </data>
+  <data name="xrTableCell17.Name" xml:space="preserve">
+    <value>xrTableCell17</value>
+  </data>
+  <data name="xrTable2.Name" xml:space="preserve">
+    <value>xrTable2</value>
+  </data>
+  <data name="CompanyAddress.Name" xml:space="preserve">
+    <value>CompanyAddress</value>
+  </data>
+  <data name="xrTableCell12.Name" xml:space="preserve">
+    <value>xrTableCell12</value>
+  </data>
+  <data name="xrTableRow1.Name" xml:space="preserve">
+    <value>xrTableRow1</value>
+  </data>
+  <data name="xrTable1.Name" xml:space="preserve">
+    <value>xrTable1</value>
+  </data>
+  <data name="xrSign5.Name" xml:space="preserve">
+    <value>xrSign5</value>
+  </data>
+  <data name="xrDate.Name" xml:space="preserve">
+    <value>xrDate</value>
+  </data>
+  <data name="xrProductName.Name" xml:space="preserve">
+    <value>xrProductName</value>
+  </data>
+  <data name="xrCustomer.Name" xml:space="preserve">
+    <value>xrCustomer</value>
+  </data>
+  <data name="dsOrder21.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="xrStock.Name" xml:space="preserve">
+    <value>xrStock</value>
+  </data>
+  <data name="Tel.Name" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="xrTableCell13.Name" xml:space="preserve">
+    <value>xrTableCell13</value>
+  </data>
+  <data name="CustomerAddress.Name" xml:space="preserve">
+    <value>CustomerAddress</value>
+  </data>
+  <data name="xrTableRow2.Name" xml:space="preserve">
+    <value>xrTableRow2</value>
+  </data>
+  <data name="xrLabel18.Name" xml:space="preserve">
+    <value>xrLabel18</value>
+  </data>
+  <data name="xrUnit.Name" xml:space="preserve">
+    <value>xrUnit</value>
+  </data>
+  <data name="ID.Name" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="xrLabel20.Name" xml:space="preserve">
+    <value>xrLabel20</value>
+  </data>
+  <data name="Fax.Name" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="GroupFooter1.Name" xml:space="preserve">
+    <value>GroupFooter1</value>
+  </data>
+  <data name="xrChiefAccountant.Name" xml:space="preserve">
+    <value>xrChiefAccountant</value>
+  </data>
+  <data name="Date.Name" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="xrSign3.Name" xml:space="preserve">
+    <value>xrSign3</value>
+  </data>
+  <data name="xrLabel19.Name" xml:space="preserve">
+    <value>xrLabel19</value>
+  </data>
+  <data name="xrLabel16.Name" xml:space="preserve">
+    <value>xrLabel16</value>
+  </data>
+  <data name="Title.Name" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="xrSTT.Name" xml:space="preserve">
+    <value>xrSTT</value>
+  </data>
+  <data name="xrTableCell8.Name" xml:space="preserve">
+    <value>xrTableCell8</value>
+  </data>
+  <data name="xrDateNote.Name" xml:space="preserve">
+    <value>xrDateNote</value>
+  </data>
+  <data name="Detail.Name" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="xrLabel1.Name" xml:space="preserve">
+    <value>xrLabel1</value>
+  </data>
+  <data name="xrTotal.Name" xml:space="preserve">
+    <value>xrTotal</value>
+  </data>
+  <data name="xrQuantity.Name" xml:space="preserve">
+    <value>xrQuantity</value>
+  </data>
+  <data name="xrReason.Name" xml:space="preserve">
+    <value>xrReason</value>
+  </data>
+  <data name="xrStoreKeeper.Name" xml:space="preserve">
+    <value>xrStoreKeeper</value>
+  </data>
+  <data name="xrChief.Name" xml:space="preserve">
+    <value>xrChief</value>
+  </data>
+  <data name="xrLabel11.Name" xml:space="preserve">
+    <value>xrLabel11</value>
+  </data>
+  <data name="xrTableCell9.Name" xml:space="preserve">
+    <value>xrTableCell9</value>
+  </data>
+  <data name="CompanyName.Name" xml:space="preserve">
+    <value>CompanyName</value>
+  </data>
+  <data name="xrTableCell11.Name" xml:space="preserve">
+    <value>xrTableCell11</value>
+  </data>
+  <data name="xrSign2.Name" xml:space="preserve">
+    <value>xrSign2</value>
+  </data>
+  <data name="ReportHeader.Name" xml:space="preserve">
+    <value>ReportHeader</value>
+  </data>
+  <data name="xrTableCell18.Name" xml:space="preserve">
+    <value>xrTableCell18</value>
+  </data>
+  <data name="xrReceipt.Name" xml:space="preserve">
+    <value>xrReceipt</value>
+  </data>
+</root>

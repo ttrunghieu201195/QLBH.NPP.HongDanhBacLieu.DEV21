@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<dsUpdateOnline xmlns="http://tempuri.org/dsUpdateOnline.xsd">
+  <UpdateConfig>
+    <OutFile />
+    <UpdateType>QLBH</UpdateType>
+    <Version>2.9.1.4</Version>
+    <Customer>QLBH.HongDanhBacLieu.2.9.1.4</Customer>
+  </UpdateConfig>
+</dsUpdateOnline>
